@@ -1,0 +1,29 @@
+/* Consistent layout + typography rendering with live site */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: clip;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* header__inner shorthand padding was wiping container side gutters */
+.container.header__inner {
+  padding-block: 1.125rem;
+  padding-inline: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container.header__inner {
+    padding-block: 0.875rem;
+    padding-inline: 1rem;
+  }
+}

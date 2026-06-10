@@ -1,0 +1,43 @@
+/* Match live rohrkraft24.de header computed styles exactly */
+
+.logo__text {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.6;
+}
+
+.logo__orange {
+  color: var(--orange);
+}
+
+.logo__dark {
+  color: var(--navy);
+}
+
+/* Match live: dropdown button uses normal line-height (not body 1.6) */
+.dropdown__trigger {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header__email,
+.header__notdienst {
+  white-space: nowrap;
+}
+
+.nav__link--icon svg,
+.header__email svg,
+.dropdown__trigger svg {
+  flex-shrink: 0;
+}
+
+.mobile-nav__cta--navy {
+  background: var(--navy);
+  margin-top: 0.5rem;
+}
+
+.mobile-nav__cta--navy:hover {
+  background: var(--navy-dark);
+}

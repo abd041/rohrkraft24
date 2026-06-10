@@ -1,0 +1,223 @@
+{
+  "slug": "rohrverstopfung-ursachen",
+  "hero": {
+    "category": "Ratgeber",
+    "title": "Rohrverstopfung: 9 häufige Ursachen & wie Sie vorbeugen",
+    "meta": [
+      "📅 22. Januar 2026",
+      "⏱ 6 Min. Lesezeit",
+      "✍️ Rohrkraft24 Redaktion"
+    ],
+    "image": "kanalreinigung-hochdruck-rohr.webp",
+    "imageSm": "kanalreinigung-hochdruck-rohr-sm.webp",
+    "alt": "Rohrverstopfung Ursachen – Inspektion im Rohr"
+  },
+  "blocks": [
+    {
+      "type": "p",
+      "html": "Eine verstopfte Leitung trifft uns meist unvorbereitet – und häufig zur Unzeit. Doch Rohrverstopfungen entstehen selten von heute auf morgen. Meist haben sich die Ursachen über Wochen oder Monate aufgebaut. Wer die häufigsten Auslöser kennt, kann gezielt vorbeugen und teure Notfalleinsätze vermeiden."
+    },
+    {
+      "type": "h2",
+      "id": "fett",
+      "text": "1. Fettablagerungen in der Küchenspüle"
+    },
+    {
+      "type": "p",
+      "html": "Der häufigste Grund für verstopfte Küchenabflüsse: Fett und Öl aus dem Kochen. Flüssiges Fett läuft problemlos ab – kühlt aber im Rohr ab, erstarrt und lagert sich als zähe Schicht an den Rohrwänden ab. Mit der Zeit verengt sich das Rohr immer mehr, bis der Abfluss komplett blockiert ist."
+    },
+    {
+      "type": "callout",
+      "html": "<strong>Tipp:</strong> Niemals Fett, Öl oder Speisereste in den Abfluss gießen. Fettreste lieber in einem alten Behälter sammeln und im Restmüll entsorgen."
+    },
+    {
+      "type": "h2",
+      "id": "haare",
+      "text": "2. Haare & Seifenrückstände im Bad"
+    },
+    {
+      "type": "p",
+      "html": "In Dusche und Badewanne bilden Haare in Kombination mit Seifenrückständen verfilzte Pfropfen. Diese setzen sich im Siphon oder kurz dahinter fest und wachsen langsam zu einer hartnäckigen Blockade. Besonders Langhaar-Haushalte sind betroffen."
+    },
+    {
+      "type": "p",
+      "html": "Ein einfacher Haarsieb im Abfluss kann dieses Problem fast vollständig verhindern – und kostet wenige Euro."
+    },
+    {
+      "type": "h2",
+      "id": "fremdkoerper",
+      "text": "3. Fremdkörper"
+    },
+    {
+      "type": "p",
+      "html": "Wattestäbchen, Kondome, Rasierklingen, Spielzeugteile, Spülmaschinentabs-Verpackungen – all das wird regelmäßig in Toiletten oder Abflüssen entsorgt, wo es nicht hingehört. Diese Gegenstände bleiben im Rohr hängen und bilden einen Kern, an dem sich weitere Ablagerungen festsetzen."
+    },
+    {
+      "type": "h2",
+      "id": "kalk",
+      "text": "4. Kalkablagerungen"
+    },
+    {
+      "type": "p",
+      "html": "In Regionen mit hartem Wasser – wie vielen Teilen Hessens – lagern sich Kalkpartikel an den Rohrinnenwänden ab. Das verengt den Querschnitt über Jahre hinweg und begünstigt das Anhaften anderer Ablagerungen. Rohre aus Kupfer oder Stahl sind besonders anfällig."
+    },
+    {
+      "type": "h2",
+      "id": "wurzeln",
+      "text": "5. Wurzeleinwüchse"
+    },
+    {
+      "type": "p",
+      "html": "Bäume und Sträucher suchen sich Wasser – und finden es in undichten Kanalrohren. Feine Wurzelfasern dringen durch kleinste Risse ein, wachsen im Rohr weiter und bilden dichte Gestrüppe, die den gesamten Kanalquerschnitt blockieren können. Besonders kritisch: Pappeln, Weiden und alte Obstbäume in Hausnähe."
+    },
+    {
+      "type": "p",
+      "html": "Eingewachsene Wurzeln lassen sich mit <a href=\"/kanalreinigung/\">Hochdruckspülung</a> und Fräsköpfen entfernen. Danach empfiehlt sich eine <a href=\"/kamerainspektion/\">Kamerainspektion</a>, um den Umfang der Schäden zu beurteilen."
+    },
+    {
+      "type": "h2",
+      "id": "gefaelle",
+      "text": "6. Falsches Gefälle oder Rohrverzug"
+    },
+    {
+      "type": "p",
+      "html": "Abwasserrohre müssen ein Mindestgefälle von 1–2 % haben, damit das Wasser selbst abfließen kann. Hat sich das Rohr durch Bodensetzungen verschoben oder wurde es ursprünglich falsch verlegt, staut sich das Abwasser – und mit ihm alle mitgeführten Feststoffe."
+    },
+    {
+      "type": "h2",
+      "id": "alte-rohre",
+      "text": "7. Alte, brüchige Rohre"
+    },
+    {
+      "type": "p",
+      "html": "Rohre aus den 1960er bis 1980er Jahren bestehen oft aus Asbest-Zement, Ton oder frühem Kunststoff. Diese Materialien werden mit der Zeit spröde, bilden Risse und Versätze – perfekte Ablagerungsstellen. In Altbauten ist eine regelmäßige Inspektion daher besonders wichtig."
+    },
+    {
+      "type": "h2",
+      "id": "papier",
+      "text": "8. Feuchttücher & zu viel Toilettenpapier"
+    },
+    {
+      "type": "p",
+      "html": "Feuchttücher gehören nicht in die Toilette – auch wenn „spülbar\" auf der Verpackung steht. Sie lösen sich im Wasser nicht auf und bilden mit anderen Materialien feste Klumpen (sogenannte Fatbergs). Gleiches gilt für übermäßige Mengen Toilettenpapier auf einmal."
+    },
+    {
+      "type": "h2",
+      "id": "baustoffe",
+      "text": "9. Baustoffe und Bauschutt"
+    },
+    {
+      "type": "p",
+      "html": "Nach Renovierungen gelangen häufig Zementreste, Gips oder Sand in die Abflüsse. Diese Materialien erhärten im Rohr und bilden steinharteVerstopfungen. Bei Bauarbeiten sollten Abflüsse grundsätzlich verschlossen werden."
+    },
+    {
+      "type": "h2",
+      "id": "vorbeugen",
+      "text": "So beugen Sie Rohrverstopfungen effektiv vor"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Haarsiebe in Dusche und Badewanne verwenden",
+        "Kein Fett, Öl oder Speisereste in den Abfluss",
+        "Nur Toilettenpapier in die Toilette – keine Feuchttücher",
+        "Regelmäßige Reinigung mit heißem Wasser und Spülmittel",
+        "Alle 2–3 Jahre eine <a href=\"/kanalreinigung/\">präventive Kanalreinigung</a> durchführen lassen",
+        "Bei älteren Immobilien: <a href=\"/kamerainspektion/\">Kamerainspektion</a> alle 5 Jahre"
+      ]
+    },
+    {
+      "type": "h2",
+      "id": "faq",
+      "text": "Häufige Fragen"
+    },
+    {
+      "type": "p",
+      "html": "Typische Anzeichen: Wasser läuft langsam ab, Gurgeln aus dem Abfluss, unangenehme Gerüche aus dem Siphon oder Rückstau in mehreren Abflüssen gleichzeitig."
+    },
+    {
+      "type": "p",
+      "html": "Bei leichten Verstopfungen helfen Natron + Essig oder eine Saugglocke. Hartnäckige Blockaden oder Probleme im Hauptkanal gehören in professionelle Hände – falsche Maßnahmen können das Rohr beschädigen."
+    },
+    {
+      "type": "p",
+      "html": "Ja. Eingewachsene Wurzeln üben kontinuierlichen Druck auf das Rohr aus und können es über Zeit aufbrechen. Eine Kamerainspektion zeigt das Ausmaß – bei strukturellen Schäden ist eine Rohrsanierung nötig."
+    },
+    {
+      "type": "p",
+      "html": "Für Privathaushalte empfehlen wir alle 2–3 Jahre eine präventive Reinigung, bei älteren Rohren oder Bäumen auf dem Grundstück jährlich."
+    },
+    {
+      "type": "p",
+      "html": "Rohrkraft24 Redaktion"
+    },
+    {
+      "type": "p",
+      "html": "Fachbetrieb für Rohrreinigung & Kanalsanierung in Hessen – seit über 10 Jahren"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie merke ich, dass mein Rohr verstopft ist?",
+      "answer": "Typische Anzeichen: Wasser läuft langsam ab, Gurgeln aus dem Abfluss, unangenehme Gerüche aus dem Siphon oder Rückstau in mehreren Abflüssen gleichzeitig."
+    },
+    {
+      "question": "Was kann ich selbst gegen eine Verstopfung tun?",
+      "answer": "Bei leichten Verstopfungen helfen Natron + Essig oder eine Saugglocke. Hartnäckige Blockaden oder Probleme im Hauptkanal gehören in professionelle Hände – falsche Maßnahmen können das Rohr beschädigen."
+    },
+    {
+      "question": "Können Wurzeln das Rohr zerstören?",
+      "answer": "Ja. Eingewachsene Wurzeln üben kontinuierlichen Druck auf das Rohr aus und können es über Zeit aufbrechen. Eine Kamerainspektion zeigt das Ausmaß – bei strukturellen Schäden ist eine Rohrsanierung nötig."
+    },
+    {
+      "question": "Wie oft sollte ich den Kanal reinigen lassen?",
+      "answer": "Für Privathaushalte empfehlen wir alle 2–3 Jahre eine präventive Reinigung, bei älteren Rohren oder Bäumen auf dem Grundstück jährlich."
+    }
+  ],
+  "toc": [
+    {
+      "id": "fett",
+      "label": "1. Fettablagerungen"
+    },
+    {
+      "id": "haare",
+      "label": "2. Haare & Seife"
+    },
+    {
+      "id": "fremdkoerper",
+      "label": "3. Fremdkörper"
+    },
+    {
+      "id": "kalk",
+      "label": "4. Kalkablagerungen"
+    },
+    {
+      "id": "wurzeln",
+      "label": "5. Wurzeleinwüchse"
+    },
+    {
+      "id": "gefaelle",
+      "label": "6. Falsches Gefälle"
+    },
+    {
+      "id": "alte-rohre",
+      "label": "7. Alte Rohre"
+    },
+    {
+      "id": "papier",
+      "label": "8. Feuchttücher & Papier"
+    },
+    {
+      "id": "baustoffe",
+      "label": "9. Baustoffe im Rohr"
+    },
+    {
+      "id": "vorbeugen",
+      "label": "Vorbeugen"
+    },
+    {
+      "id": "faq",
+      "label": "Häufige Fragen"
+    }
+  ]
+}

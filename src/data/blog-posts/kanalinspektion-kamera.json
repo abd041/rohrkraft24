@@ -1,0 +1,160 @@
+{
+  "slug": "kanalinspektion-kamera",
+  "hero": {
+    "category": "Leistungen",
+    "title": "Kanalinspektion mit Kamera: Ablauf, Kosten & wann sie nötig ist",
+    "meta": [
+      "📅 29. Januar 2026",
+      "⏱ 6 Min. Lesezeit",
+      "✍️ Rohrkraft24 Redaktion"
+    ],
+    "image": "kamerainspektion-kanal-garten.webp",
+    "imageSm": "kamerainspektion-kanal-garten-sm.webp",
+    "alt": "Kanalinspektion Kamera – HD-Kamerawagen im Einsatz"
+  },
+  "blocks": [
+    {
+      "type": "p",
+      "html": "Verstopfung oder Schaden – ohne Kamera bleibt es Rätselraten. Die Kanalinspektion mit dem Kamerawagen ist heute der Standard, wenn es darum geht, Probleme in Rohrleitungen präzise zu diagnostizieren. Sie spart Zeit, schont die Bausubstanz und liefert klare Fakten statt teurer Vermutungen."
+    },
+    {
+      "type": "h2",
+      "id": "was-ist",
+      "text": "Was ist eine Kanalinspektion mit Kamera?"
+    },
+    {
+      "type": "p",
+      "html": "Bei der Kamerainspektion – auch TV-Inspektion oder Kanal-TV genannt – wird ein kleiner, ferngesteuerter Kamerawagen in das Rohr eingeführt. Die HD-Kamera überträgt Live-Bilder des Rohrinneren auf einen Monitor. Der Techniker kann so Ablagerungen, Risse, Rohrversatz, Wurzeleinwüchse oder Fremdkörper genau lokalisieren – ohne eine einzige Schaufelgrabung."
+    },
+    {
+      "type": "h2",
+      "id": "ablauf",
+      "text": "Ablauf der Kamerainspektion"
+    },
+    {
+      "type": "h2",
+      "id": "wann-noetig",
+      "text": "Wann ist eine Kanalinspektion sinnvoll?"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Wiederkehrende Verstopfungen trotz regelmäßiger Reinigung",
+        "Kauf eines älteren Hauses (Pflichtinspektion vor der Notarunterschrift)",
+        "Unangenehme Gerüche aus Abflüssen ohne erkennbare Ursache",
+        "Feuchtigkeit im Keller ohne sichtbare Undichtigkeit",
+        "Bäume auf dem Grundstück mit möglichem Wurzeleinwuchs",
+        "Nach einer <a href=\"/kanalreinigung/\">Kanalreinigung</a> zur Erfolgskontrolle",
+        "Präventiv alle 5–10 Jahre bei Rohren über 25 Jahre alt"
+      ]
+    },
+    {
+      "type": "h2",
+      "id": "kosten",
+      "text": "Kosten der Kamerainspektion"
+    },
+    {
+      "type": "table",
+      "html": "<table class=\"blog-table\">\n  <thead>\n    <tr><th>Leistung</th><th>Preisspanne</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Inspektion Grundleitung (bis 10 m)</td><td>100 – 180 €</td></tr>\n    <tr><td>Inspektion Kanalstrecke (bis 50 m)</td><td>180 – 300 €</td></tr>\n    <tr><td>Inspektion inkl. Videobericht</td><td>200 – 350 €</td></tr>\n    <tr><td>Kombi: Spülung + Kamerainspektion</td><td>250 – 450 €</td></tr>\n  </tbody>\n</table>"
+    },
+    {
+      "type": "p",
+      "html": "Bei Rohrkraft24 erhalten Sie immer eine vollständige Videodokumentation – kein Extra-Aufpreis. <a href=\"/kamerainspektion/\">Zur Kamerainspektion →</a>"
+    },
+    {
+      "type": "h2",
+      "id": "ergebnis",
+      "text": "Was zeigt die Kamera – und was passiert dann?"
+    },
+    {
+      "type": "p",
+      "html": "Je nach Befund empfehlen wir unterschiedliche Maßnahmen:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "<strong>Leichte Ablagerungen:</strong> <a href=\"/kanalreinigung/\">Hochdruckspülung</a> reicht aus",
+        "<strong>Wurzeleinwüchse:</strong> Fräsung + Spülung, dann Dichtigkeitsprüfung",
+        "<strong>Risse oder Versatz:</strong> <a href=\"/rohrsanierung/\">Rohrsanierung mit Inliner</a> oder partielle Reparatur",
+        "<strong>Totaler Rohrschaden:</strong> Erneuerung (grabenlos oder offen)"
+      ]
+    },
+    {
+      "type": "callout",
+      "html": "<strong>Wichtig:</strong> Eine Kamerainspektion ist kein Luxus – sie ist oft die günstigste Entscheidung, die Sie treffen können. Wer das Problem kennt, löst es gezielt – ohne teure Fehlgriffe."
+    },
+    {
+      "type": "h2",
+      "id": "faq",
+      "text": "Häufige Fragen"
+    },
+    {
+      "type": "p",
+      "html": "Idealerweise ja. Starke Ablagerungen trüben die Kamerasicht. Bei Rohrkraft24 ist eine Vorspülung im Angebot meist enthalten."
+    },
+    {
+      "type": "p",
+      "html": "Ja. Wir liefern einen vollständigen Videobericht mit Zeitstempeln und Positionsangaben zu allen Auffälligkeiten – als digitale Datei."
+    },
+    {
+      "type": "p",
+      "html": "Nein. Der Kamerawagen ist für die Rohrinspektion konzipiert und übt keinen Druck auf die Rohrwände aus. Bei bereits stark beschädigten Rohren arbeiten wir besonders vorsichtig."
+    },
+    {
+      "type": "p",
+      "html": "Eine typische Hausgrundleitung (bis 30 m) ist in 60–90 Minuten komplett inspiziert. Längere Kanalstrecken dauern entsprechend länger."
+    },
+    {
+      "type": "p",
+      "html": "Rohrkraft24 Redaktion"
+    },
+    {
+      "type": "p",
+      "html": "Fachbetrieb für Rohrreinigung & Kanalsanierung in Hessen – seit über 10 Jahren"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Muss das Rohr vor der Kamerainspektion gereinigt werden?",
+      "answer": "Idealerweise ja. Starke Ablagerungen trüben die Kamerasicht. Bei Rohrkraft24 ist eine Vorspülung im Angebot meist enthalten."
+    },
+    {
+      "question": "Bekomme ich eine Aufzeichnung der Inspektion?",
+      "answer": "Ja. Wir liefern einen vollständigen Videobericht mit Zeitstempeln und Positionsangaben zu allen Auffälligkeiten – als digitale Datei."
+    },
+    {
+      "question": "Kann die Kamerainspektion Schäden verursachen?",
+      "answer": "Nein. Der Kamerawagen ist für die Rohrinspektion konzipiert und übt keinen Druck auf die Rohrwände aus. Bei bereits stark beschädigten Rohren arbeiten wir besonders vorsichtig."
+    },
+    {
+      "question": "Wie lange dauert eine Kanalinspektion?",
+      "answer": "Eine typische Hausgrundleitung (bis 30 m) ist in 60–90 Minuten komplett inspiziert. Längere Kanalstrecken dauern entsprechend länger."
+    }
+  ],
+  "toc": [
+    {
+      "id": "was-ist",
+      "label": "Was ist eine Kanalinspektion?"
+    },
+    {
+      "id": "ablauf",
+      "label": "Ablauf der Inspektion"
+    },
+    {
+      "id": "wann-noetig",
+      "label": "Wann ist sie nötig?"
+    },
+    {
+      "id": "kosten",
+      "label": "Kosten"
+    },
+    {
+      "id": "ergebnis",
+      "label": "Was zeigt die Kamera?"
+    },
+    {
+      "id": "faq",
+      "label": "Häufige Fragen"
+    }
+  ]
+}

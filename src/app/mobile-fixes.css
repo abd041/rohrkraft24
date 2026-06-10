@@ -1,0 +1,70 @@
+/* Mobile layout fixes */
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .section-sm {
+    padding-block: 2rem;
+  }
+
+  /* Keep footer links visible above the sticky CTA bar */
+  .footer {
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .ez-hero {
+    padding-block: 2.5rem 2rem;
+  }
+
+  .ez-hero__stats {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+  }
+
+  .hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__grid {
+    padding-block: 2.5rem;
+  }
+
+  .cookie-modal {
+    padding: 1.75rem 1.25rem;
+    margin-inline: 0.25rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile-sticky-btn {
+    font-size: 12px;
+    padding-inline: 8px;
+    gap: 5px;
+  }
+
+  .mobile-sticky-status {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,796 @@
+[
+  {
+    "name": "Frankfurt am Main",
+    "count": "1 Stadt",
+    "cities": [
+      {
+        "name": "Frankfurt am Main",
+        "plz": "60306",
+        "distance": "Hauptstandort",
+        "links": [
+          {
+            "href": "/rohrreinigung-frankfurt/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-frankfurt/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-frankfurt/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-frankfurt/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-frankfurt/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-frankfurt/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-frankfurt/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-frankfurt/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rhein-Main-Gebiet",
+    "count": "5 Städte",
+    "cities": [
+      {
+        "name": "Offenbach am Main",
+        "plz": "63065",
+        "distance": "5 km",
+        "links": []
+      },
+      {
+        "name": "Hanau",
+        "plz": "63450",
+        "distance": "20 km",
+        "links": []
+      },
+      {
+        "name": "Maintal",
+        "plz": "63477",
+        "distance": "15 km",
+        "links": []
+      },
+      {
+        "name": "Seligenstadt",
+        "plz": "63500",
+        "distance": "30 km",
+        "links": []
+      },
+      {
+        "name": "Mühlheim am Main",
+        "plz": "63165",
+        "distance": "12 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-muehlheim/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-muehlheim/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-muehlheim/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-muehlheim/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-muehlheim/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-muehlheim/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-muehlheim/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-muehlheim/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wiesbaden &amp; Mainz",
+    "count": "2 Städte",
+    "cities": [
+      {
+        "name": "Wiesbaden",
+        "plz": "65183",
+        "distance": "40 km",
+        "links": []
+      },
+      {
+        "name": "Mainz",
+        "plz": "55116",
+        "distance": "45 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-mainz/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-mainz/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-mainz/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-mainz/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-mainz/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-mainz/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-mainz/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-mainz/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Landkreis Offenbach",
+    "count": "8 Städte",
+    "cities": [
+      {
+        "name": "Dreieich",
+        "plz": "63303",
+        "distance": "15 km",
+        "links": []
+      },
+      {
+        "name": "Neu-Isenburg",
+        "plz": "63263",
+        "distance": "10 km",
+        "links": []
+      },
+      {
+        "name": "Langen (Hessen)",
+        "plz": "63225",
+        "distance": "18 km",
+        "links": []
+      },
+      {
+        "name": "Rödermark",
+        "plz": "63322",
+        "distance": "22 km",
+        "links": []
+      },
+      {
+        "name": "Rodgau",
+        "plz": "63110",
+        "distance": "22 km",
+        "links": []
+      },
+      {
+        "name": "Dietzenbach",
+        "plz": "63128",
+        "distance": "18 km",
+        "links": []
+      },
+      {
+        "name": "Heusenstamm",
+        "plz": "63150",
+        "distance": "12 km",
+        "links": []
+      },
+      {
+        "name": "Obertshausen",
+        "plz": "63179",
+        "distance": "16 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-obertshausen/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-obertshausen/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-obertshausen/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-obertshausen/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-obertshausen/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-obertshausen/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-obertshausen/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-obertshausen/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Main-Taunus-Kreis",
+    "count": "7 Städte",
+    "cities": [
+      {
+        "name": "Hofheim am Taunus",
+        "plz": "65719",
+        "distance": "20 km",
+        "links": []
+      },
+      {
+        "name": "Eschborn",
+        "plz": "65760",
+        "distance": "12 km",
+        "links": []
+      },
+      {
+        "name": "Kelsterbach",
+        "plz": "65451",
+        "distance": "15 km",
+        "links": []
+      },
+      {
+        "name": "Hattersheim am Main",
+        "plz": "65795",
+        "distance": "18 km",
+        "links": []
+      },
+      {
+        "name": "Bad Soden am Taunus",
+        "plz": "65812",
+        "distance": "20 km",
+        "links": []
+      },
+      {
+        "name": "Schwalbach am Taunus",
+        "plz": "65824",
+        "distance": "16 km",
+        "links": []
+      },
+      {
+        "name": "Flörsheim am Main",
+        "plz": "65439",
+        "distance": "22 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-floersheim/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-floersheim/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-floersheim/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-floersheim/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-floersheim/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-floersheim/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-floersheim/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-floersheim/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hochtaunuskreis",
+    "count": "4 Städte",
+    "cities": [
+      {
+        "name": "Bad Homburg vor der Höhe",
+        "plz": "61348",
+        "distance": "20 km",
+        "links": []
+      },
+      {
+        "name": "Oberursel (Taunus)",
+        "plz": "61440",
+        "distance": "18 km",
+        "links": []
+      },
+      {
+        "name": "Königstein im Taunus",
+        "plz": "61462",
+        "distance": "25 km",
+        "links": []
+      },
+      {
+        "name": "Friedrichsdorf",
+        "plz": "61381",
+        "distance": "25 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-friedrichsdorf/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-friedrichsdorf/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-friedrichsdorf/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-friedrichsdorf/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-friedrichsdorf/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-friedrichsdorf/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-friedrichsdorf/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-friedrichsdorf/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wetteraukreis",
+    "count": "4 Städte",
+    "cities": [
+      {
+        "name": "Butzbach",
+        "plz": "35510",
+        "distance": "50 km",
+        "links": []
+      },
+      {
+        "name": "Friedberg (Hessen)",
+        "plz": "61169",
+        "distance": "35 km",
+        "links": []
+      },
+      {
+        "name": "Bad Nauheim",
+        "plz": "61231",
+        "distance": "42 km",
+        "links": []
+      },
+      {
+        "name": "Karben",
+        "plz": "61184",
+        "distance": "28 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-karben/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-karben/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-karben/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-karben/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-karben/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-karben/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-karben/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-karben/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Main-Kinzig-Kreis",
+    "count": "2 Städte",
+    "cities": [
+      {
+        "name": "Bruchköbel",
+        "plz": "63486",
+        "distance": "25 km",
+        "links": []
+      },
+      {
+        "name": "Gelnhausen",
+        "plz": "63571",
+        "distance": "42 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-gelnhausen/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-gelnhausen/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-gelnhausen/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-gelnhausen/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-gelnhausen/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-gelnhausen/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-gelnhausen/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-gelnhausen/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Landkreis Groß-Gerau",
+    "count": "4 Städte",
+    "cities": [
+      {
+        "name": "Rüsselsheim am Main",
+        "plz": "65428",
+        "distance": "30 km",
+        "links": []
+      },
+      {
+        "name": "Mörfelden-Walldorf",
+        "plz": "64546",
+        "distance": "20 km",
+        "links": []
+      },
+      {
+        "name": "Raunheim",
+        "plz": "65479",
+        "distance": "22 km",
+        "links": []
+      },
+      {
+        "name": "Groß-Gerau",
+        "plz": "64521",
+        "distance": "30 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-gross-gerau/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-gross-gerau/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-gross-gerau/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-gross-gerau/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-gross-gerau/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-gross-gerau/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-gross-gerau/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-gross-gerau/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Darmstadt &amp; Landkreis Darmstadt-Dieburg",
+    "count": "3 Städte",
+    "cities": [
+      {
+        "name": "Darmstadt",
+        "plz": "64283",
+        "distance": "30 km",
+        "links": []
+      },
+      {
+        "name": "Griesheim",
+        "plz": "64347",
+        "distance": "32 km",
+        "links": []
+      },
+      {
+        "name": "Dieburg",
+        "plz": "64807",
+        "distance": "38 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-dieburg/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-dieburg/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-dieburg/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-dieburg/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-dieburg/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-dieburg/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-dieburg/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-dieburg/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Landkreis Bergstraße",
+    "count": "3 Städte",
+    "cities": [
+      {
+        "name": "Bensheim",
+        "plz": "64625",
+        "distance": "52 km",
+        "links": []
+      },
+      {
+        "name": "Heppenheim (Bergstraße)",
+        "plz": "64646",
+        "distance": "48 km",
+        "links": []
+      },
+      {
+        "name": "Viernheim",
+        "plz": "68519",
+        "distance": "55 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-viernheim/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-viernheim/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-viernheim/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-viernheim/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-viernheim/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-viernheim/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-viernheim/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-viernheim/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rheingau-Taunus-Kreis",
+    "count": "2 Städte",
+    "cities": [
+      {
+        "name": "Taunusstein",
+        "plz": "65232",
+        "distance": "48 km",
+        "links": []
+      },
+      {
+        "name": "Idstein",
+        "plz": "65510",
+        "distance": "42 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-idstein/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-idstein/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-idstein/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-idstein/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-idstein/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-idstein/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-idstein/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-idstein/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Limburg-Weilburg &amp; Lahn-Dill-Kreis",
+    "count": "2 Städte",
+    "cities": [
+      {
+        "name": "Limburg an der Lahn",
+        "plz": "65549",
+        "distance": "65 km",
+        "links": []
+      },
+      {
+        "name": "Wetzlar",
+        "plz": "35576",
+        "distance": "68 km",
+        "links": [
+          {
+            "href": "/rohrreinigung-wetzlar/",
+            "label": "Rohrreinigung"
+          },
+          {
+            "href": "/kanalreinigung-wetzlar/",
+            "label": "Kanalreinigung"
+          },
+          {
+            "href": "/abflussreinigung-wetzlar/",
+            "label": "Abflussreinigung"
+          },
+          {
+            "href": "/rohrsanierung-wetzlar/",
+            "label": "Rohrsanierung"
+          },
+          {
+            "href": "/kanalsanierung-wetzlar/",
+            "label": "Kanalsanierung"
+          },
+          {
+            "href": "/kamerainspektion-wetzlar/",
+            "label": "Kamerainspektion"
+          },
+          {
+            "href": "/toilette-verstopft-wetzlar/",
+            "label": "Toilette verstopft"
+          },
+          {
+            "href": "/notdienst-wetzlar/",
+            "label": "Notdienst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Landkreis Gießen",
+    "count": "1 Stadt",
+    "cities": []
+  }
+]
