@@ -1,33 +1,36 @@
-import hessenCities from "./hessen-cities.json";
+import berlinCities from "./berlin-cities.json";
 
-export type CityEntry = { name: string; slug: string };
+export type CityEntry = { name: string; slug: string; shortName?: string; region?: string };
 
-export const HESSEN_CITIES = hessenCities as CityEntry[];
+export const BERLIN_CITIES = berlinCities as CityEntry[];
 
-export const CITIES = HESSEN_CITIES.map((c) => c.name);
+/** @deprecated Use BERLIN_CITIES */
+export const HESSEN_CITIES = BERLIN_CITIES;
+
+export const CITIES = BERLIN_CITIES.map((c) => c.name);
 
 export const FOOTER_CITIES = [
-  { label: "Frankfurt", slug: "frankfurt" },
-  { label: "Wiesbaden", slug: "wiesbaden" },
-  { label: "Offenbach", slug: "offenbach" },
-  { label: "Darmstadt", slug: "darmstadt" },
-  { label: "Hanau", slug: "hanau" },
-  { label: "Mainz", slug: "mainz" },
-  { label: "Bad Homburg", slug: "bad-homburg" },
-  { label: "Dreieich", slug: "dreieich" },
-  { label: "Neu-Isenburg", slug: "neu-isenburg" },
-  { label: "Rüsselsheim", slug: "ruesselsheim" },
-  { label: "Eschborn", slug: "eschborn" },
-  { label: "Oberursel", slug: "oberursel" },
+  { label: "Berlin Mitte", slug: "berlin-mitte" },
+  { label: "Potsdam", slug: "potsdam" },
+  { label: "Oranienburg", slug: "oranienburg" },
+  { label: "Bernau", slug: "bernau" },
+  { label: "Strausberg", slug: "strausberg" },
+  { label: "Fürstenwalde", slug: "fuerstenwalde" },
+  { label: "Falkensee", slug: "falkensee" },
+  { label: "Königs Wusterhausen", slug: "koenigs-wusterhausen" },
+  { label: "Neuruppin", slug: "neuruppin" },
+  { label: "Frankfurt (Oder)", slug: "frankfurt-oder" },
+  { label: "Senftenberg", slug: "senftenberg" },
+  { label: "Schwedt/Oder", slug: "schwedt-oder" },
 ] as const;
 
 export const BUNDESLAENDER = [
-  { name: "Hessen", count: 48, active: true },
+  { name: "Berlin", count: BERLIN_CITIES.length, active: true },
+  { name: "Brandenburg", active: false },
   { name: "Bayern", active: false },
-  { name: "Baden-Württemberg", active: false },
+  { name: "Hessen", active: false },
   { name: "Nordrhein-Westfalen", active: false },
-  { name: "Rheinland-Pfalz", active: false },
   { name: "Niedersachsen", active: false },
   { name: "Sachsen", active: false },
-  { name: "Berlin", active: false },
+  { name: "Hamburg", active: false },
 ] as const;

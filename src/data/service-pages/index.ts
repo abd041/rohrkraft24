@@ -1,23 +1,25 @@
 import type { ServicePageData } from "./types";
 import { ROHRREINIGUNG_PAGE } from "./rohrreinigung";
-import { KANALREINIGUNG_PAGE } from "./kanalreinigung";
-import { ABFLUSSREINIGUNG_PAGE } from "./abflussreinigung";
-import { TOILETTEVERSTOPFT_PAGE } from "./toilette-verstopft";
-import { ROHRSANIERUNG_PAGE } from "./rohrsanierung";
-import { KANALSANIERUNG_PAGE } from "./kanalsanierung";
-import { KAMERAINSPEKTION_PAGE } from "./kamerainspektion";
+import { KAMERA_INSPEKTION_PAGE } from "./kamera-inspektion";
+import { ROHRREPARATUR_PAGE } from "./rohrreparatur";
+import { LECKAGEORTUNG_PAGE } from "./leckageortung";
+import { ABWASSERREINIGUNG_PAGE } from "./abwasserreinigung";
+import { HEBEANLAGE_WARTUNG_PAGE } from "./hebeanlage-wartung";
+import { SANITAERARBEITEN_PAGE } from "./sanitaerarbeiten";
+import { WASSERSCHADEN_PAGE } from "./wasserschaden";
 import { NOTDIENST_PAGE } from "./notdienst";
 
 export type { ServicePageData, ServicePageHeroData } from "./types";
 
 const SERVICE_PAGES: Record<string, ServicePageData> = {
   rohrreinigung: ROHRREINIGUNG_PAGE,
-  kanalreinigung: KANALREINIGUNG_PAGE,
-  abflussreinigung: ABFLUSSREINIGUNG_PAGE,
-  "toilette-verstopft": TOILETTEVERSTOPFT_PAGE,
-  rohrsanierung: ROHRSANIERUNG_PAGE,
-  kanalsanierung: KANALSANIERUNG_PAGE,
-  kamerainspektion: KAMERAINSPEKTION_PAGE,
+  "kamera-inspektion": KAMERA_INSPEKTION_PAGE,
+  rohrreparatur: ROHRREPARATUR_PAGE,
+  leckageortung: LECKAGEORTUNG_PAGE,
+  abwasserreinigung: ABWASSERREINIGUNG_PAGE,
+  "hebeanlage-wartung": HEBEANLAGE_WARTUNG_PAGE,
+  sanitaerarbeiten: SANITAERARBEITEN_PAGE,
+  wasserschaden: WASSERSCHADEN_PAGE,
   notdienst: NOTDIENST_PAGE,
 };
 

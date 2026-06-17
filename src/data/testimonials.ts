@@ -13,7 +13,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Frankfurt",
     initials: "MS",
     avatarColor: "#f97316",
-    text: "Um 23 Uhr Rohrbruch im Keller – Rohrkraft24 war in 35 Minuten da. Absolut professionell, sauber und fair im Preis. Klare Empfehlung!",
+    text: "Um 23 Uhr Rohrbruch im Keller – Rohrretter24 war in 35 Minuten da. Absolut professionell, sauber und fair im Preis. Klare Empfehlung!",
     service: "Notdienst",
   },
   {
@@ -29,7 +29,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Offenbach",
     initials: "TW",
     avatarColor: "#4b5563",
-    text: "Kanalsanierung ohne Aufgraben – hätte ich nicht für möglich gehalten. Keine Schäden am Garten, faire Kosten. Werde Rohrkraft24 weiterempfehlen.",
+    text: "Kanalsanierung ohne Aufgraben – hätte ich nicht für möglich gehalten. Keine Schäden am Garten, faire Kosten. Werde Rohrretter24 weiterempfehlen.",
     service: "Kanalsanierung",
   },
   {
@@ -37,7 +37,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: "Darmstadt",
     initials: "AM",
     avatarColor: "#059669",
-    text: "Toilette verstopft am Sonntagmorgen – kein Problem für Rohrkraft24. Innerhalb einer Stunde war alles erledigt. Sehr freundliches Team!",
+    text: "Toilette verstopft am Sonntagmorgen – kein Problem für Rohrretter24. Innerhalb einer Stunde war alles erledigt. Sehr freundliches Team!",
     service: "WC Notdienst",
   },
   {

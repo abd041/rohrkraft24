@@ -4,7 +4,7 @@ import { SERVICES } from "@/data/services";
 import { SITE } from "@/lib/constants";
 import { CheckIcon } from "@/components/icons";
 
-const SERVICE_DELAYS = ["0.14s", "0.21s", "0.28s", "0.35s", "0s", "0.07s", "0.14s"] as const;
+const SERVICE_DELAYS = ["0s", "0.07s", "0.14s", "0.21s", "0.28s", "0.35s", "0.07s", "0.14s"] as const;
 
 type ServicesProps = {
   cityLabel?: string;
@@ -20,8 +20,8 @@ export function Services({ cityLabel }: ServicesProps = {}) {
             {cityLabel ? `Alle Leistungen in ${cityLabel}` : "Alle Leistungen im Überblick"}
           </h2>
           <p className="section-subtitle mx-auto">
-            Von der einfachen Entstopfung bis zur kompletten Kanalsanierung – das komplette
-            Spektrum professioneller Rohrreinigung.
+            Rohrreinigung, Kamera-Inspektion, Rohrreparatur, Sanitärarbeiten und mehr – das
+            komplette Leistungsspektrum für Berlin und Umgebung.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export function Services({ cityLabel }: ServicesProps = {}) {
               <div className="service-card__img">
                 <Image
                   src={service.image}
-                  alt={`${service.title} – Rohrkraft24 Fachbetrieb`}
+                  alt={`${service.title} – Rohrretter24 Fachbetrieb`}
                   width={400}
                   height={200}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -74,17 +74,17 @@ export function Services({ cityLabel }: ServicesProps = {}) {
               <div className="service-icon-box">📞</div>
               <div>
                 <p className="service-card__label">Rund um die Uhr</p>
-                <h3 className="service-card__title">24h Notdienst inklusive</h3>
+                <h3 className="service-card__title">24h Notdienst</h3>
                 <p className="service-card__desc">
-                  Unser eigenes Techniker-Team – pünktlich, sauber und termingerecht im
-                  Rhein-Main-Gebiet.
+                  Soforthilfe bei Verstopfungen, Rohrbruch und Sanitär-Notfällen – rund um die Uhr
+                  in Berlin und Umgebung.
                 </p>
               </div>
               <ul className="service-card__bullets">
                 {[
                   "Kostenlose Vor-Ort-Beratung",
                   "Schriftlicher Festpreis",
-                  "30–45 Min. Reaktionszeit",
+                  "30–60 Min. Reaktionszeit",
                   "Festpreisgarantie",
                 ].map((item) => (
                   <li key={item} className="service-card__bullet">

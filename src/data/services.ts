@@ -13,66 +13,75 @@ import { IMAGES as IMG } from "@/lib/constants";
 export const SERVICES: Service[] = [
   {
     id: "rohrreinigung",
-    title: "Rohrreinigung",
+    title: "Rohrreinigung & Verstopfungen",
     description:
-      "Professionelle Entstopfung aller Rohrleitungen – schnell und ohne Beschädigungen.",
-    tags: ["Hochdruckspülung", "Mechanische Entstopfung", "Alle Rohrarten"],
+      "Professionelle Beseitigung von Verstopfungen in Küche, Bad, WC, Fall- und Grundleitungen.",
+    tags: ["Küchenabflüsse", "Badabflüsse", "WC-Verstopfungen", "Grundleitungen"],
     href: "/rohrreinigung",
     bestseller: true,
     image: `${IMG}/rohrreinigung-fachmann-einsatz.webp`,
   },
   {
-    id: "kanalreinigung",
-    title: "Kanalreinigung",
+    id: "kamera-inspektion",
+    title: "TV-Kamera-Inspektion",
     description:
-      "Hochdruckspülung von Hausanschlüssen und Grundleitungen im Rhein-Main-Gebiet.",
-    tags: ["Grundleitungsreinigung", "Hausanschlüsse", "HD-Spültechnik"],
-    href: "/kanalreinigung",
-    image: `${IMG}/kanalreinigung-hochdruck-rohr.webp`,
+      "Kamerabefahrung von Rohrleitungen mit Foto-/Video-Dokumentation und präziser Rohrortung.",
+    tags: ["Kamerabefahrung", "Foto & Video", "Rohrortung"],
+    href: "/kamera-inspektion",
+    image: `${IMG}/kamerainspektion-kanal-garten.webp`,
   },
   {
-    id: "abflussreinigung",
-    title: "Abflussreinigung",
+    id: "rohrreparatur",
+    title: "Rohrreparatur & Sanierung",
     description:
-      "Schnelle Hilfe bei verstopftem Abfluss in Küche, Bad, Dusche oder Waschmaschine.",
-    tags: ["Küche & Bad", "Dusche & Wanne", "Waschmaschinenanschluss"],
-    href: "/abflussreinigung",
-    image: `${IMG}/abflussreinigung-kueche-profi.webp`,
-  },
-  {
-    id: "toilette",
-    title: "Toilette verstopft",
-    description:
-      "WC verstopft? Wir befreien Ihre Toilette hygienisch – auch nachts.",
-    tags: ["Sofortiger Notdienst", "Hygienische Reinigung", "24/7 erreichbar"],
-    href: "/toilette-verstopft",
-    image: `${IMG}/toilette-verstopft-notfall-bad.webp`,
-  },
-  {
-    id: "rohrsanierung",
-    title: "Rohrsanierung",
-    description:
-      "Grabenlose Rohrsanierung mit Inliner-Verfahren – ohne Aufgraben, günstiger.",
-    tags: ["Inliner-Verfahren", "Ohne Aufgraben", "20 Jahre Garantie"],
-    href: "/rohrsanierung",
+      "Fachgerechte Reparatur und Sanierung von HT-, KG-, SML-, Kunststoff-, Kupfer- und Stahlrohren.",
+    tags: ["HT- & KG-Rohre", "Kupfer & Stahl", "Kunststoffrohre"],
+    href: "/rohrreparatur",
     image: `${IMG}/rohrsanierung-inliner-verfahren.webp`,
   },
   {
-    id: "kanalsanierung",
-    title: "Kanalsanierung",
+    id: "leckageortung",
+    title: "Leckageortung & Rohrbruch",
     description:
-      "Sanierung von Kanalrohren ohne Erdarbeiten – nachhaltig, dicht und langlebig.",
-    tags: ["Ohne Erdarbeiten", "Verschiedene Materialien", "Förderfähig"],
-    href: "/kanalsanierung",
+      "Schadstellensuche, Leckageortung und Reparatur von Rohrbrüchen – schnell und präzise.",
+    tags: ["Schadstellensuche", "Leckageortung", "Rohrbruch-Reparatur"],
+    href: "/leckageortung",
+    image: `${IMG}/rohrreinigung-fachmann-einsatz.webp`,
+  },
+  {
+    id: "abwasserreinigung",
+    title: "Abwasserreinigung",
+    description:
+      "Grundreinigung von Abwasserleitungen – Entfernung von Urinstein, Kalk- und Fettablagerungen.",
+    tags: ["Urinstein", "Kalkablagerungen", "Fettablagerungen"],
+    href: "/abwasserreinigung",
+    image: `${IMG}/kanalreinigung-hochdruck-rohr.webp`,
+  },
+  {
+    id: "hebeanlage-wartung",
+    title: "Hebeanlagen & Rückstau",
+    description:
+      "Wartung, Reinigung und Störungsbeseitigung für Hebeanlagen und Rückstausysteme.",
+    tags: ["Regelmäßige Wartung", "Reinigung", "Störungsbeseitigung"],
+    href: "/hebeanlage-wartung",
     image: `${IMG}/kanalsanierung-liner-einbau.webp`,
   },
   {
-    id: "kamera",
-    title: "Kamerainspektion",
+    id: "sanitaerarbeiten",
+    title: "Sanitärarbeiten",
     description:
-      "HD-Kamerabefahrung für präzise Schadensdiagnose – mit Bericht und Bildmaterial.",
-    tags: ["HD-Kameratechnik", "Digitaler Bericht", "Exakte Diagnose"],
-    href: "/kamerainspektion",
-    image: `${IMG}/kamerainspektion-kanal-garten.webp`,
+      "WC-Montage, Spülkästen, Armaturen, Siphon-Service, Eckventile und Wasserleitungen.",
+    tags: ["WC-Montage", "Armaturen & Siphon", "Wasserleitungen"],
+    href: "/sanitaerarbeiten",
+    image: `${IMG}/toilette-verstopft-notfall-bad.webp`,
+  },
+  {
+    id: "wasserschaden",
+    title: "Wasserschaden & Nasssaugen",
+    description:
+      "Wasserentfernung aus Kellern, Auspumpen überfluteter Bereiche und Hilfe bei Wasserschäden.",
+    tags: ["Keller entwässern", "Überflutung pumpen", "Wasserschaden-Hilfe"],
+    href: "/wasserschaden",
+    image: `${IMG}/abflussreinigung-kueche-profi.webp`,
   },
 ];

@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entry = getManifest()[slug];
   if (entry?.title) return { title: entry.title };
-  return { title: `${slug} | Rohrkraft24` };
+  return { title: `${slug} | Rohrretter24` };
 }
 
 export default async function CityServicePage({ params }: Props) {

@@ -1,5 +1,5 @@
 import Script from "next/script";
-import { BUNDESLAENDER, HESSEN_CITIES } from "@/data/cities";
+import { BUNDESLAENDER, BERLIN_CITIES } from "@/data/cities";
 
 const PIN_ICON = (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -26,8 +26,8 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
         <div className="map-section-header">
           <div>
             <p className="section-label">Unser Einsatzgebiet</p>
-            <h2>Rohrreinigung in Ihrer Nähe</h2>
-            <p>Schnell vor Ort in allen großen Städten Hessens – klicken Sie auf Hessen</p>
+            <h2>Rohrretter24 in Ihrer Nähe</h2>
+            <p>Schnell vor Ort in Berlin und im Umkreis von 100 km – wählen Sie Ihre Stadt</p>
           </div>
         </div>
 
@@ -42,10 +42,10 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
               </button>
               <div className="map-state-badge visible" id="mapStateBadge">
                 <span className="map-state-name" id="mapStateName">
-                  Hessen
+                  Berlin & Umgebung
                 </span>
                 <span className="map-state-count" id="mapStateCount">
-                  · 19 Standorte
+                  · {BERLIN_CITIES.length} Standorte
                 </span>
               </div>
             </div>
@@ -59,7 +59,7 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
 
           <div className="map-right">
             <div className="map-panel map-panel--hidden" id="mapPanelOverview" style={{ display: "none" }}>
-              <h3 className="map-state-title">Bundesland wählen</h3>
+              <h3 className="map-state-title">Region wählen</h3>
               <p className="map-state-sub">Unser aktuelles Einsatzgebiet</p>
               <ul className="map-state-list">
                 {BUNDESLAENDER.map((state) => (
@@ -67,7 +67,7 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
                     {state.active ? (
                       <button className="map-state-row map-state-row--active" id="hessenStateBtn" type="button">
                         <span className="map-state-name">{state.name}</span>
-                        <span className="map-state-count">{"count" in state ? state.count : ""}</span>
+                        <span className="map-state-count">{"count" in state ? `${state.count} Standorte` : ""}</span>
                         <svg className="map-state-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <polyline points="9 18 15 12 9 6" />
                         </svg>
@@ -88,13 +88,13 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="15 18 9 12 15 6" />
                 </svg>
-                Alle Bundesländer
+                Alle Regionen
               </button>
-              <span className="section-label">Hessen · 48 Standorte</span>
+              <span className="section-label">Berlin & Umgebung · {BERLIN_CITIES.length} Standorte</span>
               <h3>Stadt wählen</h3>
               <p>Stadt auswählen – dann alle Leistungen sehen:</p>
               <ul className="map-city-list">
-                {HESSEN_CITIES.map((city, index) => (
+                {BERLIN_CITIES.map((city, index) => (
                   <li key={city.slug}>
                     <button
                       className={`map-city-link rk-reveal${currentCitySlug === city.slug ? " map-city-link--active" : ""}`}
@@ -121,7 +121,7 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
               </button>
               <span className="section-label map-kw-city-label" id="mapCityLabel" />
               <h3 id="mapCityTitle">Leistung wählen</h3>
-              <p>Alle 8 Dienstleistungen in Ihrer Stadt:</p>
+              <p>Alle Dienstleistungen in Ihrer Stadt:</p>
               <ul className="map-kw-list" id="mapCityKeywords" />
             </div>
           </div>

@@ -48,7 +48,7 @@ export function CityFAQ({ title, items, phone }: CityFAQProps) {
           <div className="faq__image">
             <Image
               src={`${IMAGES}/rohrkraft24-team-besprechung-faq.webp`}
-              alt="Rohrkraft24 Team – Experten für Rohrreinigung & Kanalsanierung in Hessen"
+              alt="Rohrretter24 Team – Experten für Rohrreinigung in Berlin"
               width={500}
               height={400}
               style={{ width: "100%", height: "auto" }}

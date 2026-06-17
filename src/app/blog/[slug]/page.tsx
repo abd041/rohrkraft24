@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const entry = getManifest()[slug];
   const post = getBlogPostData(slug);
   if (entry?.title) return { title: entry.title };
-  if (post) return { title: `${post.hero.title} | Rohrkraft24` };
-  return { title: "Blog | Rohrkraft24" };
+  if (post) return { title: `${post.hero.title} | Rohrretter24` };
+  return { title: "Blog | Rohrretter24" };
 }
 
 export default async function BlogPostPage({ params }: Props) {

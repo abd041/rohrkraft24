@@ -12,7 +12,7 @@ export function BlogIndexTemplate() {
           <p className="section-label" style={{ color: "rgba(255,255,255,0.7)" }}>
             Wissen & Ratgeber
           </p>
-          <h1>Rohrkraft24 Blog</h1>
+          <h1>Rohrretter24 Blog</h1>
           <p>Expertenwissen rund um Rohrreinigung, Kanalsanierung und Rohrprobleme – verständlich erklärt.</p>
         </div>
       </section>

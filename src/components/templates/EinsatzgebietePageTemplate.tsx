@@ -7,13 +7,14 @@ import { CTABanner } from "@/components/sections/CTABanner";
 
 const LEGEND = [
   "Rohrreinigung",
-  "Kanalreinigung",
-  "Abflussreinigung",
-  "Rohrsanierung",
-  "Kanalsanierung",
-  "Kamerainspektion",
-  "Toilette verstopft",
-  "Notdienst",
+  "TV-Kamera-Inspektion",
+  "Rohrreparatur",
+  "Leckageortung",
+  "Abwasserreinigung",
+  "Hebeanlagen-Service",
+  "Sanitärarbeiten",
+  "Wasserschaden",
+  "24h Notdienst",
 ];
 
 export function EinsatzgebietePageTemplate() {
@@ -27,11 +28,11 @@ export function EinsatzgebietePageTemplate() {
             <div className="ez-hero__text">
               <p className="section-label">Unser Einsatzgebiet</p>
               <h1 className="ez-hero__title">
-                Rohrreinigung im <span className="text-orange">Rhein-Main-Gebiet</span>
+                Rohrreinigung in <span className="text-orange">Berlin & Umgebung</span>
               </h1>
               <p className="ez-hero__sub">
-                Von Frankfurt bis Darmstadt, von Wiesbaden bis Hanau – wir sind in 48 Städten für Sie da. Schnell,
-                fair und rund um die Uhr.
+                Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von 100 km für Sie da.
+                Schnell, fair und rund um die Uhr.
               </p>
               <a href={SITE.phoneHref} className="btn btn-primary" style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}>
                 <PhoneIcon /> Jetzt anrufen
@@ -39,11 +40,11 @@ export function EinsatzgebietePageTemplate() {
             </div>
             <div className="ez-hero__stats">
               <div className="ez-stat">
-                <span className="ez-stat__num">48</span>
+                <span className="ez-stat__num">85</span>
                 <span className="ez-stat__label">Städte im Einsatz</span>
               </div>
               <div className="ez-stat">
-                <span className="ez-stat__num">8</span>
+                <span className="ez-stat__num">9</span>
                 <span className="ez-stat__label">Dienstleistungen</span>
               </div>
               <div className="ez-stat">
@@ -51,7 +52,7 @@ export function EinsatzgebietePageTemplate() {
                 <span className="ez-stat__label">Notdienst</span>
               </div>
               <div className="ez-stat">
-                <span className="ez-stat__num">30 Min.</span>
+                <span className="ez-stat__num">60 Min.</span>
                 <span className="ez-stat__label">Reaktionszeit</span>
               </div>
             </div>
@@ -63,7 +64,7 @@ export function EinsatzgebietePageTemplate() {
         <div className="container">
           <div className="ez-intro">
             <p className="section-label">Alle Regionen</p>
-            <h2 className="section-title">Wir sind in ganz Hessen für Sie da</h2>
+            <h2 className="section-title">Wir sind in Berlin und Umgebung für Sie da</h2>
             <p className="section-subtitle mx-auto">
               Klicken Sie auf eine Stadt – wir zeigen Ihnen alle verfügbaren Leistungen und kommen schnellstmöglich zu
               Ihnen.

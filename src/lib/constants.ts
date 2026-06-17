@@ -1,13 +1,13 @@
 export const IMAGES = "/images";
 
 export const SITE = {
-  name: "Rohrkraft24",
+  name: "Rohrretter24",
   phone: "0176 2022 2200",
   phoneHref: "tel:+4917620222200",
   email: "info@rohrretter24.de",
-  address: "Ferdinand-Happ-Straße 53, 60314 Frankfurt am Main",
+  address: "Berlin und Umgebung (100 km Radius)",
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.5!2d8.6821!3d50.1109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422d4d510db4ec00!2sFerdinand-Happ-Stra%C3%9Fe%2053%2C%2060314%20Frankfurt%20am%20Main!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.69303802258!2d13.088345!3d52.520008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b35e9103!2sBerlin!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde",
   rating: 4.9,
   reviewCount: 300,
 } as const;
@@ -22,11 +22,22 @@ export const NAV_LINKS = [
 
 export const SERVICE_LINKS = [
   { label: "Rohrreinigung", href: "/rohrreinigung", icon: "rohrreinigung" },
-  { label: "Kanalreinigung", href: "/kanalreinigung", icon: "kanalreinigung" },
-  { label: "Abflussreinigung", href: "/abflussreinigung", icon: "abflussreinigung" },
-  { label: "Toilette verstopft", href: "/toilette-verstopft", icon: "toilette" },
-  { label: "Rohrsanierung", href: "/rohrsanierung", icon: "rohrsanierung" },
-  { label: "Kanalsanierung", href: "/kanalsanierung", icon: "kanalsanierung" },
-  { label: "Kamerainspektion", href: "/kamerainspektion", icon: "kamerainspektion" },
+  { label: "TV-Kamera-Inspektion", href: "/kamera-inspektion", icon: "kamera-inspektion" },
+  { label: "Rohrreparatur", href: "/rohrreparatur", icon: "rohrreparatur" },
+  { label: "Leckageortung", href: "/leckageortung", icon: "leckageortung" },
+  { label: "Abwasserreinigung", href: "/abwasserreinigung", icon: "abwasserreinigung" },
+  { label: "Hebeanlagen-Service", href: "/hebeanlage-wartung", icon: "hebeanlage-wartung" },
+  { label: "Sanitärarbeiten", href: "/sanitaerarbeiten", icon: "sanitaerarbeiten" },
+  { label: "Wasserschaden", href: "/wasserschaden", icon: "wasserschaden" },
   { label: "24h Notdienst", href: "/notdienst", icon: "notdienst" },
+] as const;
+
+export const EQUIPMENT_ITEMS = [
+  "TV-Kamerasysteme",
+  "Rohrortungsgeräte",
+  "Rothenberger Rohrreinigungsmaschinen",
+  "RIDGID FlexShaft-Systeme",
+  "Nasssauger",
+  "Mobile Hochdruckspülung",
+  "Spezialwerkzeuge für Kunststoff-, Kupfer- und Stahlrohrarbeiten",
 ] as const;

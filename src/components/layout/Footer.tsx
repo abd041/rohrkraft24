@@ -94,7 +94,7 @@ export function Footer() {
           <div className="footer__einsatz-grid">
             <div className="footer__einsatz-text">
               <p className="footer__heading">Einsatzgebiete</p>
-              <p className="footer__einsatz-sub">Wir sind in ganz Hessen für Sie im Einsatz</p>
+              <p className="footer__einsatz-sub">Wir sind in Berlin und Umgebung für Sie im Einsatz</p>
               <div className="footer__cities-grid">
                 <div className="footer__cities-col">
                   {FOOTER_CITIES.slice(0, 6).map((city) => (
@@ -133,7 +133,7 @@ export function Footer() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Rohrkraft24 Standort"
+                title="Rohrretter24 Standort"
               />
             </div>
           </div>
@@ -142,7 +142,7 @@ export function Footer() {
 
       <div className="footer__bottom-bar">
         <div className="container footer__bottom">
-          <p>© 2026 Rohrkraft24. Alle Rechte vorbehalten.</p>
+          <p>© 2026 Rohrretter24. Alle Rechte vorbehalten.</p>
           <div className="footer__bottom-links">
             <Link href="/impressum/">Impressum</Link>
             <Link href="/datenschutz/">Datenschutz</Link>

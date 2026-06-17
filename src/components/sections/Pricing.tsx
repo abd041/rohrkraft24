@@ -30,12 +30,12 @@ const PLANS = [
   },
   {
     price: "199",
-    title: "Kanalreinigung",
+    title: "Abwasserreinigung",
     featured: false,
     features: [
-      "Hochdruckspülung bis 200 bar",
-      "Wurzelentfernung",
-      "Kamerainspektion optional",
+      "Grundreinigung von Leitungen",
+      "Urinstein & Kalk entfernen",
+      "Fettablagerungen beseitigen",
       "Zustandsbericht",
     ],
   },

@@ -1,17 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
+import { SERVICES } from "./services-config.mjs";
 
-const cities = JSON.parse(readFileSync("src/data/hessen-cities.json", "utf8"));
-
-const services = [
-  { slug: "rohrreinigung", label: "Rohrreinigung" },
-  { slug: "kanalreinigung", label: "Kanalreinigung" },
-  { slug: "abflussreinigung", label: "Abflussreinigung" },
-  { slug: "toilette-verstopft", label: "Toilette verstopft" },
-  { slug: "rohrsanierung", label: "Rohrsanierung" },
-  { slug: "kanalsanierung", label: "Kanalsanierung" },
-  { slug: "kamerainspektion", label: "Kamerainspektion" },
-  { slug: "notdienst", label: "Notdienst" },
-];
+const cities = JSON.parse(readFileSync("src/data/berlin-cities.json", "utf8"));
 
 const mainPages = ["kontakt", "einsatzgebiete", "impressum", "datenschutz"];
 
@@ -19,11 +9,11 @@ const blogPosts = ["rohrreinigung-kosten", "rohrverstopfung-ursachen", "kanalins
 
 const routes = [];
 
-for (const s of services) {
+for (const s of SERVICES) {
   routes.push({ path: `/${s.slug}/`, slug: s.slug, type: "service" });
 }
 
-for (const s of services) {
+for (const s of SERVICES) {
   for (const c of cities) {
     routes.push({
       path: `/${s.slug}-${c.slug}/`,

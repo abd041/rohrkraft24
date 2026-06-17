@@ -18,7 +18,7 @@ const FEATURES = [
 ];
 
 const STATS = [
-  { value: "30–45 Min.", label: "Reaktionszeit" },
+  { value: "30–60 Min.", label: "Reaktionszeit" },
   { value: "Gratis Anfahrt", label: "Keine Zusatzkosten" },
   { value: "0€ Schadenscheck", label: "Kostenfrei vor Ort" },
 ];

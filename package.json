@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate-routes": "node scripts/generate-routes.mjs"
+    "generate-routes": "node scripts/generate-routes.mjs",
+    "generate-city-pages": "node scripts/generate-city-pages.mjs",
+    "generate-all": "node scripts/generate-einsatzgebiete-regions.mjs && node scripts/generate-city-pages.mjs && node scripts/generate-routes.mjs"
   },
   "dependencies": {
     "html-react-parser": "^6.1.3",

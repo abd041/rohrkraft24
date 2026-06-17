@@ -1,5 +1,4 @@
 import type { ServicePageData } from "./types";
-
 import { IMAGES as IMG } from "@/lib/constants";
 
 export const ROHRREINIGUNG_PAGE: ServicePageData = {
@@ -8,13 +7,13 @@ export const ROHRREINIGUNG_PAGE: ServicePageData = {
   mapKeyword: "rohrreinigung",
   hero: {
     titleLine1: "Rohrreinigung",
-    titleLine2: "schnell & zuverlässig",
-    tagline: "Ihr 24h-Notdienst im Rhein-Main-Gebiet",
-    body: "Rohr verstopft? Wir beseitigen jede Verstopfung in Abfluss, Kanal und Rohr – schnell, sauber und zum garantierten Festpreis. Gratis Anfahrt, kostenloser Schadenscheck.",
+    titleLine2: "Verstopfungen beseitigen",
+    tagline: "Ihr Fachbetrieb in Berlin und Umgebung",
+    body: "Verstopfte Abflüsse in Küche, Bad oder WC? Wir beseitigen jede Verstopfung in Fall- und Grundleitungen – schnell, sauber und zum Festpreis. Auch nachts und am Wochenende.",
     image: {
       src: `${IMG}/rohrreinigung-fachmann-einsatz.webp`,
       srcSm: `${IMG}/rohrreinigung-fachmann-einsatz-sm.webp`,
-      alt: "Rohrreinigung – Rohrkraft24 Fachbetrieb Hessen",
+      alt: "Rohrreinigung – Rohrretter24 Fachbetrieb Berlin",
     },
   },
 };

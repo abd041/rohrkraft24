@@ -63,14 +63,15 @@
 
     // ─── All 8 service keywords ─────────────────────────────────────────────
     const KEYWORDS = [
-        { label: 'Rohrreinigung',      slug: 'rohrreinigung' },
-        { label: 'Kanalreinigung',     slug: 'kanalreinigung' },
-        { label: 'Abflussreinigung',   slug: 'abflussreinigung' },
-        { label: 'Rohrsanierung',      slug: 'rohrsanierung' },
-        { label: 'Kanalsanierung',     slug: 'kanalsanierung' },
-        { label: 'Kamerainspektion',   slug: 'kamerainspektion' },
-        { label: 'Toilette verstopft', slug: 'toilette-verstopft' },
-        { label: 'Notdienst',          slug: 'notdienst' },
+        { label: 'Rohrreinigung',           slug: 'rohrreinigung' },
+        { label: 'TV-Kamera-Inspektion',    slug: 'kamera-inspektion' },
+        { label: 'Rohrreparatur',           slug: 'rohrreparatur' },
+        { label: 'Leckageortung',           slug: 'leckageortung' },
+        { label: 'Abwasserreinigung',        slug: 'abwasserreinigung' },
+        { label: 'Hebeanlagen-Service',      slug: 'hebeanlage-wartung' },
+        { label: 'Sanitärarbeiten',          slug: 'sanitaerarbeiten' },
+        { label: 'Wasserschaden',           slug: 'wasserschaden' },
+        { label: '24h Notdienst',           slug: 'notdienst' },
     ];
 
     const chevronSvg = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>';
@@ -113,7 +114,7 @@
         }, 450);
         setTimeout(function() {
             backBtn.classList.add('visible');
-            stateName.textContent  = 'Hessen';
+            stateName.textContent  = 'Berlin & Umgebung';
             stateCount.textContent = '· ' + cityDots.querySelectorAll('.city-dot').length + ' Standorte';
             stateBadge.classList.add('visible');
         }, 200);
@@ -271,8 +272,8 @@
         if (tooltip && tooltip.style.opacity === '1') positionTooltip(e);
     });
 
-    // ─── Auto-zoom to Hessen on load (nur wenn Karte geladen) ────────────────
-    if (hasMap) setTimeout(zoomToHessen, 300);
+    // ─── Auto-zoom disabled – Berlin city list shown by default ─────────────
+    // if (hasMap) setTimeout(zoomToHessen, 300);
 
     } // end init()
 

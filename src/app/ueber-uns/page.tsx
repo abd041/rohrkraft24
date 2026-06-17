@@ -4,9 +4,9 @@ import { About } from "@/components/sections/About";
 import { CTABanner } from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Über uns | Rohrkraft24 – Rohrreinigung Rhein-Main",
+  title: "Über uns | Rohrretter24 – Rohrreinigung Berlin",
   description:
-    "Rohrkraft24 – zertifizierter Fachbetrieb für Rohrreinigung im Rhein-Main-Gebiet. Über 10 Jahre Erfahrung, 24/7 Notdienst.",
+    "Rohrretter24 – zertifizierter Fachbetrieb für Rohrreinigung in Berlin und Umgebung. Über 10 Jahre Erfahrung, 24/7 Notdienst.",
 };
 
 export default function UeberUnsPage() {

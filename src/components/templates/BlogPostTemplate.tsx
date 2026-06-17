@@ -8,9 +8,9 @@ import { getRelatedBlogPosts, type BlogPostData } from "@/lib/blog-posts";
 
 const SERVICE_LINKS = [
   { href: "/rohrreinigung/", label: "Rohrreinigung" },
-  { href: "/kanalreinigung/", label: "Kanalreinigung" },
-  { href: "/kamerainspektion/", label: "Kamerainspektion" },
-  { href: "/rohrsanierung/", label: "Rohrsanierung" },
+  { href: "/kamera-inspektion/", label: "TV-Kamera-Inspektion" },
+  { href: "/rohrreparatur/", label: "Rohrreparatur" },
+  { href: "/leckageortung/", label: "Leckageortung" },
   { href: "/notdienst/", label: "24h Notdienst" },
 ];
 
@@ -75,11 +75,11 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
               )}
 
               <div className="blog-author">
-                <div className="blog-author__avatar">RK</div>
+                <div className="blog-author__avatar">RR</div>
                 <div>
-                  <p className="blog-author__name">Rohrkraft24 Redaktion</p>
+                  <p className="blog-author__name">Rohrretter24 Redaktion</p>
                   <p className="blog-author__role">
-                    Fachbetrieb für Rohrreinigung & Kanalsanierung in Hessen – seit über 10 Jahren
+                    Fachbetrieb für Rohrreinigung in Berlin und Umgebung – seit über 10 Jahren
                   </p>
                 </div>
               </div>

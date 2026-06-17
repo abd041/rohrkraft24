@@ -12,7 +12,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Wie schnell sind Sie vor Ort?",
     answer:
-      "Unser Team ist bei akuten Notfällen innerhalb von 30 bis 45 Minuten bei Ihnen – abhängig von Ihrer Region und der aktuellen Auslastung. Wir bieten einen 24-Stunden-Notdienst, auch an Wochenenden und Feiertagen.",
+      "Unser Team ist bei akuten Notfällen innerhalb von 30 bis 60 Minuten bei Ihnen – im Raum Berlin und Umgebung (100 km). Wir bieten einen 24-Stunden-Notdienst, auch an Wochenenden und Feiertagen.",
   },
   {
     question: "Was kostet eine Rohrreinigung?",

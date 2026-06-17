@@ -8,11 +8,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Rohrkraft24</strong><br>\n    Borngartenstraße 7<br>\n    35764 Sinn"
-    },
-    {
-      "type": "p",
-      "html": "<strong>Zweigstelle:</strong><br>\n    Ferdinand-Happ-Straße 53<br>\n    60314 Frankfurt am Main"
+      "html": "<strong>Rohrretter24</strong><br>\n    Berlin und Umgebung (100 km Radius)"
     },
     {
       "type": "h2",
@@ -20,7 +16,7 @@
     },
     {
       "type": "p",
-      "html": "Telefon: <a href=\"tel:+4917620222200\">0176 2022 2200</a><br>\n    E-Mail: <a href=\"mailto:info@rohrretter24.de\">info@rohrretter24.de</a>"
+      "html": "Telefon: <a href=\"tel:+4917620222200\">0176 2022 2200</a><br>\n    E-Mail: <a href=\"mailto:info@rohrretter24.de\">info@rohrretter24.de</a><br>\n    Web: <a href=\"https://rohrretter24.de\">rohrretter24.de</a>"
     },
     {
       "type": "h2",
@@ -36,7 +32,7 @@
     },
     {
       "type": "p",
-      "html": "Rohrkraft24<br>\n    Borngartenstraße 7<br>\n    35764 Sinn"
+      "html": "Rohrretter24<br>\n    Berlin und Umgebung"
     },
     {
       "type": "h2",
@@ -76,7 +72,7 @@
     },
     {
       "type": "p",
-      "html": "Stand: Oktober 2025"
+      "html": "Stand: Juni 2026"
     }
   ]
 }

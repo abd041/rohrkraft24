@@ -4,8 +4,8 @@ import { CheckIcon, PhoneIcon } from "@/components/icons";
 
 const POINTS = [
   "Tiefgehendes Fachwissen",
-  "Jahrelange Erfahrung im Rhein-Main-Gebiet",
-  "Modernste Hochdrucktechnik",
+  "Jahrelange Erfahrung in Berlin und Umgebung",
+  "Modernste Technik & professionelle Ausstattung",
 ];
 
 export function About() {
@@ -16,12 +16,12 @@ export function About() {
           <div className="team__content">
             <p className="section-label">Hier sind wir Zuhause!</p>
             <h2 className="section-title mb-4">
-              Fachbetrieb mit über 10 Jahren Erfahrung in der Rohrreinigung
+              Fachbetrieb mit über 10 Jahren Erfahrung
             </h2>
             <p className="team__text">
-              Rohrkraft24 steht seit über einem Jahrzehnt für Qualität, Verlässlichkeit und
-              Kundenzufriedenheit im Rhein-Main-Gebiet. Wir setzen auf eine entscheidende
-              Fähigkeit, um erstklassige Ergebnisse zu garantieren.
+              Rohrretter24 steht für Qualität, Verlässlichkeit und Kundenzufriedenheit im Raum
+              Berlin und Umgebung (100 km). Von Rohrreinigung über Leckageortung bis
+              Sanitärarbeiten – alles aus einer Hand.
             </p>
             <ul className="team__bullets">
               {POINTS.map((point) => (
@@ -34,10 +34,9 @@ export function About() {
               ))}
             </ul>
             <p className="team__text" style={{ marginBottom: "2rem" }}>
-              Unsere erfahrenen Mitarbeiter arbeiten mit präzisen Methoden und neuester
-              Ausrüstung, um selbst die hartnäckigsten Verstopfungen schnell und sauber zu
-              beseitigen. Von der Abflussreinigung über die Kanalreinigung bis hin zur
-              Kamerainspektion und Kanalsanierung – alles aus einer Hand.
+              Unsere erfahrenen Techniker arbeiten mit präzisen Methoden und professioneller
+              Ausrüstung – Rothenberger Maschinen, RIDGID FlexShaft, TV-Kameras und Nasssauger –
+              um Schäden schnell und sauber zu beheben.
             </p>
             <div className="team__ctas">
               <a href={SITE.phoneHref} className="btn btn-primary">
@@ -52,7 +51,7 @@ export function About() {
           <figure className="team__photo">
             <Image
               src={`${IMAGES}/rohrkraft24-team-rohrreinigung-hessen.webp`}
-              alt="Rohrkraft24 Team – Professionelle Rohrreinigung in Hessen"
+              alt="Rohrretter24 Team – Professioneller Service in Berlin"
               width={800}
               height={600}
               loading="lazy"
@@ -66,8 +65,8 @@ export function About() {
               </span>
             </div>
             <figcaption className="team__photo-caption">
-              Unser zertifiziertes Team im Einsatz – schnell, sauber und zum Festpreis im
-              gesamten Rhein-Main-Gebiet
+              Unser zertifiziertes Team im Einsatz – schnell, sauber und zum Festpreis in Berlin
+              und Umgebung
             </figcaption>
           </figure>
         </div>

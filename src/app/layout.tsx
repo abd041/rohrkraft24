@@ -11,9 +11,9 @@ import { inter } from "./inter";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rohrreinigung Frankfurt & Rhein-Main ▷ 24h Notdienst | Rohrkraft24",
+  title: "Rohrreinigung Berlin ▷ 24h Notdienst | Rohrretter24",
   description:
-    "Rohrreinigung Frankfurt ✔ 24/7 Notdienst ✔ 30–45 Min. Reaktionszeit ✔ Kanalreinigung, Rohrsanierung & Kamerainspektion im Rhein-Main-Gebiet. Gratis Anfahrt!",
+    "Rohrreinigung Berlin ✔ 24/7 Notdienst ✔ 30–60 Min. Reaktionszeit ✔ Kamera-Inspektion, Rohrreparatur & Sanitär in Berlin und Umgebung (100 km). Gratis Anfahrt!",
 };
 
 export const viewport: Viewport = {

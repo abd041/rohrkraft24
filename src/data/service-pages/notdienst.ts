@@ -1,5 +1,4 @@
 import type { ServicePageData } from "./types";
-
 import { IMAGES as IMG } from "@/lib/constants";
 
 export const NOTDIENST_PAGE: ServicePageData = {
@@ -8,13 +7,13 @@ export const NOTDIENST_PAGE: ServicePageData = {
   mapKeyword: "notdienst",
   hero: {
     titleLine1: "24h Notdienst",
-    titleLine2: "schnell & zuverlässig",
-    tagline: "24h Notdienst – wir helfen sofort, auch nachts",
-    body: "Rohrbruch, Rückstau oder totale Verstopfung – unser Notdienst ist 365 Tage im Jahr, rund um die Uhr für Sie da. In 30–45 Minuten bei Ihnen im gesamten Rhein-Main-Gebiet.",
+    titleLine2: "Soforthilfe rund um die Uhr",
+    tagline: "Verstopfung, Rohrbruch, Sanitär-Notfall",
+    body: "Rohrverstopfung, Rohrbruch oder Sanitär-Notfall? Unser Notdienst ist 365 Tage im Jahr erreichbar – Soforthilfe bei Verstopfungen, Rohrbruch-Notdienst und Sanitär-Notfällen im Raum Berlin und Umgebung (100 km).",
     image: {
       src: `${IMG}/notdienst-rohrreinigung-sofort.webp`,
       srcSm: `${IMG}/notdienst-rohrreinigung-sofort-sm.webp`,
-      alt: "24h Notdienst – Rohrkraft24 Fachbetrieb Hessen",
+      alt: "24h Notdienst – Rohrretter24 Berlin",
     },
   },
 };

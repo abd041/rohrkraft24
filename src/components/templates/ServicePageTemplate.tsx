@@ -2,6 +2,7 @@ import { Breadcrumb } from "@/components/blocks/Breadcrumb";
 import { ServicePageHero } from "@/components/blocks/ServicePageHero";
 import { About } from "@/components/sections/About";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { Equipment } from "@/components/sections/Equipment";
 import { FAQ } from "@/components/sections/FAQ";
 import { Features } from "@/components/sections/Features";
 import { MiniCTA } from "@/components/sections/MiniCTA";
@@ -24,6 +25,7 @@ export function ServicePageTemplate({ page }: ServicePageTemplateProps) {
       <TrustMarquee />
       <Features />
       <Services />
+      <Equipment />
       <Pricing />
       <MiniCTA />
       <About />

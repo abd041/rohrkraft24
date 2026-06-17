@@ -18,7 +18,7 @@ export function Header() {
         <Link href="/" className="logo">
           <span className="logo__text">
             <span className="logo__orange">Rohr</span>
-            <span className="logo__dark">kraft24.</span>
+            <span className="logo__dark">retter24.</span>
           </span>
         </Link>
 
@@ -104,7 +104,7 @@ export function Header() {
           <div className="mobile-nav__header">
             <span className="mobile-nav__logo">
               <span style={{ color: "var(--orange)" }}>Rohr</span>
-              <span style={{ color: "var(--navy)" }}>kraft24.</span>
+              <span style={{ color: "var(--navy)" }}>retter24.</span>
             </span>
             <button
               className="mobile-nav__close"

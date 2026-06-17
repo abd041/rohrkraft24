@@ -80,12 +80,13 @@ export function StarsRow() {
 
 export type ServiceIconName =
   | "rohrreinigung"
-  | "kanalreinigung"
-  | "abflussreinigung"
-  | "toilette"
-  | "rohrsanierung"
-  | "kanalsanierung"
-  | "kamerainspektion"
+  | "kamera-inspektion"
+  | "rohrreparatur"
+  | "leckageortung"
+  | "abwasserreinigung"
+  | "hebeanlage-wartung"
+  | "sanitaerarbeiten"
+  | "wasserschaden"
   | "notdienst";
 
 export function ServiceIcon({ name, size = 15 }: { name: ServiceIconName; size?: number }) {
@@ -104,39 +105,45 @@ export function ServiceIcon({ name, size = 15 }: { name: ServiceIconName; size?:
     rohrreinigung: (
       <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
     ),
-    kanalreinigung: (
+    "kamera-inspektion": (
       <>
-        <path d="M2 12c1.5-3 3-4.5 4.5-4.5S9 9 10.5 9 13.5 6 15 6s3 1.5 4.5 4.5" />
-        <path d="M2 18c1.5-3 3-4.5 4.5-4.5S9 15 10.5 15 13.5 12 15 12s3 1.5 4.5 4.5" />
+        <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+        <circle cx="12" cy="13" r="4" />
       </>
     ),
-    abflussreinigung: <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />,
-    toilette: (
-      <>
-        <rect x="4" y="2" width="16" height="6" rx="1" />
-        <path d="M4 8h16v2a8 8 0 01-16 0V8z" />
-        <path d="M12 18v4M8 22h8" />
-      </>
-    ),
-    rohrsanierung: (
+    rohrreparatur: (
       <>
         <rect x="1" y="9" width="22" height="6" rx="2" />
         <path d="M8 9V5a2 2 0 012-2h4a2 2 0 012 2v4M8 15v4a2 2 0 002 2h4a2 2 0 002-2v-4" />
       </>
     ),
-    kanalsanierung: (
+    leckageortung: (
+      <>
+        <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+        <circle cx="12" cy="11" r="1" fill="currentColor" />
+      </>
+    ),
+    abwasserreinigung: (
+      <>
+        <path d="M2 12c1.5-3 3-4.5 4.5-4.5S9 9 10.5 9 13.5 6 15 6s3 1.5 4.5 4.5" />
+        <path d="M2 18c1.5-3 3-4.5 4.5-4.5S9 15 10.5 15 13.5 12 15 12s3 1.5 4.5 4.5" />
+      </>
+    ),
+    "hebeanlage-wartung": (
       <>
         <circle cx="12" cy="12" r="3" />
         <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14" />
         <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
       </>
     ),
-    kamerainspektion: (
+    sanitaerarbeiten: (
       <>
-        <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
-        <circle cx="12" cy="13" r="4" />
+        <rect x="4" y="2" width="16" height="6" rx="1" />
+        <path d="M4 8h16v2a8 8 0 01-16 0V8z" />
+        <path d="M12 18v4M8 22h8" />
       </>
     ),
+    wasserschaden: <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />,
     notdienst: (
       <>
         <circle cx="12" cy="13" r="8" />

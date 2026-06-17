@@ -24,17 +24,16 @@ export function Hero() {
             <h1 className="hero__title">
               Rohrreinigung in
               <br />
-              der Nähe
+              Berlin & Umgebung
             </h1>
             <p className="hero__tagline">
-              Ihr 24h-Notdienst im Rhein-Main-Gebiet – schnell, günstig & zuverlässig
+              Ihr 24h-Notdienst in Berlin und Umgebung (100 km) – schnell, zuverlässig & fair
             </p>
             <p className="hero__body">
-              Rohr verstopft? Abfluss blockiert? Wir sind in 30–45 Minuten bei Ihnen – in
-              Frankfurt, Wiesbaden, Offenbach und dem gesamten Rhein-Main-Gebiet. Als
-              zertifizierter Fachbetrieb beseitigen wir jede Verstopfung in Abfluss, Kanal
-              und Rohr: sofort, sauber und zum garantierten Festpreis. Gratis Anfahrt, 0 €
-              Schadenscheck, keine versteckten Kosten.
+              Rohr verstopft? Abfluss blockiert? Wir sind in 30–60 Minuten bei Ihnen – in Berlin,
+              Potsdam, Oranienburg und im gesamten Umkreis von 100 km. Als zertifizierter
+              Fachbetrieb beseitigen wir Verstopfungen, reparieren Rohrbrüche und helfen bei
+              Sanitär-Notfällen – zum garantierten Festpreis. Gratis Anfahrt, 0 € Schadenscheck.
             </p>
 
             <div className="hero__trust">
@@ -90,7 +89,7 @@ export function Hero() {
               />
               <img
                 src={`${IMAGES}/rohrkraft24-team-hessen.webp`}
-                alt="Rohrkraft24 Team Hessen – professionelle Rohrreinigung"
+                alt="Rohrretter24 Team – professionelle Rohrreinigung Berlin"
                 width={900}
                 height={600}
                 loading="eager"

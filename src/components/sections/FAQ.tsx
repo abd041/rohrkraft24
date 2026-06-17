@@ -40,7 +40,7 @@ export function FAQ() {
           <div className="faq__image">
             <Image
               src={`${IMAGES}/rohrkraft24-team-besprechung-faq.webp`}
-              alt="Rohrkraft24 Team – Experten für Rohrreinigung & Kanalsanierung in Hessen"
+              alt="Rohrretter24 Team – Experten für Rohrreinigung in Berlin"
               width={600}
               height={450}
               loading="lazy"
