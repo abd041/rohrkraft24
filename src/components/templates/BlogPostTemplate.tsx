@@ -101,7 +101,7 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
 
               <div
                 className="blog-sidebar__box rk-reveal"
-                style={{ background: "var(--orange)", borderColor: "var(--orange)", transitionDelay: "0.07s" }}
+                style={{ background: "var(--secondary)", borderColor: "var(--secondary)", transitionDelay: "0.07s" }}
               >
                 <h3 style={{ color: "white" }}>Jetzt Hilfe erhalten</h3>
                 <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "0.875rem", marginBottom: "1rem", lineHeight: 1.6 }}>
@@ -110,7 +110,7 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
                 <a
                   href={SITE.phoneHref}
                   className="btn btn-primary"
-                  style={{ width: "100%", justifyContent: "center", background: "white", color: "var(--orange)" }}
+                  style={{ width: "100%", justifyContent: "center", background: "white", color: "var(--primary)" }}
                 >
                   <PhoneIcon /> {SITE.phone}
                 </a>

@@ -28,7 +28,7 @@ export function EinsatzgebietePageTemplate() {
             <div className="ez-hero__text">
               <p className="section-label">Unser Einsatzgebiet</p>
               <h1 className="ez-hero__title">
-                Rohrreinigung in <span className="text-orange">Berlin & Umgebung</span>
+                Rohrreinigung in <span className="text-accent">Berlin & Umgebung</span>
               </h1>
               <p className="ez-hero__sub">
                 Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von 100 km für Sie da.

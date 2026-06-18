@@ -103,7 +103,7 @@ export function Header() {
         <div className="mobile-nav__panel">
           <div className="mobile-nav__header">
             <span className="mobile-nav__logo">
-              <span style={{ color: "var(--orange)" }}>Rohr</span>
+              <span style={{ color: "var(--accent)" }}>Rohr</span>
               <span style={{ color: "var(--navy)" }}>retter24.</span>
             </span>
             <button

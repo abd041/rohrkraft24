@@ -1,13 +1,13 @@
 import { BadgeIcon } from "@/components/icons";
 
 const BADGES = [
-  { title: "Handwerkskammer", sub: "Frankfurt · RheinMain", icon: "craft" as const, bg: "#2d3748" },
-  { title: "IHK Frankfurt", sub: "Zertifizierter Betrieb", icon: "ihk" as const, bg: "#374151" },
+  { title: "Handwerkskammer", sub: "Frankfurt · RheinMain", icon: "craft" as const, bg: "#153A6B" },
+  { title: "IHK Frankfurt", sub: "Zertifizierter Betrieb", icon: "ihk" as const, bg: "#0f2d52" },
   { title: "4,9", sub: "300+ Bewertungen", icon: "google" as const, googleTitle: true },
   { title: "Zertifizierter", sub: "Rohrreinigungsfachbetrieb", icon: "shield" as const, bg: "#059669" },
   { title: "Das Handwerk", sub: "Die Wirtschaftsmacht", icon: "wrench" as const, bg: "#c0392b" },
-  { title: "Festpreis", sub: "100% Preisgarantie", icon: "dollar" as const, bg: "#f97316" },
-  { title: "Seit 2014", sub: "10+ Jahre Erfahrung", icon: "award" as const, bg: "#7c3aed" },
+  { title: "Festpreis", sub: "100% Preisgarantie", icon: "dollar" as const, bg: "#315D9F" },
+  { title: "Seit 2014", sub: "10+ Jahre Erfahrung", icon: "award" as const, bg: "#5AA0D3" },
 ];
 
 function BadgeItem({ badge, index }: { badge: (typeof BADGES)[number]; index: number }) {

@@ -23,7 +23,7 @@ export function Equipment() {
               className="card"
               style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "0.75rem", alignItems: "flex-start" }}
             >
-              <span style={{ color: "var(--orange)", flexShrink: 0, marginTop: 2 }}>
+              <span style={{ color: "var(--accent)", flexShrink: 0, marginTop: 2 }}>
                 <CheckIcon />
               </span>
               <span style={{ color: "var(--navy)", fontWeight: 600, fontSize: "0.9375rem" }}>{item}</span>
