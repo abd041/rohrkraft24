@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const HEBEANLAGE_WARTUNG_PAGE: ServicePageData = {
+export const HEBEANLAGE_WARTUNG_PAGE: ServicePageBase = {
   slug: "hebeanlage-wartung",
   breadcrumbLabel: "Hebeanlagen-Service",
   mapKeyword: "hebeanlage-wartung",
@@ -13,7 +13,7 @@ export const HEBEANLAGE_WARTUNG_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/kanalsanierung-liner-einbau.webp`,
       srcSm: `${IMG}/kanalsanierung-liner-einbau-sm.webp`,
-      alt: "Hebeanlagen-Service – Rohrretter24 Berlin",
+      alt: "Hebeanlagen-Service – RohrRetter24 Berlin",
     },
   },
 };

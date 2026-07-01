@@ -1,5 +1,7 @@
 import Script from "next/script";
-import { BUNDESLAENDER, BERLIN_CITIES } from "@/data/cities";
+import { ServiceAreaMap } from "@/components/map/ServiceAreaMap";
+import { BUNDESLAENDER, BERLIN_CITIES, CITY_COUNT } from "@/data/cities";
+import { SITE } from "@/lib/constants";
 
 const PIN_ICON = (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -26,34 +28,32 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
         <div className="map-section-header">
           <div>
             <p className="section-label">Unser Einsatzgebiet</p>
-            <h2>Rohrretter24 in Ihrer Nähe</h2>
+            <h2>{SITE.name} in Ihrer Nähe</h2>
             <p>Schnell vor Ort in Berlin und im Umkreis von 100 km – wählen Sie Ihre Stadt</p>
           </div>
         </div>
 
         <div className="map-wrapper" {...(mapKeyword ? { "data-keyword": mapKeyword } : {})}>
-          <div className="map-left" id="mapLeft">
+          <div className="map-left map-left--embed" id="mapLeft">
             <div className="map-controls">
-              <button className="map-back-btn visible" id="mapBackBtn" type="button" aria-label="Zurück zur Übersicht">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-                Übersicht
-              </button>
               <div className="map-state-badge visible" id="mapStateBadge">
                 <span className="map-state-name" id="mapStateName">
                   Berlin & Umgebung
                 </span>
                 <span className="map-state-count" id="mapStateCount">
-                  · {BERLIN_CITIES.length} Standorte
+                  · {CITY_COUNT} Standorte
                 </span>
               </div>
             </div>
+            <div className="map-embed-wrap">
+              <ServiceAreaMap highlightSlug={currentCitySlug} />
+            </div>
             <div
-              className="map-svg-container"
+              className="map-svg-container map-svg-container--hidden"
               id="mapSvgContainer"
               data-map-src="/germany-map.svg"
               {...(currentCitySlug ? { "data-current-slug": currentCitySlug } : {})}
+              aria-hidden
             />
           </div>
 
@@ -65,7 +65,7 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
                 {BUNDESLAENDER.map((state) => (
                   <li key={state.name}>
                     {state.active ? (
-                      <button className="map-state-row map-state-row--active" id="hessenStateBtn" type="button">
+                      <button className="map-state-row map-state-row--active" id="berlinStateBtn" type="button">
                         <span className="map-state-name">{state.name}</span>
                         <span className="map-state-count">{"count" in state ? `${state.count} Standorte` : ""}</span>
                         <svg className="map-state-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -73,7 +73,7 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
                         </svg>
                       </button>
                     ) : (
-                      <div className="map-state-row map-state-row--soon">
+                      <div className="map-state-row map-state-row--soon" aria-disabled="true">
                         <span className="map-state-name">{state.name}</span>
                         <span className="map-state-soon">demnächst</span>
                       </div>
@@ -83,14 +83,8 @@ export function ServiceArea({ mapKeyword, currentCitySlug }: ServiceAreaProps = 
               </ul>
             </div>
 
-            <div className="map-panel" id="mapPanelHessen" style={{ display: "flex" }}>
-              <button className="map-back-link" id="mapBackToStates" type="button">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polyline points="15 18 9 12 15 6" />
-                </svg>
-                Alle Regionen
-              </button>
-              <span className="section-label">Berlin & Umgebung · {BERLIN_CITIES.length} Standorte</span>
+            <div className="map-panel" id="mapPanelBerlin" style={{ display: "flex" }}>
+              <span className="section-label">Berlin & Umgebung · {CITY_COUNT} Standorte</span>
               <h3>Stadt wählen</h3>
               <p>Stadt auswählen – dann alle Leistungen sehen:</p>
               <ul className="map-city-list">

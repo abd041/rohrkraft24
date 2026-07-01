@@ -2,200 +2,121 @@
   "slug": "rohrreinigung-kosten",
   "hero": {
     "category": "Kosten & Preise",
-    "title": "Rohrreinigung Kosten 2026: Preise, Faktoren & Spartipps",
+    "title": "Was kostet Rohrreinigung in Berlin? Preise & Festpreise 2026",
     "meta": [
-      "📅 15. Januar 2026",
-      "⏱ 7 Min. Lesezeit",
-      "✍️ Rohrretter24 Redaktion"
+      "📅 12. März 2026",
+      "⏱ 8 Min. Lesezeit",
+      "✍️ RohrRetter24 Redaktion"
     ],
     "image": "rohrreinigung-fachmann-einsatz.webp",
     "imageSm": "rohrreinigung-fachmann-einsatz-sm.webp",
-    "alt": "Rohrreinigung Kosten – Fachmann im Einsatz"
+    "alt": "Techniker bei Rohrreinigung in Berlin"
   },
+  "toc": [
+    { "id": "preisueberblick", "label": "Preisüberblick" },
+    { "id": "kostenfaktoren", "label": "Kostenfaktoren" },
+    { "id": "preistabelle", "label": "Preistabelle" },
+    { "id": "anfahrt", "label": "Anfahrtspauschale" },
+    { "id": "spartipps", "label": "Spartipps" },
+    { "id": "faq", "label": "FAQ" }
+  ],
   "blocks": [
     {
       "type": "p",
-      "html": "Eine verstopfte Rohrleitung – und plötzlich stellt sich die Frage: Was kostet das eigentlich? Viele Menschen scheuen sich davor, einen Fachbetrieb zu rufen, weil sie Angst vor undurchsichtigen Preisen haben. Dieser Artikel schafft Transparenz: Wir erklären alle Kostenfaktoren, geben realistische Preisspannen und zeigen, wie Sie unnötige Ausgaben vermeiden."
+      "html": "Ein verstopfter Abfluss kommt selten zum passenden Zeitpunkt – und fast immer stellt sich sofort die Frage nach den Kosten. In Berlin und im Umland zahlen Haushalte für professionelle Rohrreinigung unterschiedliche Beträge, je nach Schwere der Verstopfung, Tageszeit und Zugang zur Leitung. Dieser Ratgeber erklärt, womit Sie rechnen sollten, wie Festpreise funktionieren und woran Sie seriöse Anbieter erkennen."
     },
     {
       "type": "h2",
-      "id": "kosten-ueberblick",
-      "text": "Rohrreinigung Kosten: Der Überblick"
+      "id": "preisueberblick",
+      "text": "Rohrreinigung: realistische Preisspannen"
     },
     {
       "type": "p",
-      "html": "Die Kosten für eine professionelle Rohrreinigung hängen stark vom Ausmaß der Verstopfung, dem Rohrtyp und der Zugänglichkeit ab. Als grobe Orientierung gilt:"
+      "html": "Für einfache Verstopfungen in Waschbecken, Dusche oder WC liegen die Preise in Berlin meist zwischen <strong>80 und 180 €</strong>. Sind Fall- oder Grundleitungen betroffen oder muss mit Hochdruck gearbeitet werden, sind <strong>150 bis 400 €</strong> üblich. Notdiensteinsätze nachts oder an Feiertagen können einen Zuschlag von 20–50 % haben – seriöse Betriebe nennen diesen vorab."
     },
     {
       "type": "callout",
-      "html": "\n  <strong>Faustformel:</strong> Eine einfache Rohrreinigung (Abfluss, WC) kostet zwischen <strong>80 und 200 €</strong>. Komplexere Arbeiten wie Hochdruckspülung oder Kanalreinigung liegen zwischen <strong>150 und 600 €</strong>. Der Notdienst nachts oder am Wochenende kann einen Aufschlag von 20–50 % bedeuten.\n"
+      "html": "<strong>Wichtig:</strong> Bei RohrRetter24 erhalten Sie vor Arbeitsbeginn einen schriftlichen Festpreis. Zusätzlich fällt eine Anfahrtspauschale von 49 € an – diese wird bei Beauftragung verrechnet."
     },
     {
       "type": "h2",
-      "id": "einflussfaktoren",
-      "text": "Welche Faktoren beeinflussen den Preis?"
+      "id": "kostenfaktoren",
+      "text": "Was den Preis beeinflusst"
     },
     {
       "type": "h3",
-      "text": "1. Art der Verstopfung"
+      "text": "Schwere der Verstopfung"
     },
     {
       "type": "p",
-      "html": "Leichte Ablagerungen in einem Haushaltsabfluss lassen sich oft mit einer Spirale lösen – das ist schnell und günstig. Hartnäckige Fettablagerungen oder Wurzeleinwüchse im Hauptkanal erfordern Hochdrucktechnik und mehr Zeit."
+      "html": "Ein leicht verstopfter Siphon ist in 20–30 Minuten erledigt. Hartnäckige Fett- oder Haarpfropfen in der Fallleitung oder Wurzeleinwuchs im Außenbereich brauchen mehr Zeit und stärkere Technik."
     },
     {
       "type": "h3",
-      "text": "2. Rohrdurchmesser und -material"
+      "text": "Zugänglichkeit"
     },
     {
       "type": "p",
-      "html": "Größere Rohrdurchmesser (DN 100 bis DN 200 bei Kanalrohren) benötigen stärkeres Equipment. Alte Tonrohre oder Gusseisenrohre sind oft empfindlicher und bedürfen erfahrener Techniker."
+      "html": "Revisionsöffnungen im Keller, enge Bäder oder Leitungen unter Estrich erhöhen den Aufwand. Je schwieriger der Zugang, desto mehr beeinflusst das den Endpreis."
     },
     {
       "type": "h3",
-      "text": "3. Zugänglichkeit"
+      "text": "Tageszeit"
     },
     {
       "type": "p",
-      "html": "Liegt der Reinigungsschacht direkt zugänglich im Keller, ist die Arbeit schneller erledigt als bei Rohren unter Estrich oder in engen Leitungsschächten. Schwierige Zugangssituationen erhöhen den Aufwand – und damit den Preis."
-    },
-    {
-      "type": "h3",
-      "text": "4. Tageszeit und Wochentag"
-    },
-    {
-      "type": "p",
-      "html": "Notdiensteinsätze zwischen 22:00 und 6:00 Uhr sowie an Sonn- und Feiertagen werden mit einem Zuschlag abgerechnet. Bei Rohrretter24 kommunizieren wir diese Zuschläge transparent vor dem Einsatz."
+      "html": "Einsätze zwischen 22:00 und 6:00 Uhr sowie an Sonn- und Feiertagen sind personalintensiver. Transparente Anbieter kommunizieren Zuschläge vor dem Termin – nicht erst auf der Rechnung."
     },
     {
       "type": "h2",
       "id": "preistabelle",
-      "text": "Preistabelle: Rohrreinigung nach Leistung"
+      "text": "Orientierung nach Leistung"
     },
     {
       "type": "table",
-      "html": "<table class=\"blog-table\">\n  <thead>\n    <tr><th>Leistung</th><th>Preisspanne</th><th>Typische Dauer</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Abfluss reinigen (Küche/Bad)</td><td>80 – 150 €</td><td>30–60 Min.</td></tr>\n    <tr><td>WC / Toilette entstopfen</td><td>90 – 180 €</td><td>30–90 Min.</td></tr>\n    <tr><td>Kanalreinigung mit Hochdruck</td><td>150 – 400 €</td><td>1–3 Std.</td></tr>\n    <tr><td>Kamerainspektion</td><td>100 – 250 €</td><td>30–90 Min.</td></tr>\n    <tr><td>Rohrsanierung (Inliner)</td><td>800 – 3.500 €</td><td>1–2 Tage</td></tr>\n    <tr><td>Notdienst (Aufschlag)</td><td>+ 20–50 %</td><td>–</td></tr>\n  </tbody>\n</table>"
-    },
-    {
-      "type": "p",
-      "html": "<em>Alle Angaben sind Richtwerte. Die tatsächlichen Kosten hängen von den Gegebenheiten vor Ort ab. Wir erstellen immer ein transparentes Angebot vor Arbeitsbeginn.</em>"
+      "html": "<table class=\"blog-table\"><thead><tr><th>Leistung</th><th>Preisspanne Berlin</th><th>Dauer</th></tr></thead><tbody><tr><td>Abfluss Küche/Bad</td><td>80 – 150 €</td><td>30–60 Min.</td></tr><tr><td>WC entstopfen</td><td>90 – 180 €</td><td>30–90 Min.</td></tr><tr><td>Fallleitung / Grundleitung</td><td>150 – 300 €</td><td>1–2 Std.</td></tr><tr><td>Hochdruckreinigung</td><td>180 – 400 €</td><td>1–3 Std.</td></tr><tr><td>Kamerainspektion</td><td>100 – 250 €</td><td>30–90 Min.</td></tr><tr><td>Notdienst-Zuschlag</td><td>+ 20–50 %</td><td>–</td></tr></tbody></table>"
     },
     {
       "type": "h2",
-      "id": "festpreis",
-      "text": "Festpreis vs. Stundensatz: Was ist besser?"
+      "id": "anfahrt",
+      "text": "Anfahrtspauschale: Was Sie wissen sollten"
     },
     {
       "type": "p",
-      "html": "Viele Betriebe rechnen nach Stundensatz ab – das kann bei unvorhergesehenen Komplikationen teuer werden. <a href=\"/rohrreinigung/\">Rohrretter24</a> arbeitet bevorzugt mit Festpreisen: Sie wissen vor dem Einsatz genau, was Sie zahlen – ohne böse Überraschungen."
-    },
-    {
-      "type": "p",
-      "html": "Achten Sie beim Anbietervergleich auf folgende Punkte:"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "Wird eine Anfahrtspauschale berechnet?",
-        "Sind Materialkosten (z. B. für Düsen) enthalten?",
-        "Gibt es eine Garantie auf die Arbeit?",
-        "Ist der Betrieb in Ihrer Region tätig und kann schnell reagieren?"
-      ]
+      "html": "Viele Kunden fragen, ob die Anfahrt extra berechnet wird. Bei uns gilt: <strong>49 € Anfahrtspauschale</strong> für Einsätze in Berlin und im Umkreis von 100 km. Die Pauschale wird bei Beauftragung mit dem Arbeitslohn verrechnet – Sie wissen also vorab, welche Fixkosten auf Sie zukommen."
     },
     {
       "type": "h2",
       "id": "spartipps",
-      "text": "Spartipps: So sparen Sie bei der Rohrreinigung"
+      "text": "So vermeiden Sie unnötige Kosten"
     },
     {
       "type": "ul",
       "items": [
-        "<strong>Frühzeitig handeln:</strong> Je länger Sie warten, desto hartnäckiger wird die Verstopfung – und teurer die Reinigung.",
-        "<strong>Präventive Reinigung:</strong> Eine jährliche <a href=\"/kanalreinigung/\">Kanalreinigung</a> kostet wenig und verhindert teure Notfalleinsätze.",
-        "<strong>Kombiangebote nutzen:</strong> Oft lohnt es sich, gleichzeitig eine <a href=\"/kamera-inspektion/\">Kamerainspektion</a> durchführen zu lassen – so erkennen Sie versteckte Schäden früh.",
-        "<strong>Versicherung prüfen:</strong> Manche Hausratversicherungen übernehmen Kosten bei Rohrschäden durch plötzliche Ereignisse."
+        "Verstopfung früh beheben lassen – kleine Pfropfen werden mit der Zeit teurer",
+        "Festpreis schriftlich bestätigen lassen, bevor gebohrt oder gespült wird",
+        "Bei wiederkehrenden Problemen Kamerainspektion statt mehrfacher Blind-Reinigung",
+        "Keine aggressiven Rohrreiniger aus dem Supermarkt – können Rohre schädigen",
+        "Bei Mietwohnung Vermieter informieren – oft zuständig bei Grundleitung"
       ]
     },
     {
-      "type": "h2",
-      "id": "faq",
-      "text": "Häufige Fragen"
-    },
-    {
       "type": "p",
-      "html": "Notdiensteinsätze (nachts, Wochenende, Feiertage) kosten in der Regel 20–50 % mehr als Tageseinsätze. Bei Rohrretter24 erfahren Sie den genauen Preis vorab – ohne versteckte Kosten."
-    },
-    {
-      "type": "p",
-      "html": "Bei Verstopfungen durch normalen Gebrauch trägt der Vermieter die Kosten. Verursacht der Mieter die Verstopfung (z. B. durch Fremdkörper), ist er kostenpflichtig. Im Zweifelsfall lohnt ein Blick in den Mietvertrag."
-    },
-    {
-      "type": "p",
-      "html": "Seriöse Betriebe geben eine Garantie auf die Entstopfung – in der Regel 30 Tage. Bei Rohrretter24 lösen wir das Problem dauerhaft oder kommen kostenlos zurück."
-    },
-    {
-      "type": "p",
-      "html": "Ja – Handwerkerleistungen im eigenen Heim können steuerlich geltend gemacht werden (§ 35a EStG). 20 % der Lohnkosten, maximal 1.200 € pro Jahr, sind absetzbar."
-    },
-    {
-      "type": "p",
-      "html": "Wenn die Kamerainspektion strukturelle Schäden zeigt (Risse, Rohrversatz, Wurzeleinwüchse), ist eine Sanierung sinnvoller als wiederholte Reinigungen. Langfristig günstiger und zuverlässiger."
-    },
-    {
-      "type": "p",
-      "html": "Rohrretter24 Redaktion"
-    },
-    {
-      "type": "p",
-      "html": "Fachbetrieb für Rohrreinigung & Kanalsanierung in Hessen – seit über 10 Jahren"
+      "html": "Sie haben akut eine Verstopfung? <a href=\"/rohrreinigung/\">Zur Rohrreinigung</a> oder direkt unseren <a href=\"/notdienst/\">24h-Notdienst</a> anrufen."
     }
   ],
   "faq": [
     {
-      "question": "Was kostet eine Rohrreinigung im Notdienst?",
-      "answer": "Notdiensteinsätze (nachts, Wochenende, Feiertage) kosten in der Regel 20–50 % mehr als Tageseinsätze. Bei Rohrretter24 erfahren Sie den genauen Preis vorab – ohne versteckte Kosten."
+      "question": "Gibt es versteckte Kosten?",
+      "answer": "Bei seriösen Betrieben nicht – wenn ein Festpreis vorab vereinbart wurde. Fragen Sie explizit nach Anfahrt, Material und möglichen Zuschlägen."
     },
     {
-      "question": "Wer zahlt die Rohrreinigung – Mieter oder Vermieter?",
-      "answer": "Bei Verstopfungen durch normalen Gebrauch trägt der Vermieter die Kosten. Verursacht der Mieter die Verstopfung (z. B. durch Fremdkörper), ist er kostenpflichtig. Im Zweifelsfall lohnt ein Blick in den Mietvertrag."
+      "question": "Wird die Anfahrtspauschale erstattet, wenn ich absage?",
+      "answer": "Die 49 € Anfahrtspauschale gilt bei Beauftragung. Bei reiner Anfahrt ohne Auftrag kann je nach Situation eine Berechnung anfallen – klären Sie das telefonisch."
     },
     {
-      "question": "Gibt es eine Garantie auf die Rohrreinigung?",
-      "answer": "Seriöse Betriebe geben eine Garantie auf die Entstopfung – in der Regel 30 Tage. Bei Rohrretter24 lösen wir das Problem dauerhaft oder kommen kostenlos zurück."
-    },
-    {
-      "question": "Kann ich die Rohrreinigung von der Steuer absetzen?",
-      "answer": "Ja – Handwerkerleistungen im eigenen Heim können steuerlich geltend gemacht werden (§ 35a EStG). 20 % der Lohnkosten, maximal 1.200 € pro Jahr, sind absetzbar."
-    },
-    {
-      "question": "Wann lohnt sich eine Rohrsanierung statt Reinigung?",
-      "answer": "Wenn die Kamerainspektion strukturelle Schäden zeigt (Risse, Rohrversatz, Wurzeleinwüchse), ist eine Sanierung sinnvoller als wiederholte Reinigungen. Langfristig günstiger und zuverlässiger."
-    }
-  ],
-  "toc": [
-    {
-      "id": "kosten-ueberblick",
-      "label": "Kosten im Überblick"
-    },
-    {
-      "id": "einflussfaktoren",
-      "label": "Einflussfaktoren"
-    },
-    {
-      "id": "preistabelle",
-      "label": "Preistabelle nach Leistung"
-    },
-    {
-      "id": "festpreis",
-      "label": "Festpreis vs. Stundensatz"
-    },
-    {
-      "id": "spartipps",
-      "label": "Spartipps"
-    },
-    {
-      "id": "faq",
-      "label": "Häufige Fragen"
+      "question": "Kann ich Rohrreinigung von der Steuer absetzen?",
+      "answer": "Handwerkerleistungen im eigenen Heim können unter § 35a EStG geltend gemacht werden – 20 % der Lohnkosten, maximal 1.200 € pro Jahr."
     }
   ]
 }

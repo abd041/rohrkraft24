@@ -42,98 +42,98 @@
                                     <!-- City dots – visible when zoomed into Hessen -->
                                     <g id="cityDots" class="city-dots-visible">
     <g class="city-dot" data-city="Frankfurt am Main" data-slug="frankfurt">
-        <circle class="dot-pulse" cx="179.7" cy="518.78" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="179.7" cy="518.78" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="179.7" cy="518.78" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="179.7" cy="518.78" r="6" fill="#2171D8"></circle>
         <circle cx="179.7" cy="518.78" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Wiesbaden" data-slug="wiesbaden">
-        <circle class="dot-pulse" cx="151.51" cy="521.46" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="151.51" cy="521.46" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="151.51" cy="521.46" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="151.51" cy="521.46" r="6" fill="#2171D8"></circle>
         <circle cx="151.51" cy="521.46" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Offenbach" data-slug="offenbach">
-        <circle class="dot-pulse" cx="184.87" cy="519.67" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="184.87" cy="519.67" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="184.87" cy="519.67" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="184.87" cy="519.67" r="6" fill="#2171D8"></circle>
         <circle cx="184.87" cy="519.67" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Darmstadt" data-slug="darmstadt">
-        <circle class="dot-pulse" cx="177.73" cy="542.33" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="177.73" cy="542.33" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="177.73" cy="542.33" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="177.73" cy="542.33" r="6" fill="#2171D8"></circle>
         <circle cx="177.73" cy="542.33" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Hanau" data-slug="hanau">
-        <circle class="dot-pulse" cx="194.63" cy="516.47" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="194.63" cy="516.47" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="194.63" cy="516.47" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="194.63" cy="516.47" r="6" fill="#2171D8"></circle>
         <circle cx="194.63" cy="516.47" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Bad Homburg" data-slug="bad-homburg">
-        <circle class="dot-pulse" cx="178.5" cy="509.2" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="178.5" cy="509.2" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="178.5" cy="509.2" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="178.5" cy="509.2" r="6" fill="#2171D8"></circle>
         <circle cx="178.5" cy="509.2" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Rüsselsheim" data-slug="ruesselsheim">
-        <circle class="dot-pulse" cx="159.8" cy="526.1" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="159.8" cy="526.1" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="159.8" cy="526.1" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="159.8" cy="526.1" r="6" fill="#2171D8"></circle>
         <circle cx="159.8" cy="526.1" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Dreieich" data-slug="dreieich">
-        <circle class="dot-pulse" cx="180.5" cy="530.4" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="180.5" cy="530.4" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="180.5" cy="530.4" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="180.5" cy="530.4" r="6" fill="#2171D8"></circle>
         <circle cx="180.5" cy="530.4" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Neu-Isenburg" data-slug="neu-isenburg">
-        <circle class="dot-pulse" cx="183" cy="525.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="183" cy="525.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="183" cy="525.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="183" cy="525.5" r="6" fill="#2171D8"></circle>
         <circle cx="183" cy="525.5" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Oberursel" data-slug="oberursel">
-        <circle class="dot-pulse" cx="174" cy="511.8" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="174" cy="511.8" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="174" cy="511.8" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="174" cy="511.8" r="6" fill="#2171D8"></circle>
         <circle cx="174" cy="511.8" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Maintal" data-slug="maintal">
-        <circle class="dot-pulse" cx="191.5" cy="513.6" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="191.5" cy="513.6" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="191.5" cy="513.6" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="191.5" cy="513.6" r="6" fill="#2171D8"></circle>
         <circle cx="191.5" cy="513.6" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Butzbach" data-slug="butzbach">
-        <circle class="dot-pulse" cx="179" cy="488" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="179" cy="488" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="179" cy="488" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="179" cy="488" r="6" fill="#2171D8"></circle>
         <circle cx="179" cy="488" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Seligenstadt" data-slug="seligenstadt">
-        <circle class="dot-pulse" cx="198.5" cy="522.8" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="198.5" cy="522.8" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="198.5" cy="522.8" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="198.5" cy="522.8" r="6" fill="#2171D8"></circle>
         <circle cx="198.5" cy="522.8" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Hofheim" data-slug="hofheim">
-        <circle class="dot-pulse" cx="162.5" cy="519.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="162.5" cy="519.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="162.5" cy="519.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="162.5" cy="519.5" r="6" fill="#2171D8"></circle>
         <circle cx="162.5" cy="519.5" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Langen" data-slug="langen">
-        <circle class="dot-pulse" cx="179" cy="534" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="179" cy="534" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="179" cy="534" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="179" cy="534" r="6" fill="#2171D8"></circle>
         <circle cx="179" cy="534" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Kelsterbach" data-slug="kelsterbach">
-        <circle class="dot-pulse" cx="167.5" cy="523.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="167.5" cy="523.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="167.5" cy="523.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="167.5" cy="523.5" r="6" fill="#2171D8"></circle>
         <circle cx="167.5" cy="523.5" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Eschborn" data-slug="eschborn">
-        <circle class="dot-pulse" cx="172" cy="515.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="172" cy="515.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="172" cy="515.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="172" cy="515.5" r="6" fill="#2171D8"></circle>
         <circle cx="172" cy="515.5" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Rödermark" data-slug="roedermark">
-        <circle class="dot-pulse" cx="185.5" cy="537.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="185.5" cy="537.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="185.5" cy="537.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="185.5" cy="537.5" r="6" fill="#2171D8"></circle>
         <circle cx="185.5" cy="537.5" r="3" fill="white"></circle>
       </g>
     <g class="city-dot" data-city="Mörfelden-Walldorf" data-slug="moerfelden-walldorf">
-        <circle class="dot-pulse" cx="174.5" cy="536.5" r="14" fill="#315D9F" opacity="0.15"></circle>
-        <circle class="dot-core" cx="174.5" cy="536.5" r="6" fill="#315D9F"></circle>
+        <circle class="dot-pulse" cx="174.5" cy="536.5" r="14" fill="#2171D8" opacity="0.15"></circle>
+        <circle class="dot-core" cx="174.5" cy="536.5" r="6" fill="#2171D8"></circle>
         <circle cx="174.5" cy="536.5" r="3" fill="white"></circle>
       </g>
   </g>

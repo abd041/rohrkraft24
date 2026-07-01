@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const KAMERA_INSPEKTION_PAGE: ServicePageData = {
+export const KAMERA_INSPEKTION_PAGE: ServicePageBase = {
   slug: "kamera-inspektion",
   breadcrumbLabel: "TV-Kamera-Inspektion",
   mapKeyword: "kamera-inspektion",
@@ -13,7 +13,7 @@ export const KAMERA_INSPEKTION_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/kamerainspektion-kanal-garten.webp`,
       srcSm: `${IMG}/kamerainspektion-kanal-garten-sm.webp`,
-      alt: "TV-Kamera-Inspektion – Rohrretter24 Berlin",
+      alt: "TV-Kamera-Inspektion – RohrRetter24 Berlin",
     },
   },
 };

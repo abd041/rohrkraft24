@@ -1,0 +1,476 @@
+[
+  {
+    "slug": "berlin-mitte",
+    "name": "Berlin Mitte",
+    "lat": 51.7547722,
+    "lng": 14.3333842
+  },
+  {
+    "slug": "berlin-pankow",
+    "name": "Berlin Pankow",
+    "lat": 52.6282296,
+    "lng": 13.5086683
+  },
+  {
+    "slug": "berlin-spandau",
+    "name": "Berlin Spandau",
+    "lat": 52.5384756,
+    "lng": 12.9653329
+  },
+  {
+    "slug": "berlin-neukoelln",
+    "name": "Berlin Neukölln",
+    "lat": 52.4454318,
+    "lng": 13.4434598
+  },
+  {
+    "slug": "berlin-treptow-koepenick",
+    "name": "Berlin Treptow-Köpenick",
+    "lat": 52.4179881,
+    "lng": 13.6264026
+  },
+  {
+    "slug": "berlin-lichtenberg",
+    "name": "Berlin Lichtenberg",
+    "lat": 52.70583,
+    "lng": 14.1327631
+  },
+  {
+    "slug": "bernau",
+    "name": "Bernau bei Berlin",
+    "lat": 52.6787254,
+    "lng": 13.5881114
+  },
+  {
+    "slug": "eberswalde",
+    "name": "Eberswalde",
+    "lat": 52.8350807,
+    "lng": 13.7996542
+  },
+  {
+    "slug": "wandlitz",
+    "name": "Wandlitz",
+    "lat": 52.7537935,
+    "lng": 13.4519809
+  },
+  {
+    "slug": "werneuchen",
+    "name": "Werneuchen",
+    "lat": 52.6460567,
+    "lng": 13.7411177
+  },
+  {
+    "slug": "biesenthal",
+    "name": "Biesenthal",
+    "lat": 52.7664978,
+    "lng": 13.6289589
+  },
+  {
+    "slug": "oranienburg",
+    "name": "Oranienburg",
+    "lat": 52.7529379,
+    "lng": 13.2457591
+  },
+  {
+    "slug": "hennigsdorf",
+    "name": "Hennigsdorf",
+    "lat": 52.6375777,
+    "lng": 13.2057511
+  },
+  {
+    "slug": "hohen-neuendorf",
+    "name": "Hohen Neuendorf",
+    "lat": 52.6732755,
+    "lng": 13.2807255
+  },
+  {
+    "slug": "velten",
+    "name": "Velten",
+    "lat": 52.6882194,
+    "lng": 13.1775867
+  },
+  {
+    "slug": "birkenwerder",
+    "name": "Birkenwerder",
+    "lat": 52.6884408,
+    "lng": 13.2831336
+  },
+  {
+    "slug": "zehdenick",
+    "name": "Zehdenick",
+    "lat": 52.9794838,
+    "lng": 13.3348959
+  },
+  {
+    "slug": "fuerstenberg-havel",
+    "name": "Fürstenberg/Havel",
+    "lat": 53.1852387,
+    "lng": 13.1456754
+  },
+  {
+    "slug": "falkensee",
+    "name": "Falkensee",
+    "lat": 52.5606426,
+    "lng": 13.08824
+  },
+  {
+    "slug": "nauen",
+    "name": "Nauen",
+    "lat": 52.6061065,
+    "lng": 12.8772599
+  },
+  {
+    "slug": "brieselang",
+    "name": "Brieselang",
+    "lat": 52.588357,
+    "lng": 12.9958846
+  },
+  {
+    "slug": "dallgow-doeberitz",
+    "name": "Dallgow-Döberitz",
+    "lat": 52.5406496,
+    "lng": 13.0602956
+  },
+  {
+    "slug": "ketzin-havel",
+    "name": "Ketzin/Havel",
+    "lat": 52.4769264,
+    "lng": 12.8443972
+  },
+  {
+    "slug": "rathenow",
+    "name": "Rathenow",
+    "lat": 52.6063703,
+    "lng": 12.3382259
+  },
+  {
+    "slug": "potsdam",
+    "name": "Potsdam",
+    "lat": 52.4009309,
+    "lng": 13.0591397
+  },
+  {
+    "slug": "teltow",
+    "name": "Teltow",
+    "lat": 52.3805562,
+    "lng": 13.2685278
+  },
+  {
+    "slug": "kleinmachnow",
+    "name": "Kleinmachnow",
+    "lat": 52.4064167,
+    "lng": 13.2236601
+  },
+  {
+    "slug": "stahnsdorf",
+    "name": "Stahnsdorf",
+    "lat": 52.3869675,
+    "lng": 13.2077118
+  },
+  {
+    "slug": "werder",
+    "name": "Werder (Havel)",
+    "lat": 52.3715809,
+    "lng": 12.9329125
+  },
+  {
+    "slug": "beelitz",
+    "name": "Beelitz",
+    "lat": 52.2288191,
+    "lng": 12.9569266
+  },
+  {
+    "slug": "michendorf",
+    "name": "Michendorf",
+    "lat": 52.2871106,
+    "lng": 13.0657683
+  },
+  {
+    "slug": "bad-belzig",
+    "name": "Bad Belzig",
+    "lat": 52.1405622,
+    "lng": 12.5865873
+  },
+  {
+    "slug": "ludwigsfelde",
+    "name": "Ludwigsfelde",
+    "lat": 52.3016096,
+    "lng": 13.2610163
+  },
+  {
+    "slug": "zossen",
+    "name": "Zossen",
+    "lat": 52.2159073,
+    "lng": 13.4488958
+  },
+  {
+    "slug": "rangsdorf",
+    "name": "Rangsdorf",
+    "lat": 52.2914292,
+    "lng": 13.418888
+  },
+  {
+    "slug": "blankenfelde-mahlow",
+    "name": "Blankenfelde-Mahlow",
+    "lat": 52.3479238,
+    "lng": 13.4119554
+  },
+  {
+    "slug": "juterbog",
+    "name": "Jüterbog",
+    "lat": 51.9916493,
+    "lng": 13.0801128
+  },
+  {
+    "slug": "luckenwalde",
+    "name": "Luckenwalde",
+    "lat": 52.0902045,
+    "lng": 13.1741882
+  },
+  {
+    "slug": "trebbin",
+    "name": "Trebbin",
+    "lat": 52.2150361,
+    "lng": 13.2140282
+  },
+  {
+    "slug": "koenigs-wusterhausen",
+    "name": "Königs Wusterhausen",
+    "lat": 52.2994511,
+    "lng": 13.6244389
+  },
+  {
+    "slug": "wildau",
+    "name": "Wildau",
+    "lat": 52.3214429,
+    "lng": 13.6348744
+  },
+  {
+    "slug": "zeuthen",
+    "name": "Zeuthen",
+    "lat": 52.3507952,
+    "lng": 13.629328
+  },
+  {
+    "slug": "schoenefeld",
+    "name": "Schönefeld",
+    "lat": 52.388552,
+    "lng": 13.5048276
+  },
+  {
+    "slug": "mittenwalde",
+    "name": "Mittenwalde",
+    "lat": 52.2642238,
+    "lng": 13.5360563
+  },
+  {
+    "slug": "lubben",
+    "name": "Lübben",
+    "lat": 51.9418987,
+    "lng": 13.8963805
+  },
+  {
+    "slug": "luebbenau",
+    "name": "Lübbenau",
+    "lat": 51.8680114,
+    "lng": 13.9689477
+  },
+  {
+    "slug": "erkner",
+    "name": "Erkner",
+    "lat": 52.4259804,
+    "lng": 13.7542811
+  },
+  {
+    "slug": "fuerstenwalde",
+    "name": "Fürstenwalde/Spree",
+    "lat": 52.3580209,
+    "lng": 14.064985
+  },
+  {
+    "slug": "storkow",
+    "name": "Storkow (Mark)",
+    "lat": 52.2058093,
+    "lng": 13.9049798
+  },
+  {
+    "slug": "beeskow",
+    "name": "Beeskow",
+    "lat": 52.1721569,
+    "lng": 14.2471058
+  },
+  {
+    "slug": "eisenhuettenstadt",
+    "name": "Eisenhüttenstadt",
+    "lat": 52.1448863,
+    "lng": 14.6294413
+  },
+  {
+    "slug": "strausberg",
+    "name": "Strausberg",
+    "lat": 52.5814009,
+    "lng": 13.8833952
+  },
+  {
+    "slug": "altlandsberg",
+    "name": "Altlandsberg",
+    "lat": 52.5936007,
+    "lng": 13.7760013
+  },
+  {
+    "slug": "neuenhagen",
+    "name": "Neuenhagen bei Berlin",
+    "lat": 52.5261884,
+    "lng": 13.6889259
+  },
+  {
+    "slug": "hoppegarten",
+    "name": "Hoppegarten",
+    "lat": 52.550231,
+    "lng": 13.6411944
+  },
+  {
+    "slug": "bad-freienwalde",
+    "name": "Bad Freienwalde",
+    "lat": 52.787521,
+    "lng": 14.0300689
+  },
+  {
+    "slug": "seelow",
+    "name": "Seelow",
+    "lat": 52.5318238,
+    "lng": 14.380704
+  },
+  {
+    "slug": "neuruppin",
+    "name": "Neuruppin",
+    "lat": 52.9243859,
+    "lng": 12.8092919
+  },
+  {
+    "slug": "rheinsberg",
+    "name": "Rheinsberg",
+    "lat": 53.0983176,
+    "lng": 12.8910116
+  },
+  {
+    "slug": "fehrbellin",
+    "name": "Fehrbellin",
+    "lat": 52.8142217,
+    "lng": 12.7652143
+  },
+  {
+    "slug": "wittstock",
+    "name": "Wittstock/Dosse",
+    "lat": 53.162999,
+    "lng": 12.4868962
+  },
+  {
+    "slug": "perleberg",
+    "name": "Perleberg",
+    "lat": 53.075548,
+    "lng": 11.8212016
+  },
+  {
+    "slug": "wittenberge",
+    "name": "Wittenberge",
+    "lat": 53.0112877,
+    "lng": 11.7374296
+  },
+  {
+    "slug": "pritzwalk",
+    "name": "Pritzwalk",
+    "lat": 53.1492896,
+    "lng": 12.1761903
+  },
+  {
+    "slug": "prenzlau",
+    "name": "Prenzlau",
+    "lat": 53.3167,
+    "lng": 13.866575
+  },
+  {
+    "slug": "angermuende",
+    "name": "Angermünde",
+    "lat": 53.017276,
+    "lng": 13.9981503
+  },
+  {
+    "slug": "schwedt-oder",
+    "name": "Schwedt/Oder",
+    "lat": 53.0586366,
+    "lng": 14.2840858
+  },
+  {
+    "slug": "templin",
+    "name": "Templin",
+    "lat": 53.1193496,
+    "lng": 13.5005559
+  },
+  {
+    "slug": "finsterwalde",
+    "name": "Finsterwalde",
+    "lat": 51.6315282,
+    "lng": 13.707358
+  },
+  {
+    "slug": "herzberg",
+    "name": "Herzberg (Elster)",
+    "lat": 51.6924078,
+    "lng": 13.2358585
+  },
+  {
+    "slug": "bad-liebenwerda",
+    "name": "Bad Liebenwerda",
+    "lat": 51.5158115,
+    "lng": 13.39272
+  },
+  {
+    "slug": "senftenberg",
+    "name": "Senftenberg",
+    "lat": 51.519201,
+    "lng": 14.0046541
+  },
+  {
+    "slug": "lauchhammer",
+    "name": "Lauchhammer",
+    "lat": 51.4977774,
+    "lng": 13.7400618
+  },
+  {
+    "slug": "grossraeschen",
+    "name": "Großräschen",
+    "lat": 51.5883265,
+    "lng": 14.0123136
+  },
+  {
+    "slug": "schwarzheide",
+    "name": "Schwarzheide",
+    "lat": 51.4858276,
+    "lng": 13.8306977
+  },
+  {
+    "slug": "forst",
+    "name": "Forst (Lausitz)",
+    "lat": 51.7438586,
+    "lng": 14.6455395
+  },
+  {
+    "slug": "spremberg",
+    "name": "Spremberg",
+    "lat": 51.5714513,
+    "lng": 14.3804302
+  },
+  {
+    "slug": "guben",
+    "name": "Guben",
+    "lat": 51.9503235,
+    "lng": 14.7153567
+  },
+  {
+    "slug": "frankfurt-oder",
+    "name": "Frankfurt (Oder)",
+    "lat": 52.3412273,
+    "lng": 14.549452
+  }
+]

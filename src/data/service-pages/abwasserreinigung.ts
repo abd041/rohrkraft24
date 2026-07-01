@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const ABWASSERREINIGUNG_PAGE: ServicePageData = {
+export const ABWASSERREINIGUNG_PAGE: ServicePageBase = {
   slug: "abwasserreinigung",
   breadcrumbLabel: "Abwasserreinigung",
   mapKeyword: "abwasserreinigung",
@@ -13,7 +13,7 @@ export const ABWASSERREINIGUNG_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/kanalreinigung-hochdruck-rohr.webp`,
       srcSm: `${IMG}/kanalreinigung-hochdruck-rohr-sm.webp`,
-      alt: "Abwasserreinigung – Rohrretter24 Berlin",
+      alt: "Abwasserreinigung – RohrRetter24 Berlin",
     },
   },
 };

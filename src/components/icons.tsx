@@ -272,17 +272,9 @@ export function PricingCardIcon({ index }: { index: number }) {
   );
 }
 
-type BadgeIconType = "craft" | "ihk" | "google" | "shield" | "wrench" | "dollar" | "award";
+type BadgeIconType = "craft" | "google" | "shield" | "wrench" | "dollar" | "award";
 
 export function BadgeIcon({ type }: { type: BadgeIconType }) {
-  if (type === "ihk") {
-    return (
-      <span style={{ fontSize: "0.875rem", fontWeight: 900, color: "white", letterSpacing: "-0.02em" }}>
-        IHK
-      </span>
-    );
-  }
-
   if (type === "google") {
     return <GoogleIcon />;
   }

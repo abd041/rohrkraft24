@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const ROHRREPARATUR_PAGE: ServicePageData = {
+export const ROHRREPARATUR_PAGE: ServicePageBase = {
   slug: "rohrreparatur",
   breadcrumbLabel: "Rohrreparatur",
   mapKeyword: "rohrreparatur",
@@ -13,7 +13,7 @@ export const ROHRREPARATUR_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/rohrsanierung-inliner-verfahren.webp`,
       srcSm: `${IMG}/rohrsanierung-inliner-verfahren-sm.webp`,
-      alt: "Rohrreparatur – Rohrretter24 Berlin",
+      alt: "Rohrreparatur – RohrRetter24 Berlin",
     },
   },
 };

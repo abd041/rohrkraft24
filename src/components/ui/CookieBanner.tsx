@@ -28,9 +28,8 @@ export function CookieBanner() {
         <div className="cookie-modal__icon">🍪</div>
         <h2 className="cookie-modal__title">Cookies & Datenschutz</h2>
         <p className="cookie-modal__desc">
-          Wir verwenden Cookies für Google Ads und Analysen, um Ihnen die bestmögliche
-          Erfahrung zu bieten und relevante Angebote anzuzeigen. Mit einem Klick auf „Alle
-          akzeptieren" stimmen Sie der Nutzung zu.
+          Wir verwenden technisch notwendige Speicherung, damit der Cookie-Hinweis nicht bei jedem
+          Besuch erneut erscheint. Details finden Sie in unserer Datenschutzerklärung.
         </p>
         <p className="cookie-modal__links">
           <Link href="/datenschutz">Datenschutzerklärung</Link>

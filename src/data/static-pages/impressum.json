@@ -8,7 +8,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Rohrretter24</strong><br>\n    Berlin und Umgebung (100 km Radius)"
+      "html": "<strong>RohrRetter24 UG</strong><br>\n    Mühlenstr. 8a<br>\n    14167 Berlin"
     },
     {
       "type": "h2",
@@ -20,11 +20,27 @@
     },
     {
       "type": "h2",
+      "text": "Handelsregister"
+    },
+    {
+      "type": "p",
+      "html": "Handelsregisternummer und Registergericht werden nach Abschluss der notariellen Eintragung ergänzt."
+    },
+    {
+      "type": "h2",
+      "text": "Geschäftsführung"
+    },
+    {
+      "type": "p",
+      "html": "Wird nach Abschluss der notariellen Eintragung ergänzt."
+    },
+    {
+      "type": "h2",
       "text": "Umsatzsteuer-ID"
     },
     {
       "type": "p",
-      "html": "Die Umsatzsteuer-Identifikationsnummer wird aus Sicherheitsgründen nicht öffentlich gemacht. Bei Bedarf erhalten Sie diese auf Anfrage."
+      "html": "Die Umsatzsteuer-Identifikationsnummer wird nach Eintragung der UG ergänzt. Bei Bedarf erhalten Sie diese auf Anfrage."
     },
     {
       "type": "h2",
@@ -32,7 +48,7 @@
     },
     {
       "type": "p",
-      "html": "Rohrretter24<br>\n    Berlin und Umgebung"
+      "html": "RohrRetter24 UG<br>\n    Mühlenstr. 8a<br>\n    14167 Berlin"
     },
     {
       "type": "h2",
@@ -72,7 +88,7 @@
     },
     {
       "type": "p",
-      "html": "Stand: Juni 2026"
+      "html": "Stand: Juli 2026"
     }
   ]
 }

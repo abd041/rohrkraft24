@@ -46,7 +46,7 @@
     const stateName    = document.getElementById('mapStateName');
     const stateCount   = document.getElementById('mapStateCount');
     const panelOverview = document.getElementById('mapPanelOverview');
-    const panelHessen   = document.getElementById('mapPanelHessen');
+    const panelBerlin  = document.getElementById('mapPanelBerlin');
     const panelCity     = document.getElementById('mapPanelCity');
     const mapCityLabel  = document.getElementById('mapCityLabel');
     const mapCityTitle  = document.getElementById('mapCityTitle');
@@ -121,7 +121,7 @@
 
         panelOverview.style.display = 'none';
         if (panelCity) panelCity.style.display = 'none';
-        panelHessen.style.display   = 'flex';
+        panelBerlin.style.display   = 'flex';
     }
 
     // ─── Back to Deutschland ────────────────────────────────────────────────
@@ -138,7 +138,7 @@
         backBtn.classList.remove('visible');
         stateBadge.classList.remove('visible');
 
-        panelHessen.style.display   = 'none';
+        panelBerlin.style.display   = 'none';
         if (panelCity) panelCity.style.display = 'none';
         panelOverview.style.display = 'flex';
     }
@@ -161,7 +161,7 @@
                 chevronSvg + '<span>' + kw.label + ' ' + cityName + '</span></a></li>';
         }).join('');
 
-        panelHessen.style.display = 'none';
+        panelBerlin.style.display = 'none';
         panelCity.style.display   = 'flex';
 
         // Highlight active dot (nur wenn Karte geladen)
@@ -176,7 +176,7 @@
     if (backToCities) {
         backToCities.addEventListener('click', function() {
             if (panelCity) panelCity.style.display = 'none';
-            if (panelHessen) panelHessen.style.display = 'flex';
+            if (panelBerlin) panelBerlin.style.display = 'flex';
             if (cityDots) cityDots.querySelectorAll('.city-dot--active').forEach(function(d) { d.classList.remove('city-dot--active'); });
         });
     }
@@ -206,7 +206,12 @@
     // ─── City list buttons → open keyword panel ─────────────────────────────
     document.querySelectorAll('.map-city-link[data-slug]').forEach(function(btn) {
         btn.addEventListener('click', function() {
-            showCityPanel(btn.getAttribute('data-slug'), btn.getAttribute('data-city'));
+            var slug = btn.getAttribute('data-slug');
+            var name = btn.getAttribute('data-city');
+            if (slug && name) {
+                window.dispatchEvent(new CustomEvent('rk-map-city-select', { detail: { slug: slug, name: name } }));
+            }
+            showCityPanel(slug, name);
         });
 
         btn.addEventListener('mouseenter', function() {
@@ -220,7 +225,7 @@
     });
 
     // ─── Panel navigation buttons ───────────────────────────────────────────
-    var hessenStateBtn = document.getElementById('hessenStateBtn');
+    var hessenStateBtn = document.getElementById('berlinStateBtn') || document.getElementById('hessenStateBtn');
     if (hessenStateBtn) hessenStateBtn.addEventListener('click', zoomToHessen);
 
     var backToStates = document.getElementById('mapBackToStates');

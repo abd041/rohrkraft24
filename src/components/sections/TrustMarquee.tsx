@@ -1,13 +1,13 @@
 import { BadgeIcon } from "@/components/icons";
+import { SITE } from "@/lib/constants";
 
 const BADGES = [
-  { title: "Handwerkskammer", sub: "Frankfurt · RheinMain", icon: "craft" as const, bg: "#153A6B" },
-  { title: "IHK Frankfurt", sub: "Zertifizierter Betrieb", icon: "ihk" as const, bg: "#0f2d52" },
-  { title: "4,9", sub: "300+ Bewertungen", icon: "google" as const, googleTitle: true },
-  { title: "Zertifizierter", sub: "Rohrreinigungsfachbetrieb", icon: "shield" as const, bg: "#059669" },
-  { title: "Das Handwerk", sub: "Die Wirtschaftsmacht", icon: "wrench" as const, bg: "#c0392b" },
-  { title: "Festpreis", sub: "100% Preisgarantie", icon: "dollar" as const, bg: "#315D9F" },
-  { title: "Seit 2014", sub: "10+ Jahre Erfahrung", icon: "award" as const, bg: "#5AA0D3" },
+  { title: "Google", sub: `${SITE.rating} · ${SITE.reviewCount}+ Bewertungen`, icon: "google" as const, googleTitle: true },
+  { title: "Festpreis", sub: "100% Preisgarantie", icon: "dollar" as const, bg: "#2171D8" },
+  { title: "24/7", sub: "Notdienst Berlin", icon: "shield" as const, bg: "#002854" },
+  { title: "Seit 2014", sub: `${SITE.yearsExperience} Jahre Erfahrung`, icon: "award" as const, bg: "#2171D8" },
+  { title: SITE.reactionTime, sub: "Reaktionszeit", icon: "wrench" as const, bg: "#001d3d" },
+  { title: "Berlin", sub: "100 km Einsatzradius", icon: "craft" as const, bg: "#1a5aad" },
 ];
 
 function BadgeItem({ badge, index }: { badge: (typeof BADGES)[number]; index: number }) {
@@ -33,7 +33,7 @@ function BadgeItem({ badge, index }: { badge: (typeof BADGES)[number]; index: nu
             className="badge-item__title"
             style={{ display: "flex", alignItems: "center", gap: "0.375rem" }}
           >
-            4,9{" "}
+            {SITE.rating.toString().replace(".", ",")}{" "}
             <span style={{ color: "#FBBF24", fontSize: "0.75rem" }}>★★★★★</span>
           </p>
         ) : (
@@ -50,7 +50,7 @@ export function TrustMarquee() {
 
   return (
     <section className="badges-section">
-      <div className="badges-label">Zertifiziert und anerkannt</div>
+      <div className="badges-label">Ihr Partner für Rohrreinigung in Berlin</div>
       <div className="badges-outer">
         <div className="badges-track">
           {items.map((badge, i) => (

@@ -19,19 +19,21 @@ export function FAQ() {
             <div className="faq__list">
               {FAQ_ITEMS.map((item, index) => (
                 <div
-                  key={index}
-                  className={`faq__item rk-reveal${openIndex === index ? " open" : ""}`}
-                  style={{ transitionDelay: `${(index % 6) * 0.07}s` }}
+                  key={item.question}
+                  className={`faq__item${openIndex === index ? " open" : ""}`}
                 >
                   <button
                     type="button"
                     className="faq__question"
+                    aria-expanded={openIndex === index}
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   >
                     {item.question}
                     <span className="faq__icon">{openIndex === index ? "−" : "+"}</span>
                   </button>
-                  <div className="faq__answer">{item.answer}</div>
+                  <div className="faq__answer">
+                    <div className="faq__answer-inner">{item.answer}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -40,7 +42,7 @@ export function FAQ() {
           <div className="faq__image">
             <Image
               src={`${IMAGES}/rohrkraft24-team-besprechung-faq.webp`}
-              alt="Rohrretter24 Team – Experten für Rohrreinigung in Berlin"
+              alt={`${SITE.name} Team – Experten für Rohrreinigung in Berlin`}
               width={600}
               height={450}
               loading="lazy"

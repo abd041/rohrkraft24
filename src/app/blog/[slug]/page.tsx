@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogPostTemplate } from "@/components/templates/BlogPostTemplate";
 import { BLOG_POST_SLUGS, getBlogPostData } from "@/lib/blog-posts";
-import { getManifest } from "@/lib/pages";
+import { getPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -14,11 +14,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getManifest()[slug];
-  const post = getBlogPostData(slug);
-  if (entry?.title) return { title: entry.title };
-  if (post) return { title: `${post.hero.title} | Rohrretter24` };
-  return { title: "Blog | Rohrretter24" };
+  return getPageMetadata(slug);
 }
 
 export default async function BlogPostPage({ params }: Props) {

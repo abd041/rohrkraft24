@@ -1,0 +1,35 @@
+/* Brand typography – Geist (headings), Nexa (body & UI copy) */
+body {
+  font-family: var(--font-nexa), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero__title,
+.section-title,
+.cta-section__title,
+.kontakt-title,
+.ez-hero__title,
+.blog-page-hero h1,
+.blog-index-hero h1,
+.blog-card__title,
+.pricing-card__num,
+.how__title,
+.stats__num,
+.team__photo-badge-num,
+.rueckruf-title,
+.cookie-modal__title,
+.kontakt-form-header h2,
+.kontakt-vorteile-title,
+.notdienst-banner__title,
+.features__title,
+.service-card__title,
+.badge-item__title,
+.nav__link--icon,
+.dropdown__trigger {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}

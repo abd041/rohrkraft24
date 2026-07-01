@@ -1,21 +1,17 @@
 import Link from "next/link";
-import { Breadcrumb } from "@/components/blocks/Breadcrumb";
+import { SubpageHero } from "@/components/blocks/SubpageHero";
 import { BLOG_POSTS } from "@/data/blog";
+import { SITE } from "@/lib/constants";
 
 export function BlogIndexTemplate() {
   return (
     <>
-      <Breadcrumb current="Blog" />
-
-      <section className="blog-index-hero">
-        <div className="container">
-          <p className="section-label" style={{ color: "rgba(255,255,255,0.7)" }}>
-            Wissen & Ratgeber
-          </p>
-          <h1>Rohrretter24 Blog</h1>
-          <p>Expertenwissen rund um Rohrreinigung, Kanalsanierung und Rohrprobleme – verständlich erklärt.</p>
-        </div>
-      </section>
+      <SubpageHero
+        breadcrumb="Blog"
+        label="Wissen & Ratgeber"
+        title={`${SITE.name} Blog`}
+        subtitle="Praxisnahe Tipps zu Rohrreinigung, Kosten und Schadensvermeidung – speziell für Berlin und Brandenburg."
+      />
 
       <section className="section" style={{ background: "var(--gray-50)" }}>
         <div className="container">

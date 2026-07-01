@@ -54,7 +54,7 @@ export function ContactSidebar() {
       </div>
 
       <div className="kontakt-trust">
-        <h3>Warum Rohrretter24?</h3>
+        <h3>Warum {SITE.name}?</h3>
         <ul className="kontakt-trust-list">
           {CONTACT_TRUST_POINTS.map((point) => (
             <li key={point.title}>

@@ -1,6 +1,7 @@
 "use client";
 
 import type { CityPageHero, CityPagePhone } from "@/lib/city-pages";
+import { HERO_TRUST, SITE } from "@/lib/constants";
 import { CalendarIcon, CheckIcon, PhoneIcon } from "@/components/icons";
 import { useModal } from "@/components/providers/ModalProvider";
 
@@ -8,12 +9,10 @@ import { IMAGES as IMG } from "@/lib/constants";
 
 const STATS = [
   { num: "500+", label: "Einsätze" },
-  { num: "10+", label: "Jahre Erfahrung" },
+  { num: SITE.yearsExperience, label: "Jahre Erfahrung" },
   { num: "98%", label: "Kundenzufriedenheit" },
   { num: "24/7", label: "Erreichbar" },
 ];
-
-const TRUST = ["Zertifizierter Betrieb", "Meisterbetrieb", "Faire Festpreise"];
 
 type CityServiceHeroProps = {
   hero: CityPageHero;
@@ -41,7 +40,7 @@ export function CityServiceHero({ hero, phone }: CityServiceHeroProps) {
             <p className="hero__body">{hero.body}</p>
 
             <div className="hero__trust">
-              {TRUST.map((item) => (
+              {HERO_TRUST.map((item) => (
                 <span key={item} className="hero__trust-item">
                   <CheckIcon /> {item}
                 </span>
@@ -50,7 +49,7 @@ export function CityServiceHero({ hero, phone }: CityServiceHeroProps) {
 
             <div className="hero__ctas">
               <a href={phone.href} className="btn btn-primary pulse">
-                <PhoneIcon /> Jetzt kostenlos anfragen
+                <PhoneIcon /> Jetzt anrufen
               </a>
               <button type="button" className="btn btn-outline-dark" data-rueckruf onClick={() => openModal("callback")}>
                 <CalendarIcon />
@@ -59,9 +58,9 @@ export function CityServiceHero({ hero, phone }: CityServiceHeroProps) {
             </div>
 
             <div className="hero__stats">
-              {STATS.map((stat, index) => (
+              {STATS.map((stat, i) => (
                 <div key={stat.label} style={{ display: "contents" }}>
-                  {index > 0 && <div className="hero__stat-divider" />}
+                  {i > 0 && <div className="hero__stat-divider" />}
                   <div className="hero__stat">
                     <span className="hero__stat-num">{stat.num}</span>
                     <span className="hero__stat-label">{stat.label}</span>
@@ -81,7 +80,6 @@ export function CityServiceHero({ hero, phone }: CityServiceHeroProps) {
                 height={600}
                 loading="eager"
                 fetchPriority="high"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </picture>
             <div className="hero__avail-badge">
@@ -90,15 +88,19 @@ export function CityServiceHero({ hero, phone }: CityServiceHeroProps) {
             </div>
             <div className="hero__stars">
               <div className="stars">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} className="star">
-                    ★
-                  </span>
-                ))}
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
               </div>
               <div>
-                <p style={{ fontWeight: 900, fontSize: "0.875rem", color: "var(--navy)", lineHeight: 1 }}>4,9 / 5</p>
-                <p style={{ fontSize: "0.72rem", color: "var(--gray-600)", marginTop: 2 }}>127 Bewertungen</p>
+                <p style={{ fontWeight: 900, fontSize: "0.875rem", color: "var(--navy)", lineHeight: 1 }}>
+                  {SITE.rating.toString().replace(".", ",")} / 5
+                </p>
+                <p style={{ fontSize: "0.72rem", color: "var(--gray-600)", marginTop: 2 }}>
+                  {SITE.reviewCount} Bewertungen
+                </p>
               </div>
             </div>
           </div>

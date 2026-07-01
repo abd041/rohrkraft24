@@ -1,18 +1,16 @@
 "use client";
 
 import type { ServicePageHeroData } from "@/data/service-pages/types";
-import { SITE } from "@/lib/constants";
+import { HERO_TRUST, SITE } from "@/lib/constants";
 import { CalendarIcon, CheckIcon, PhoneIcon } from "@/components/icons";
 import { useModal } from "@/components/providers/ModalProvider";
 
 const STATS = [
   { num: "500+", label: "Einsätze" },
-  { num: "10+", label: "Jahre Erfahrung" },
+  { num: SITE.yearsExperience, label: "Jahre Erfahrung" },
   { num: "98%", label: "Kundenzufriedenheit" },
   { num: "24/7", label: "Erreichbar" },
 ];
-
-const TRUST = ["Zertifizierter Betrieb", "Meisterbetrieb", "Faire Festpreise"];
 
 type ServicePageHeroProps = {
   hero: ServicePageHeroData;
@@ -35,7 +33,7 @@ export function ServicePageHero({ hero }: ServicePageHeroProps) {
             <p className="hero__body">{hero.body}</p>
 
             <div className="hero__trust">
-              {TRUST.map((item) => (
+              {HERO_TRUST.map((item) => (
                 <span key={item} className="hero__trust-item">
                   <CheckIcon /> {item}
                 </span>
@@ -44,7 +42,7 @@ export function ServicePageHero({ hero }: ServicePageHeroProps) {
 
             <div className="hero__ctas">
               <a href={SITE.phoneHref} className="btn btn-primary pulse">
-                <PhoneIcon /> Jetzt kostenlos anfragen
+                <PhoneIcon /> Jetzt anrufen
               </a>
               <button type="button" className="btn btn-outline-dark" data-rueckruf onClick={() => openModal("callback")}>
                 <CalendarIcon />
@@ -53,25 +51,15 @@ export function ServicePageHero({ hero }: ServicePageHeroProps) {
             </div>
 
             <div className="hero__stats">
-              <div className="hero__stat">
-                <span className="hero__stat-num">{STATS[0].num}</span>
-                <span className="hero__stat-label">{STATS[0].label}</span>
-              </div>
-              <div className="hero__stat-divider" />
-              <div className="hero__stat">
-                <span className="hero__stat-num">{STATS[1].num}</span>
-                <span className="hero__stat-label">{STATS[1].label}</span>
-              </div>
-              <div className="hero__stat-divider" />
-              <div className="hero__stat">
-                <span className="hero__stat-num">{STATS[2].num}</span>
-                <span className="hero__stat-label">{STATS[2].label}</span>
-              </div>
-              <div className="hero__stat-divider" />
-              <div className="hero__stat">
-                <span className="hero__stat-num">{STATS[3].num}</span>
-                <span className="hero__stat-label">{STATS[3].label}</span>
-              </div>
+              {STATS.map((stat, i) => (
+                <div key={stat.label} style={{ display: "contents" }}>
+                  {i > 0 && <div className="hero__stat-divider" />}
+                  <div className="hero__stat">
+                    <span className="hero__stat-num">{stat.num}</span>
+                    <span className="hero__stat-label">{stat.label}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -102,10 +90,10 @@ export function ServicePageHero({ hero }: ServicePageHeroProps) {
               </div>
               <div>
                 <p style={{ fontWeight: 900, fontSize: "0.875rem", color: "var(--navy)", lineHeight: 1 }}>
-                  4,9 / 5
+                  {SITE.rating.toString().replace(".", ",")} / 5
                 </p>
                 <p style={{ fontSize: "0.72rem", color: "var(--gray-600)", marginTop: 2 }}>
-                  127 Bewertungen
+                  {SITE.reviewCount} Bewertungen
                 </p>
               </div>
             </div>

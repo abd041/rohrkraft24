@@ -1,3 +1,5 @@
+import { COPY, SITE } from "@/lib/constants";
+
 export const CONTACT_SERVICE_OPTIONS = [
   { value: "rohrreinigung", label: "Rohrreinigung" },
   { value: "kamera-inspektion", label: "TV-Kamera-Inspektion" },
@@ -12,22 +14,22 @@ export const CONTACT_SERVICE_OPTIONS = [
 ] as const;
 
 export const CONTACT_TRUST_POINTS = [
-  { title: "Gratis Anfahrt", text: "kein Mindestauftragswert" },
-  { title: "0 € Schadenscheck", text: "kostenfreie Diagnose vor Ort" },
+  { title: SITE.travelFeeShort, text: "bei Beauftragung verrechnet" },
   { title: "Schriftlicher Festpreis", text: "keine versteckten Kosten" },
-  { title: "30–60 Min. Reaktionszeit", text: "in Berlin und Umgebung" },
+  { title: `${SITE.reactionTime} Reaktionszeit`, text: "in Berlin und Umgebung" },
+  { title: "24/7 Notdienst", text: "auch an Wochenenden" },
 ] as const;
 
 export const CONTACT_VORTEILE = [
   {
     title: "Schnelle Reaktion",
-    text: "30–60 Minuten Reaktionszeit im Raum Berlin und Umgebung (100 km) – auch nachts, an Wochenenden und Feiertagen.",
+    text: `${SITE.reactionTime} Reaktionszeit im Raum Berlin und Umgebung (100 km) – auch nachts, an Wochenenden und Feiertagen.`,
     featured: false,
     delay: "0s",
   },
   {
     title: "Persönliche Beratung",
-    text: "Kein Callcenter – Sie sprechen direkt mit unserem erfahrenen Techniker-Team, das Ihr Problem sofort einschätzt.",
+    text: `Kein Callcenter – Sie sprechen direkt mit unserem ${COPY.technicians}, das Ihr Problem sofort einschätzt.`,
     featured: true,
     delay: "0.07s",
   },

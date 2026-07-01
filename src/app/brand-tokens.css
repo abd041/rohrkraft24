@@ -1,0 +1,19 @@
+/* RohrRetter24 brand tokens – RohrRetter24 Brand guidelines (2026) */
+:root {
+  --brand-navy: #002854;
+  --brand-blue: #2171d8;
+  --brand-white: #ffffff;
+
+  --primary: var(--brand-navy);
+  --secondary: var(--brand-blue);
+  --accent: var(--brand-blue);
+  --navy: var(--brand-navy);
+  --navy-dark: #001d3d;
+  --navy-darker: #001428;
+  --orange: var(--brand-blue);
+  --orange-dark: #1a5aad;
+  --orange-light: #e9f2fc;
+  --accent-light: #eef4fd;
+  --blue-300: #8bb5e8;
+  --blue-400: #6fa3e3;
+}

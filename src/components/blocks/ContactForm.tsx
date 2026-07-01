@@ -53,7 +53,7 @@ export function ContactForm() {
             <label htmlFor="stadt">
               Stadt / Region <span className="form-optional">(optional)</span>
             </label>
-            <input type="text" id="stadt" name="stadt" placeholder="z. B. Frankfurt" autoComplete="address-level2" />
+            <input type="text" id="stadt" name="stadt" placeholder="z. B. Berlin" autoComplete="address-level2" />
           </div>
         </div>
 
@@ -111,7 +111,7 @@ export function ContactForm() {
             <line x1="22" y1="2" x2="11" y2="13" />
             <polygon points="22 2 15 22 11 13 2 9 22 2" />
           </svg>
-          Anfrage kostenlos senden
+          Anfrage senden
         </button>
 
         {placeholderMessage && (

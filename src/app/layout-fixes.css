@@ -27,3 +27,171 @@ body {
     padding-inline: 1rem;
   }
 }
+
+.blog-author__avatar:has(.site-logo) {
+  background: #fff;
+  padding: 0.35rem;
+  border: 1px solid var(--gray-200);
+}
+
+.blog-author__avatar .site-logo {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* FAQ accordion – grid-basiert statt max-height */
+.faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  max-height: none;
+  padding: 0 1.5rem;
+  transition: grid-template-rows 0.3s ease, padding 0.3s ease;
+}
+
+.faq__answer-inner {
+  overflow: hidden;
+}
+
+.faq__item.open .faq__answer {
+  grid-template-rows: 1fr;
+  padding: 0 1.5rem 1.25rem;
+}
+
+/* Notdienst-Banner */
+.notdienst-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  color: #fff;
+  border-radius: var(--radius-xl);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(21, 58, 107, 0.25);
+}
+
+.notdienst-banner__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.notdienst-banner__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.notdienst-banner__icon svg {
+  stroke: #fff;
+}
+
+.notdienst-banner__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.25rem;
+}
+
+.notdienst-banner__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.notdienst-banner__desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 52rem;
+}
+
+.notdienst-banner__bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notdienst-banner__bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.notdienst-banner__bullets .bullet-check {
+  color: #fff;
+}
+
+.notdienst-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 100px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.notdienst-banner__cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.notdienst-banner__cta svg {
+  stroke: var(--navy);
+}
+
+/* Karte: Google Maps Embed */
+.map-left--embed {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-embed-wrap {
+  flex: 1;
+  min-height: 400px;
+  padding: 3.5rem 1rem 1rem;
+}
+
+.map-embed-wrap iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.map-svg-container--hidden {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .notdienst-banner {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .notdienst-banner__content {
+    flex-direction: column;
+  }
+}
+

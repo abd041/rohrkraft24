@@ -6,7 +6,8 @@ export type BlogBlock =
   | { type: "p"; html: string }
   | { type: "callout"; html: string }
   | { type: "table"; html: string }
-  | { type: "ul"; items: string[] };
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] };
 
 type BlogContentProps = {
   blocks: BlogBlock[];
@@ -45,6 +46,17 @@ export function BlogContent({ blocks }: BlogContentProps) {
                 </li>
               ))}
             </ul>
+          );
+        }
+        if (block.type === "ol") {
+          return (
+            <ol key={index}>
+              {block.items.map((item, i) => (
+                <li key={i}>
+                  <RichHtml html={item} />
+                </li>
+              ))}
+            </ol>
           );
         }
         return (

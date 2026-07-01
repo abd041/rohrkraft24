@@ -6,15 +6,15 @@ export type LegalBlock =
   | { type: "ul"; items: string[] };
 
 type LegalContentProps = {
-  h1: string;
+  h1?: string;
   blocks: LegalBlock[];
 };
 
 export function LegalContent({ h1, blocks }: LegalContentProps) {
   return (
-    <section className="section" style={{ background: "white" }}>
-      <div className="container" style={{ maxWidth: 760 }}>
-        <h1 style={{ marginBottom: "2rem" }}>{h1}</h1>
+    <section className="section legal-content">
+      <div className="container legal-content__inner">
+        {h1 && <h1 className="legal-content__title">{h1}</h1>}
         {blocks.map((block, index) => {
           if (block.type === "h2") {
             return (

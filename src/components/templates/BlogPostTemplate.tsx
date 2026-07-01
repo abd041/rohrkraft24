@@ -1,9 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BlogBreadcrumb } from "@/components/blocks/BlogBreadcrumb";
+import { SubpageHero } from "@/components/blocks/SubpageHero";
 import { BlogContent } from "@/components/blocks/BlogContent";
 import { PhoneIcon } from "@/components/icons";
 import { CTABanner } from "@/components/sections/CTABanner";
-import { IMAGES, SITE } from "@/lib/constants";
+import { IMAGES, COPY, SITE } from "@/lib/constants";
+import { Logo } from "@/components/ui/Logo";
 import { getRelatedBlogPosts, type BlogPostData } from "@/lib/blog-posts";
 
 const SERVICE_LINKS = [
@@ -26,31 +29,27 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
     <>
       <BlogBreadcrumb current={post.hero.title} />
 
-      <div className="blog-hero">
-        <picture>
-          <source media="(max-width:600px)" srcSet={`${imgBase}/${post.hero.imageSm}`} />
-          <img
-            src={`${imgBase}/${post.hero.image}`}
-            alt={post.hero.alt}
-            loading="eager"
-            fetchPriority="high"
-            width={1200}
-            height={420}
-          />
-        </picture>
-        <div className="blog-hero__overlay">
-          <span className="blog-hero__cat">{post.hero.category}</span>
-          <h1 className="blog-hero__title">{post.hero.title}</h1>
-          <div className="blog-hero__meta">
-            {post.hero.meta.map((item) => (
-              <span key={item}>{item}</span>
-            ))}
-          </div>
-        </div>
-      </div>
+      <SubpageHero
+        label={post.hero.category}
+        title={post.hero.title}
+        meta={post.hero.meta.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      />
 
       <section style={{ background: "white" }}>
         <div className="container">
+          <div className="blog-featured-image">
+            <Image
+              src={`${imgBase}/${post.hero.image}`}
+              alt={post.hero.alt}
+              width={1200}
+              height={420}
+              priority
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+
           <div className="blog-layout">
             <article className="blog-content">
               <BlogContent blocks={post.blocks} />
@@ -75,11 +74,13 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
               )}
 
               <div className="blog-author">
-                <div className="blog-author__avatar">RR</div>
+                <div className="blog-author__avatar">
+                  <Logo height={40} href={null} />
+                </div>
                 <div>
-                  <p className="blog-author__name">Rohrretter24 Redaktion</p>
+                  <p className="blog-author__name">{SITE.name} Redaktion</p>
                   <p className="blog-author__role">
-                    Fachbetrieb für Rohrreinigung in Berlin und Umgebung – seit über 10 Jahren
+                    {COPY.team.charAt(0).toUpperCase() + COPY.team.slice(1)} – {COPY.specialization} in Berlin und Umgebung
                   </p>
                 </div>
               </div>

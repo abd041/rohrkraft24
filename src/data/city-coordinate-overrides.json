@@ -1,0 +1,10 @@
+{
+  "berlin-mitte": { "lat": 52.520008, "lng": 13.404954 },
+  "berlin-friedrichshain-kreuzberg": { "lat": 52.499256, "lng": 13.453945 },
+  "berlin-charlottenburg-wilmersdorf": { "lat": 52.504475, "lng": 13.304642 },
+  "berlin-steglitz-zehlendorf": { "lat": 52.434002, "lng": 13.258358 },
+  "berlin-tempelhof-schoeneberg": { "lat": 52.473035, "lng": 13.385206 },
+  "berlin-marzahn-hellersdorf": { "lat": 52.542237, "lng": 13.554214 },
+  "berlin-reinickendorf": { "lat": 52.588023, "lng": 13.321542 },
+  "berlin-lichtenberg": { "lat": 52.515469, "lng": 13.499439 }
+}

@@ -2,222 +2,129 @@
   "slug": "rohrverstopfung-ursachen",
   "hero": {
     "category": "Ratgeber",
-    "title": "Rohrverstopfung: 9 häufige Ursachen & wie Sie vorbeugen",
+    "title": "Rohrverstopfung: Ursachen erkennen und vorbeugen",
     "meta": [
-      "📅 22. Januar 2026",
+      "📅 5. März 2026",
       "⏱ 6 Min. Lesezeit",
-      "✍️ Rohrretter24 Redaktion"
+      "✍️ RohrRetter24 Redaktion"
     ],
-    "image": "kanalreinigung-hochdruck-rohr.webp",
+    "image": "kanalreinigung-hochdruck-rohr-sm.webp",
     "imageSm": "kanalreinigung-hochdruck-rohr-sm.webp",
-    "alt": "Rohrverstopfung Ursachen – Inspektion im Rohr"
+    "alt": "Rohrverstopfung in Berliner Altbau-Leitung"
   },
+  "toc": [
+    { "id": "ursachen", "label": "Häufige Ursachen" },
+    { "id": "warnzeichen", "label": "Warnzeichen" },
+    { "id": "vorbeugen", "label": "Vorbeugung" },
+    { "id": "hausmittel", "label": "Hausmittel vs. Profi" },
+    { "id": "faq", "label": "FAQ" }
+  ],
   "blocks": [
     {
       "type": "p",
-      "html": "Eine verstopfte Leitung trifft uns meist unvorbereitet – und häufig zur Unzeit. Doch Rohrverstopfungen entstehen selten von heute auf morgen. Meist haben sich die Ursachen über Wochen oder Monate aufgebaut. Wer die häufigsten Auslöser kennt, kann gezielt vorbeugen und teure Notfalleinsätze vermeiden."
+      "html": "Gluckernde Abflüsse, langsames Abfließen oder ein muffiger Geruch aus dem Waschbecken – Rohrverstopfungen entstehen selten über Nacht, sondern wachsen über Wochen. Besonders in Berliner Altbauten mit engen Rohrbögen und alten Leitungen sind wiederkehrende Probleme keine Seltenheit. Wer die Ursachen kennt, kann Schäden früh erkennen und teure Notfälle vermeiden."
     },
     {
       "type": "h2",
-      "id": "fett",
-      "text": "1. Fettablagerungen in der Küchenspüle"
+      "id": "ursachen",
+      "text": "Die häufigsten Ursachen im Haushalt"
+    },
+    {
+      "type": "h3",
+      "text": "1. Fett und Speisereste"
     },
     {
       "type": "p",
-      "html": "Der häufigste Grund für verstopfte Küchenabflüsse: Fett und Öl aus dem Kochen. Flüssiges Fett läuft problemlos ab – kühlt aber im Rohr ab, erstarrt und lagert sich als zähe Schicht an den Rohrwänden ab. Mit der Zeit verengt sich das Rohr immer mehr, bis der Abfluss komplett blockiert ist."
+      "html": "Flüssiges Fett aus der Pfanne verhärtet in kühlten Rohren und bildet einen zähen Pfropfen. Besonders Küchenabflüsse in Wohnungen mit viel Homeoffice-Kochen sind betroffen."
     },
     {
-      "type": "callout",
-      "html": "<strong>Tipp:</strong> Niemals Fett, Öl oder Speisereste in den Abfluss gießen. Fettreste lieber in einem alten Behälter sammeln und im Restmüll entsorgen."
+      "type": "h3",
+      "text": "2. Haare und Seifenreste"
+    },
+    {
+      "type": "p",
+      "html": "Im Bad verfilzen Haare mit Seife zu einer festen Masse. Dusch- und Badewannenabflüsse sind deshalb die zweithäufigste Ursache für unsere Einsätze in Potsdam und Berlin."
+    },
+    {
+      "type": "h3",
+      "text": "3. Feuchttücher & Hygieneartikel"
+    },
+    {
+      "type": "p",
+      "html": "Selbst Produkte mit „spülbar“-Hinweis verstopfen ältere Leitungen. Feuchttücher, Wattestäbchen und Damenbinden gehören in den Müll – nicht ins WC."
+    },
+    {
+      "type": "h3",
+      "text": "4. Kalk und Urinstein"
+    },
+    {
+      "type": "p",
+      "html": "In Regionen mit hartem Wasser lagern sich Mineralien an den Rohrwänden ab. Der Querschnitt wird enger – Haare und Fett bleiben leichter hängen."
+    },
+    {
+      "type": "h3",
+      "text": "5. Wurzeleinwuchs & Bauschäden"
+    },
+    {
+      "type": "p",
+      "html": "Außenleitungen in Einfamilienhäusern mit Garten können von Baumwurzeln durchdrungen werden. Versatz oder Risse entstehen auch durch Setzung – typisch bei Gründerzeitbauten."
     },
     {
       "type": "h2",
-      "id": "haare",
-      "text": "2. Haare & Seifenrückstände im Bad"
-    },
-    {
-      "type": "p",
-      "html": "In Dusche und Badewanne bilden Haare in Kombination mit Seifenrückständen verfilzte Pfropfen. Diese setzen sich im Siphon oder kurz dahinter fest und wachsen langsam zu einer hartnäckigen Blockade. Besonders Langhaar-Haushalte sind betroffen."
-    },
-    {
-      "type": "p",
-      "html": "Ein einfacher Haarsieb im Abfluss kann dieses Problem fast vollständig verhindern – und kostet wenige Euro."
-    },
-    {
-      "type": "h2",
-      "id": "fremdkoerper",
-      "text": "3. Fremdkörper"
-    },
-    {
-      "type": "p",
-      "html": "Wattestäbchen, Kondome, Rasierklingen, Spielzeugteile, Spülmaschinentabs-Verpackungen – all das wird regelmäßig in Toiletten oder Abflüssen entsorgt, wo es nicht hingehört. Diese Gegenstände bleiben im Rohr hängen und bilden einen Kern, an dem sich weitere Ablagerungen festsetzen."
-    },
-    {
-      "type": "h2",
-      "id": "kalk",
-      "text": "4. Kalkablagerungen"
-    },
-    {
-      "type": "p",
-      "html": "In Regionen mit hartem Wasser – wie vielen Teilen Hessens – lagern sich Kalkpartikel an den Rohrinnenwänden ab. Das verengt den Querschnitt über Jahre hinweg und begünstigt das Anhaften anderer Ablagerungen. Rohre aus Kupfer oder Stahl sind besonders anfällig."
-    },
-    {
-      "type": "h2",
-      "id": "wurzeln",
-      "text": "5. Wurzeleinwüchse"
-    },
-    {
-      "type": "p",
-      "html": "Bäume und Sträucher suchen sich Wasser – und finden es in undichten Kanalrohren. Feine Wurzelfasern dringen durch kleinste Risse ein, wachsen im Rohr weiter und bilden dichte Gestrüppe, die den gesamten Kanalquerschnitt blockieren können. Besonders kritisch: Pappeln, Weiden und alte Obstbäume in Hausnähe."
-    },
-    {
-      "type": "p",
-      "html": "Eingewachsene Wurzeln lassen sich mit <a href=\"/kanalreinigung/\">Hochdruckspülung</a> und Fräsköpfen entfernen. Danach empfiehlt sich eine <a href=\"/kamera-inspektion/\">Kamerainspektion</a>, um den Umfang der Schäden zu beurteilen."
-    },
-    {
-      "type": "h2",
-      "id": "gefaelle",
-      "text": "6. Falsches Gefälle oder Rohrverzug"
-    },
-    {
-      "type": "p",
-      "html": "Abwasserrohre müssen ein Mindestgefälle von 1–2 % haben, damit das Wasser selbst abfließen kann. Hat sich das Rohr durch Bodensetzungen verschoben oder wurde es ursprünglich falsch verlegt, staut sich das Abwasser – und mit ihm alle mitgeführten Feststoffe."
-    },
-    {
-      "type": "h2",
-      "id": "alte-rohre",
-      "text": "7. Alte, brüchige Rohre"
-    },
-    {
-      "type": "p",
-      "html": "Rohre aus den 1960er bis 1980er Jahren bestehen oft aus Asbest-Zement, Ton oder frühem Kunststoff. Diese Materialien werden mit der Zeit spröde, bilden Risse und Versätze – perfekte Ablagerungsstellen. In Altbauten ist eine regelmäßige Inspektion daher besonders wichtig."
-    },
-    {
-      "type": "h2",
-      "id": "papier",
-      "text": "8. Feuchttücher & zu viel Toilettenpapier"
-    },
-    {
-      "type": "p",
-      "html": "Feuchttücher gehören nicht in die Toilette – auch wenn „spülbar\" auf der Verpackung steht. Sie lösen sich im Wasser nicht auf und bilden mit anderen Materialien feste Klumpen (sogenannte Fatbergs). Gleiches gilt für übermäßige Mengen Toilettenpapier auf einmal."
-    },
-    {
-      "type": "h2",
-      "id": "baustoffe",
-      "text": "9. Baustoffe und Bauschutt"
-    },
-    {
-      "type": "p",
-      "html": "Nach Renovierungen gelangen häufig Zementreste, Gips oder Sand in die Abflüsse. Diese Materialien erhärten im Rohr und bilden steinharteVerstopfungen. Bei Bauarbeiten sollten Abflüsse grundsätzlich verschlossen werden."
-    },
-    {
-      "type": "h2",
-      "id": "vorbeugen",
-      "text": "So beugen Sie Rohrverstopfungen effektiv vor"
+      "id": "warnzeichen",
+      "text": "Frühe Warnzeichen ernst nehmen"
     },
     {
       "type": "ul",
       "items": [
-        "Haarsiebe in Dusche und Badewanne verwenden",
-        "Kein Fett, Öl oder Speisereste in den Abfluss",
-        "Nur Toilettenpapier in die Toilette – keine Feuchttücher",
-        "Regelmäßige Reinigung mit heißem Wasser und Spülmittel",
-        "Alle 2–3 Jahre eine <a href=\"/kanalreinigung/\">präventive Kanalreinigung</a> durchführen lassen",
-        "Bei älteren Immobilien: <a href=\"/kamera-inspektion/\">Kamerainspektion</a> alle 5 Jahre"
+        "Wasser steht kurz, bevor es abläuft",
+        "Mehrere Abflüsse gleichzeitig betroffen",
+        "Blubbernde Geräusche beim Spülen",
+        "Geruch aus Bodenablauf oder Keller",
+        "Feuchtigkeit an Wänden nahe Leitungsverlauf"
+      ]
+    },
+    {
+      "type": "p",
+      "html": "Sind mehrere Abflüsse betroffen, liegt das Problem oft in der Grundleitung – dann hilft nur professionelle Hilfe, nicht der Pömpel im einzelnen Bad."
+    },
+    {
+      "type": "h2",
+      "id": "vorbeugen",
+      "text": "So beugen Sie Verstopfungen vor"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sieb im Abfluss regelmäßig leeren",
+        "Fett niemals in den Abfluss gießen",
+        "Regelmäßige Spülung mit heißem Wasser (ohne Chemie-Exzesse)",
+        "Bei Altbau: Kamerainspektion alle paar Jahre",
+        "Rückstauklappe und Hebeanlage warten lassen"
       ]
     },
     {
       "type": "h2",
-      "id": "faq",
-      "text": "Häufige Fragen"
+      "id": "hausmittel",
+      "text": "Hausmittel oder Profi?"
     },
     {
       "type": "p",
-      "html": "Typische Anzeichen: Wasser läuft langsam ab, Gurgeln aus dem Abfluss, unangenehme Gerüche aus dem Siphon oder Rückstau in mehreren Abflüssen gleichzeitig."
-    },
-    {
-      "type": "p",
-      "html": "Bei leichten Verstopfungen helfen Natron + Essig oder eine Saugglocke. Hartnäckige Blockaden oder Probleme im Hauptkanal gehören in professionelle Hände – falsche Maßnahmen können das Rohr beschädigen."
-    },
-    {
-      "type": "p",
-      "html": "Ja. Eingewachsene Wurzeln üben kontinuierlichen Druck auf das Rohr aus und können es über Zeit aufbrechen. Eine Kamerainspektion zeigt das Ausmaß – bei strukturellen Schäden ist eine Rohrsanierung nötig."
-    },
-    {
-      "type": "p",
-      "html": "Für Privathaushalte empfehlen wir alle 2–3 Jahre eine präventive Reinigung, bei älteren Rohren oder Bäumen auf dem Grundstück jährlich."
-    },
-    {
-      "type": "p",
-      "html": "Rohrretter24 Redaktion"
-    },
-    {
-      "type": "p",
-      "html": "Fachbetrieb für Rohrreinigung & Kanalsanierung in Hessen – seit über 10 Jahren"
+      "html": "Natron und Essig lösen leichte Ablagerungen manchmal. Chemische Rohrreiniger aus dem Handel sind oft zu aggressiv und schädigen Dichtungen sowie Kunststoffrohre. Bleibt das Problem nach einem Versuch bestehen oder kehrt es zurück, ist eine <a href=\"/rohrreinigung/\">professionelle Rohrreinigung</a> meist günstiger als wiederholte Experimente."
     }
   ],
   "faq": [
     {
-      "question": "Wie merke ich, dass mein Rohr verstopft ist?",
-      "answer": "Typische Anzeichen: Wasser läuft langsam ab, Gurgeln aus dem Abfluss, unangenehme Gerüche aus dem Siphon oder Rückstau in mehreren Abflüssen gleichzeitig."
+      "question": "Kann ich eine Verstopfung selbst beheben?",
+      "answer": "Bei leichten Verstopfungen im Siphon kann ein Pömpel helfen. Tiefer sitzende Blockaden oder wiederkehrende Probleme erfordern Spezialgerät."
     },
     {
-      "question": "Was kann ich selbst gegen eine Verstopfung tun?",
-      "answer": "Bei leichten Verstopfungen helfen Natron + Essig oder eine Saugglocke. Hartnäckige Blockaden oder Probleme im Hauptkanal gehören in professionelle Hände – falsche Maßnahmen können das Rohr beschädigen."
+      "question": "Warum verstopft mein Abfluss immer wieder?",
+      "answer": "Oft liegt eine strukturelle Ursache vor – Rohrschaden, Wurzeln oder falsche Neigung. Eine Kamerainspektion bringt Klarheit."
     },
     {
-      "question": "Können Wurzeln das Rohr zerstören?",
-      "answer": "Ja. Eingewachsene Wurzeln üben kontinuierlichen Druck auf das Rohr aus und können es über Zeit aufbrechen. Eine Kamerainspektion zeigt das Ausmaß – bei strukturellen Schäden ist eine Rohrsanierung nötig."
-    },
-    {
-      "question": "Wie oft sollte ich den Kanal reinigen lassen?",
-      "answer": "Für Privathaushalte empfehlen wir alle 2–3 Jahre eine präventive Reinigung, bei älteren Rohren oder Bäumen auf dem Grundstück jährlich."
-    }
-  ],
-  "toc": [
-    {
-      "id": "fett",
-      "label": "1. Fettablagerungen"
-    },
-    {
-      "id": "haare",
-      "label": "2. Haare & Seife"
-    },
-    {
-      "id": "fremdkoerper",
-      "label": "3. Fremdkörper"
-    },
-    {
-      "id": "kalk",
-      "label": "4. Kalkablagerungen"
-    },
-    {
-      "id": "wurzeln",
-      "label": "5. Wurzeleinwüchse"
-    },
-    {
-      "id": "gefaelle",
-      "label": "6. Falsches Gefälle"
-    },
-    {
-      "id": "alte-rohre",
-      "label": "7. Alte Rohre"
-    },
-    {
-      "id": "papier",
-      "label": "8. Feuchttücher & Papier"
-    },
-    {
-      "id": "baustoffe",
-      "label": "9. Baustoffe im Rohr"
-    },
-    {
-      "id": "vorbeugen",
-      "label": "Vorbeugen"
-    },
-    {
-      "id": "faq",
-      "label": "Häufige Fragen"
+      "question": "Wie schnell kommt Hilfe in Berlin?",
+      "answer": "Im Notfall sind wir in der Regel innerhalb von 30–60 Minuten vor Ort – auch nachts und am Wochenende."
     }
   ]
 }

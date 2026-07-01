@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/blocks/Breadcrumb";
+import { ServicePageContent } from "@/components/blocks/ServicePageContent";
 import { ServicePageHero } from "@/components/blocks/ServicePageHero";
 import { About } from "@/components/sections/About";
 import { CTABanner } from "@/components/sections/CTABanner";
@@ -22,6 +23,7 @@ export function ServicePageTemplate({ page }: ServicePageTemplateProps) {
     <>
       <Breadcrumb current={page.breadcrumbLabel} />
       <ServicePageHero hero={page.hero} />
+      <ServicePageContent content={page.content} serviceLabel={page.breadcrumbLabel} />
       <TrustMarquee />
       <Features />
       <Services />

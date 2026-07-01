@@ -1,0 +1,76 @@
+/* WCAG contrast fixes on dark navy backgrounds (§12.4) */
+
+/* Subpage heroes – secondary text ≥ 4.5:1 on navy */
+.subpage-hero__subtitle,
+.blog-page-hero p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.subpage-hero__meta,
+.blog-page-hero__meta {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.subpage-hero__label,
+.blog-page-hero__cat {
+  color: var(--blue-300);
+  border-color: rgba(139, 181, 232, 0.55);
+}
+
+/* Notdienst banner */
+.notdienst-banner__label {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.notdienst-banner__desc {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Footer – improve muted link/text contrast on navy */
+.footer a,
+.footer p,
+.footer li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .section-label,
+.footer__col-title {
+  color: var(--blue-300);
+}
+
+.footer__bottom,
+.footer__bottom p,
+.footer__bottom a {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Mini CTA + CTA banner secondary text */
+.mini-cta p,
+.cta-section p,
+.cta-banner p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Mobile sticky bar */
+.mobile-sticky-bar__label {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Header top bar on navy */
+.header__top a,
+.header__top span {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.header__notdienst {
+  color: #fff;
+}
+
+/* Blog sidebar CTA on brand blue */
+.blog-sidebar__box p {
+  color: rgba(255, 255, 255, 0.95);
+}

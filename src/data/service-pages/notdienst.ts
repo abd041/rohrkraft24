@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const NOTDIENST_PAGE: ServicePageData = {
+export const NOTDIENST_PAGE: ServicePageBase = {
   slug: "notdienst",
   breadcrumbLabel: "24h Notdienst",
   mapKeyword: "notdienst",
@@ -13,7 +13,7 @@ export const NOTDIENST_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/notdienst-rohrreinigung-sofort.webp`,
       srcSm: `${IMG}/notdienst-rohrreinigung-sofort-sm.webp`,
-      alt: "24h Notdienst – Rohrretter24 Berlin",
+      alt: "24h Notdienst – RohrRetter24 Berlin",
     },
   },
 };

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { FOOTER_CITIES } from "@/data/cities";
+import { FOOTER_CITIES, CITY_COUNT } from "@/data/cities";
 import { SERVICE_LINKS, SITE } from "@/lib/constants";
+import { Logo } from "@/components/ui/Logo";
 
 const QUICK_LINKS = [
   { label: "Startseite", href: "/" },
@@ -120,7 +121,7 @@ export function Footer() {
                 </div>
               </div>
               <Link href="/einsatzgebiete/" className="footer__all-cities">
-                Alle 48 Städte ansehen →
+                Alle {CITY_COUNT} Standorte ansehen →
               </Link>
             </div>
 
@@ -133,7 +134,7 @@ export function Footer() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Rohrretter24 Standort"
+                title={`${SITE.name} Standort`}
               />
             </div>
           </div>
@@ -142,7 +143,10 @@ export function Footer() {
 
       <div className="footer__bottom-bar">
         <div className="container footer__bottom">
-          <p>© 2026 Rohrretter24. Alle Rechte vorbehalten.</p>
+          <div className="footer__bottom-brand">
+            <Logo height={34} />
+            <p>© 2026 {SITE.name}. Alle Rechte vorbehalten.</p>
+          </div>
           <div className="footer__bottom-links">
             <Link href="/impressum/">Impressum</Link>
             <Link href="/datenschutz/">Datenschutz</Link>

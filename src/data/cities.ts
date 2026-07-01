@@ -4,9 +4,6 @@ export type CityEntry = { name: string; slug: string; shortName?: string; region
 
 export const BERLIN_CITIES = berlinCities as CityEntry[];
 
-/** @deprecated Use BERLIN_CITIES */
-export const HESSEN_CITIES = BERLIN_CITIES;
-
 export const CITIES = BERLIN_CITIES.map((c) => c.name);
 
 export const FOOTER_CITIES = [
@@ -24,8 +21,10 @@ export const FOOTER_CITIES = [
   { label: "Schwedt/Oder", slug: "schwedt-oder" },
 ] as const;
 
+export const CITY_COUNT = BERLIN_CITIES.length;
+
 export const BUNDESLAENDER = [
-  { name: "Berlin", count: BERLIN_CITIES.length, active: true },
+  { name: "Berlin", count: CITY_COUNT, active: true },
   { name: "Brandenburg", active: false },
   { name: "Bayern", active: false },
   { name: "Hessen", active: false },

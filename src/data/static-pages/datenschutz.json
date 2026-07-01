@@ -8,7 +8,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Rohrretter24</strong><br>\n    Berlin und Umgebung (100 km Radius)<br>\n    Telefon: <a href=\"tel:+4917620222200\">0176 2022 2200</a><br>\n    E-Mail: <a href=\"mailto:info@rohrretter24.de\">info@rohrretter24.de</a>"
+      "html": "<strong>RohrRetter24 UG</strong><br>\n    Mühlenstr. 8a<br>\n    14167 Berlin<br>\n    Telefon: <a href=\"tel:+4917620222200\">0176 2022 2200</a><br>\n    E-Mail: <a href=\"mailto:info@rohrretter24.de\">info@rohrretter24.de</a>"
     },
     {
       "type": "h2",
@@ -24,67 +24,51 @@
     },
     {
       "type": "p",
-      "html": "Diese Website wird gehostet bei <strong>SiteGround Spain S.L.</strong>, C/ Prim 19, 28004 Madrid, Spanien. Bei jedem Aufruf unserer Website erfasst der Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles (IP-Adresse, Datum, Uhrzeit, aufgerufene Seite). Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit Daten aus anderen Quellen zusammengeführt."
+      "html": "Diese Website wird bei <strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133, Covina, CA 91723, USA, gehostet. Beim Aufruf der Website erfasst der Hosting-Anbieter automatisch technische Daten in Server-Logfiles (z. B. IP-Adresse, Datum, Uhrzeit, aufgerufene Seite, Browsertyp). Die Verarbeitung erfolgt zur Bereitstellung und Sicherheit der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
     },
     {
       "type": "h2",
-      "text": "4. Cookies & Consent-Management (CookieYes)"
+      "text": "4. Cookies & Einwilligungsverwaltung"
     },
     {
       "type": "p",
-      "html": "Unsere Website verwendet Cookies. Wir setzen das Consent-Management-Tool <strong>CookieYes</strong> ein, um Ihre Einwilligung zur Speicherung bestimmter Cookies zu verwalten. CookieYes speichert Ihre Einwilligungen, damit diese nicht bei jedem Seitenaufruf neu abgefragt werden müssen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. c DSGVO."
+      "html": "Wir verwenden ein eigenes Cookie-Hinweis-Banner. Ihre Einwilligung wird im lokalen Speicher Ihres Browsers (<code>localStorage</code>) gespeichert, damit der Hinweis nicht bei jedem Besuch erneut erscheint. Es werden dabei keine personenbezogenen Daten an Dritte übermittelt. Rechtsgrundlage für technisch notwendige Speicherung ist Art. 6 Abs. 1 lit. f DSGVO, für optional eingesetzte Analyse- oder Marketing-Tools Art. 6 Abs. 1 lit. a DSGVO."
     },
     {
       "type": "h2",
-      "text": "5. Kontaktformular"
+      "text": "5. Kontaktformular & E-Mail"
     },
     {
       "type": "p",
-      "html": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular (Name, Telefon, Adresse, Nachricht) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Das Formular wird über <strong>Gravity Forms</strong> betrieben. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO."
+      "html": "Wenn Sie uns per Kontaktformular oder E-Mail Anfragen senden, werden Ihre Angaben (z. B. Name, Telefon, E-Mail, Nachricht) zur Bearbeitung der Anfrage und für Anschlussfragen bei uns verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO."
     },
     {
       "type": "h2",
-      "text": "6. Call Tracking (Sipgate)"
+      "text": "6. Telefon & WhatsApp"
     },
     {
       "type": "p",
-      "html": "Zur Analyse unserer Telefonkampagnen nutzen wir den Dienst der <strong>Sipgate GmbH</strong>, Gladbacher Str. 74, 40219 Düsseldorf. Dabei werden Zeitpunkt des Anrufs, Rufnummern und Gesprächsdauer erfasst. Die Daten dienen der Marketingoptimierung. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
+      "html": "Bei telefonischer Kontaktaufnahme oder Nutzung des WhatsApp-Links werden die von Ihnen übermittelten Daten (z. B. Telefonnummer, Nachrichteninhalt) zur Bearbeitung Ihrer Anfrage verarbeitet. WhatsApp wird von Meta Platforms Ireland Ltd. betrieben; es kann zu einer Datenübermittlung in Drittländer kommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO."
     },
     {
       "type": "h2",
-      "text": "7. Google Analytics"
+      "text": "7. Google Maps"
     },
     {
       "type": "p",
-      "html": "Diese Website nutzt Google Analytics, einen Webanalysedienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google Analytics verwendet Cookies und erfasst anonymisierte IP-Adressen, Nutzungsdaten sowie Verweildauer. Die erzeugten Informationen werden auf Servern von Google gespeichert. Sie können die Erfassung durch Google Analytics verhindern, indem Sie das Browser-Add-on zur Deaktivierung von Google Analytics installieren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO."
+      "html": "Wir binden Karten des Dienstes <strong>Google Maps</strong> (Google Ireland Limited) ein. Beim Aufruf einer Seite mit Karte kann Google Ihre IP-Adresse und weitere technische Daten verarbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer übersichtlichen Darstellung unseres Einsatzgebiets)."
     },
     {
       "type": "h2",
-      "text": "8. Google Ads & Conversion-Tracking"
+      "text": "8. Schriftarten"
     },
     {
       "type": "p",
-      "html": "Wir nutzen Google Ads zur Schaltung von Werbeanzeigen. Dabei werden GCLID-Parameter zur Conversion-Verfolgung eingesetzt. Google LLC verarbeitet die Daten in den USA. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO."
+      "html": "Die auf dieser Website verwendeten Schriftarten (Geist, Nexa) sind <strong>lokal auf unserem Server eingebunden</strong>. Beim Seitenaufruf werden keine Verbindungen zu Font-Servern von Google oder anderen Anbietern hergestellt."
     },
     {
       "type": "h2",
-      "text": "9. Google reCAPTCHA"
-    },
-    {
-      "type": "p",
-      "html": "Wir nutzen Google reCAPTCHA zum Schutz unserer Formulare vor automatisierten Eingaben. Dabei werden IP-Adresse und weitere Daten an Google übermittelt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO."
-    },
-    {
-      "type": "h2",
-      "text": "10. Google Fonts"
-    },
-    {
-      "type": "p",
-      "html": "Diese Website verwendet Google Fonts. Die Schriftarten sind lokal eingebunden, sodass keine Daten an Google-Server übertragen werden."
-    },
-    {
-      "type": "h2",
-      "text": "11. Ihre Rechte"
+      "text": "9. Ihre Rechte"
     },
     {
       "type": "p",
@@ -103,11 +87,11 @@
     },
     {
       "type": "p",
-      "html": "Sie haben zudem das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren: <strong>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit</strong>, Postfach 3163, 65021 Wiesbaden."
+      "html": "Sie haben zudem das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren: <strong>Der Berliner Beauftragte für Datenschutz und Informationsfreiheit</strong>, Friedrichstr. 219, 10969 Berlin."
     },
     {
       "type": "h2",
-      "text": "12. Widerspruch gegen Werbe-E-Mails"
+      "text": "10. Widerspruch gegen Werbe-E-Mails"
     },
     {
       "type": "p",
@@ -115,7 +99,7 @@
     },
     {
       "type": "p",
-      "html": "Stand: Oktober 2025"
+      "html": "Stand: Juli 2026"
     }
   ]
 }

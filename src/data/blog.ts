@@ -12,33 +12,33 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: "Rohrreinigung Kosten 2026: Preise, Faktoren & Spartipps",
+    title: "Was kostet Rohrreinigung in Berlin? Preise & Festpreise 2026",
     excerpt:
-      "Was kostet eine professionelle Rohrreinigung? Alle Preise, Einflussfaktoren und wie Sie unnötige Kosten vermeiden – transparent erklärt.",
+      "Realistische Preisspannen, Anfahrtspauschale und Spartipps – transparent erklärt für Berlin und Umgebung.",
     category: "Kosten & Preise",
-    date: "15. Januar 2026",
+    date: "12. März 2026",
     href: "/blog/rohrreinigung-kosten/",
     image: `${IMG}/rohrreinigung-fachmann-einsatz-sm.webp`,
-    alt: "Rohrreinigung Kosten – Fachmann im Einsatz",
+    alt: "Techniker bei Rohrreinigung in Berlin",
   },
   {
-    title: "Rohrverstopfung: 9 häufige Ursachen & wie Sie vorbeugen",
+    title: "Rohrverstopfung: Ursachen erkennen und vorbeugen",
     excerpt:
-      "Fettablagerungen, Wurzeln, Fremdkörper – die 9 häufigsten Ursachen für verstopfte Rohre und was Sie dagegen tun können.",
+      "Fett, Haare, Kalk oder Wurzeln – die häufigsten Ursachen und was Sie im Alltag dagegen tun können.",
     category: "Ratgeber",
-    date: "22. Januar 2026",
+    date: "5. März 2026",
     href: "/blog/rohrverstopfung-ursachen/",
     image: `${IMG}/kanalreinigung-hochdruck-rohr-sm.webp`,
-    alt: "Rohrverstopfung Ursachen – Inspektion im Rohr",
+    alt: "Rohrverstopfung in Berliner Leitung",
   },
   {
-    title: "Kanalinspektion mit Kamera: Ablauf, Kosten & wann sie nötig ist",
+    title: "Rohrkamera-Inspektion: Wann sie sinnvoll ist und was sie kostet",
     excerpt:
-      "Die Kamerainspektion zeigt genau, was im Kanal falsch läuft. Wie sie abläuft, was sie kostet und wann sie sich lohnt.",
+      "TV-Kamera im Rohr – Ablauf, typische Befunde und Kosten für Eigentümer in Berlin und Brandenburg.",
     category: "Leistungen",
-    date: "29. Januar 2026",
+    date: "18. Februar 2026",
     href: "/blog/kanalinspektion-kamera/",
     image: `${IMG}/kamerainspektion-kanal-garten-sm.webp`,
-    alt: "Kanalinspektion Kamera – HD-Kamerawagen im Einsatz",
+    alt: "TV-Kamera-Inspektion einer Abwasserleitung",
   },
 ];

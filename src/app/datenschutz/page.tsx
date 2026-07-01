@@ -11,5 +11,5 @@ export const metadata: Metadata = getPageMetadata(SLUG);
 export default function DatenschutzPage() {
   const page = getStaticPageData(SLUG);
   if (!page) notFound();
-  return <StaticPageTemplate breadcrumb="Datenschutz" h1={page.h1} blocks={page.blocks} />;
+  return <StaticPageTemplate breadcrumb="Datenschutz" label="Rechtliches" h1={page.h1} subtitle="Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO" blocks={page.blocks} />;
 }

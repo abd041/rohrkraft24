@@ -4,6 +4,8 @@ import { SERVICES, PHONE } from "./services-config.mjs";
 
 const cities = JSON.parse(readFileSync("src/data/berlin-cities.json", "utf8"));
 const outDir = "src/data/city-pages";
+const BRAND = "RohrRetter24";
+const TRAVEL_FEE = "49 € Anfahrtspauschale";
 
 function faqFor(service, city) {
   return [
@@ -14,7 +16,7 @@ function faqFor(service, city) {
     {
       question: `Was kostet ${service.label} in ${city.name}?`,
       answer:
-        "Wir arbeiten mit transparenten Festpreisen. Nach einer kostenlosen Vor-Ort-Diagnose erhalten Sie ein schriftliches Angebot – ohne versteckte Kosten.",
+        `Wir arbeiten mit transparenten Festpreisen. Nach der Vor-Ort-Diagnose erhalten Sie ein schriftliches Angebot – ohne versteckte Kosten. ${TRAVEL_FEE} – bei Beauftragung verrechnet.`,
     },
     {
       question: `Bieten Sie ${service.label} auch am Wochenende in ${city.name} an?`,
@@ -55,15 +57,15 @@ function buildPage(service, city, cityIndex) {
       titleLine1: `${service.label} ${city.name}`,
       titleLine2: service.heroLine2,
       tagline: service.tagline,
-      body: `${service.label} in ${city.name}? Rohrretter24 ist Ihr lokaler Fachbetrieb im Raum Berlin und Umgebung (100 km). Wir kommen schnell vor Ort – auch nachts und am Wochenende.`,
+      body: `${service.label} in ${city.name}? ${BRAND} ist Ihr lokaler Partner im Raum Berlin und Umgebung (100 km). Wir kommen schnell vor Ort – auch nachts und am Wochenende.`,
       image: service.image,
       imageSm: service.imageSm,
-      alt: `${service.label} ${city.name} – Rohrretter24 Team vor Ort`,
+      alt: `${service.label} ${city.name} – ${BRAND} Team vor Ort`,
     },
     faqTitle: `Häufige Fragen zu ${service.label}`,
     faq: faqFor(service, city),
     nearbyTitle: `${service.label} auch in der Nähe von ${city.name}`,
-    nearbyIntro: `Neben ${city.name} ist Rohrretter24 in zahlreichen Nachbarorten im Einsatz:`,
+    nearbyIntro: `Neben ${city.name} ist ${BRAND} in zahlreichen Nachbarorten im Einsatz:`,
     nearby: nearbyCities(cityIndex),
   };
 }

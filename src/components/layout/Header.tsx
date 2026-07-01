@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { NAV_LINKS, SERVICE_LINKS, SITE } from "@/lib/constants";
 import { ServiceIcon, type ServiceIconName } from "@/components/icons";
+import { Logo } from "@/components/ui/Logo";
 import { useModal } from "@/components/providers/ModalProvider";
 
 export function Header() {
@@ -15,12 +16,7 @@ export function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <Link href="/" className="logo">
-          <span className="logo__text">
-            <span className="logo__orange">Rohr</span>
-            <span className="logo__dark">retter24.</span>
-          </span>
-        </Link>
+        <Logo height={36} />
 
         <nav className="nav">
           <Link href="/" className="nav__link nav__link--icon">
@@ -69,15 +65,11 @@ export function Header() {
         </nav>
 
         <div className="header__actions">
-          <a
-            href={`mailto:${SITE.email}?subject=Anfrage%20Rohrreinigung`}
-            className="header__email"
-          >
+          <a href={SITE.phoneHref} className="header__email">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
             </svg>{" "}
-            {SITE.email}
+            {SITE.phone}
           </a>
           <a href={SITE.phoneHref} className="header__notdienst">
             <span className="header__notdienst-dot" />
@@ -102,10 +94,7 @@ export function Header() {
       <div className={`mobile-nav${mobileOpen ? " open" : ""}`}>
         <div className="mobile-nav__panel">
           <div className="mobile-nav__header">
-            <span className="mobile-nav__logo">
-              <span style={{ color: "var(--accent)" }}>Rohr</span>
-              <span style={{ color: "var(--navy)" }}>retter24.</span>
-            </span>
+            <Logo height={32} className="site-logo--mobile-nav" />
             <button
               className="mobile-nav__close"
               aria-label="Menü schließen"

@@ -1,5 +1,5 @@
 {
-  "name": "rohrkraft24",
+  "name": "rohrretter24",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,19 @@
     "lint": "eslint",
     "generate-routes": "node scripts/generate-routes.mjs",
     "generate-city-pages": "node scripts/generate-city-pages.mjs",
-    "generate-all": "node scripts/generate-einsatzgebiete-regions.mjs && node scripts/generate-city-pages.mjs && node scripts/generate-routes.mjs"
+    "generate-manifest": "node scripts/generate-manifest.mjs",
+    "generate-all": "node scripts/generate-einsatzgebiete-regions.mjs && node scripts/generate-city-pages.mjs && node scripts/generate-routes.mjs && node scripts/generate-manifest.mjs"
   },
   "dependencies": {
+    "geist": "^1.7.2",
     "html-react-parser": "^6.1.3",
+    "leaflet": "^1.9.4",
     "next": "16.2.7",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -15,6 +15,7 @@ export type SiteRoute = {
 export type PageManifestEntry = {
   path: string;
   title: string;
+  description: string;
   type: string;
   h1: string;
 };

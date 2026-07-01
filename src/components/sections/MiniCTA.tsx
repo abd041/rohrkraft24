@@ -14,7 +14,7 @@ export function MiniCTA({ phone }: MiniCTAProps = {}) {
       <div className="container mini-cta__inner">
         <div className="mini-cta__text">
           <span className="mini-cta__headline">
-            Jetzt kostenlos anfragen – wir melden uns innerhalb von 15 Minuten!
+            Jetzt anrufen – wir melden uns innerhalb von 15 Minuten!
           </span>
         </div>
         <div className="mini-cta__actions">

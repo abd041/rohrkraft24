@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { IMAGES } from "@/lib/constants";
+import { IMAGES, SITE } from "@/lib/constants";
 import type { CityPageFaqItem, CityPagePhone } from "@/lib/city-pages";
 import { PhoneIcon } from "@/components/icons";
 
@@ -28,7 +28,7 @@ export function CityFAQ({ title, items, phone }: CityFAQProps) {
               {items.map((item, index) => (
                 <div
                   key={item.question}
-                  className={`faq__item rk-reveal${openIndex === index ? " open" : ""}`}
+                  className={`faq__item${openIndex === index ? " open" : ""}`}
                   style={{ transitionDelay: `${(index % 6) * 0.07}s` }}
                 >
                   <button
@@ -39,7 +39,9 @@ export function CityFAQ({ title, items, phone }: CityFAQProps) {
                     {item.question}
                     <span className="faq__icon">{openIndex === index ? "−" : "+"}</span>
                   </button>
-                  <div className="faq__answer">{item.answer}</div>
+                  <div className="faq__answer">
+                    <div className="faq__answer-inner">{item.answer}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -48,7 +50,7 @@ export function CityFAQ({ title, items, phone }: CityFAQProps) {
           <div className="faq__image">
             <Image
               src={`${IMAGES}/rohrkraft24-team-besprechung-faq.webp`}
-              alt="Rohrretter24 Team – Experten für Rohrreinigung in Berlin"
+              alt={`${SITE.name} Team – Experten für Rohrreinigung in Berlin`}
               width={500}
               height={400}
               style={{ width: "100%", height: "auto" }}

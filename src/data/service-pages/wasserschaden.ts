@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const WASSERSCHADEN_PAGE: ServicePageData = {
+export const WASSERSCHADEN_PAGE: ServicePageBase = {
   slug: "wasserschaden",
   breadcrumbLabel: "Wasserschaden",
   mapKeyword: "wasserschaden",
@@ -13,7 +13,7 @@ export const WASSERSCHADEN_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/abflussreinigung-kueche-profi.webp`,
       srcSm: `${IMG}/abflussreinigung-kueche-profi-sm.webp`,
-      alt: "Wasserschaden Hilfe – Rohrretter24 Berlin",
+      alt: "Wasserschaden Hilfe – RohrRetter24 Berlin",
     },
   },
 };

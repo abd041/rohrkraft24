@@ -1,4 +1,5 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase, ServicePageData } from "./types";
+import { SERVICE_CONTENTS } from "./contents";
 import { ROHRREINIGUNG_PAGE } from "./rohrreinigung";
 import { KAMERA_INSPEKTION_PAGE } from "./kamera-inspektion";
 import { ROHRREPARATUR_PAGE } from "./rohrreparatur";
@@ -9,9 +10,9 @@ import { SANITAERARBEITEN_PAGE } from "./sanitaerarbeiten";
 import { WASSERSCHADEN_PAGE } from "./wasserschaden";
 import { NOTDIENST_PAGE } from "./notdienst";
 
-export type { ServicePageData, ServicePageHeroData } from "./types";
+export type { ServicePageData, ServicePageBase, ServicePageHeroData, ServicePageContent } from "./types";
 
-const SERVICE_PAGES: Record<string, ServicePageData> = {
+const SERVICE_PAGES: Record<string, ServicePageBase> = {
   rohrreinigung: ROHRREINIGUNG_PAGE,
   "kamera-inspektion": KAMERA_INSPEKTION_PAGE,
   rohrreparatur: ROHRREPARATUR_PAGE,
@@ -26,5 +27,8 @@ const SERVICE_PAGES: Record<string, ServicePageData> = {
 export const SERVICE_PAGE_SLUGS = Object.keys(SERVICE_PAGES);
 
 export function getServicePageData(slug: string): ServicePageData | undefined {
-  return SERVICE_PAGES[slug];
+  const page = SERVICE_PAGES[slug];
+  const content = SERVICE_CONTENTS[slug];
+  if (!page || !content) return undefined;
+  return { ...page, content };
 }

@@ -18,7 +18,7 @@ export function CTABanner({ phone }: CTABannerProps = {}) {
         </p>
         <h2 className="cta-section__title mb-4">Rohrproblem? Wir lösen es sofort.</h2>
         <p className="cta-section__sub mb-8 mx-auto">
-          30–45 Minuten Reaktionszeit · Gratis Anfahrt · Festpreis vor Arbeitsbeginn
+          {SITE.reactionTime} Reaktionszeit · {SITE.travelFeeShort} · Festpreis vor Arbeitsbeginn
         </p>
         <a href={phoneHref} className="btn-cta-white">
           <PhoneIcon /> {phoneDisplay} – Jetzt anrufen

@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const LECKAGEORTUNG_PAGE: ServicePageData = {
+export const LECKAGEORTUNG_PAGE: ServicePageBase = {
   slug: "leckageortung",
   breadcrumbLabel: "Leckageortung",
   mapKeyword: "leckageortung",
@@ -13,7 +13,7 @@ export const LECKAGEORTUNG_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/rohrreinigung-fachmann-einsatz.webp`,
       srcSm: `${IMG}/rohrreinigung-fachmann-einsatz-sm.webp`,
-      alt: "Leckageortung – Rohrretter24 Berlin",
+      alt: "Leckageortung – RohrRetter24 Berlin",
     },
   },
 };

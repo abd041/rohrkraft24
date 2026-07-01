@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CityServicePageTemplate } from "@/components/templates/CityServicePageTemplate";
 import { getCityPageData } from "@/lib/city-pages";
+import { getPageMetadata } from "@/lib/metadata";
 import {
-  getManifest,
   getRouteBySlug,
   getStaticSlugs,
 } from "@/lib/pages";
@@ -18,9 +18,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getManifest()[slug];
-  if (entry?.title) return { title: entry.title };
-  return { title: `${slug} | Rohrretter24` };
+  return getPageMetadata(slug);
 }
 
 export default async function CityServicePage({ params }: Props) {

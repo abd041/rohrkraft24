@@ -1,17 +1,34 @@
-import { Breadcrumb } from "@/components/blocks/Breadcrumb";
 import { LegalContent, type LegalBlock } from "@/components/blocks/LegalContent";
+import { SubpageHero } from "@/components/blocks/SubpageHero";
 
 type StaticPageTemplateProps = {
   breadcrumb: string;
+  label?: string;
   h1: string;
+  subtitle?: string;
   blocks: LegalBlock[];
+  hideHero?: boolean;
 };
 
-export function StaticPageTemplate({ breadcrumb, h1, blocks }: StaticPageTemplateProps) {
+export function StaticPageTemplate({
+  breadcrumb,
+  label,
+  h1,
+  subtitle,
+  blocks,
+  hideHero,
+}: StaticPageTemplateProps) {
   return (
     <>
-      <Breadcrumb current={breadcrumb} />
-      <LegalContent h1={h1} blocks={blocks} />
+      {!hideHero && (
+        <SubpageHero
+          breadcrumb={breadcrumb}
+          label={label ?? breadcrumb}
+          title={h1}
+          subtitle={subtitle}
+        />
+      )}
+      <LegalContent blocks={blocks} />
     </>
   );
 }

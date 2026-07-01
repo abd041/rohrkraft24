@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/constants";
+
 export type FAQItem = {
   question: string;
   answer: string;
@@ -16,8 +18,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     question: "Was kostet eine Rohrreinigung?",
-    answer:
-      "Die Kosten richten sich nach dem Aufwand, der Lage der Verstopfung und der gewählten Methode. Transparente Festpreise beginnen bei etwa 89 €. Vor Beginn der Arbeit erhalten Sie immer eine klare Kostenübersicht – ohne versteckte Gebühren.",
+    answer: `Die Kosten richten sich nach dem Aufwand, der Lage der Verstopfung und der gewählten Methode. Transparente Festpreise beginnen bei etwa 89 €. ${SITE.travelFeeShort} – bei Beauftragung verrechnet. Vor Beginn der Arbeit erhalten Sie immer eine klare Kostenübersicht.`,
   },
   {
     question: "Wie entsteht eine Rohrverstopfung?",
@@ -37,6 +38,6 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Sind Hausmittel oder Chemikalien zu empfehlen?",
     answer:
-      "Viele Hausmittel wie Essig & Natron helfen nur bei leichten Ablagerungen. Chemische Rohrreiniger aus dem Handel sind oft aggressiv, schädigen Rohre und die Umwelt. Wir empfehlen, bei hartnäckigen Verstopfungen immer den Fachmann zu rufen.",
+      "Viele Hausmittel wie Essig & Natron helfen nur bei leichten Ablagerungen. Chemische Rohrreiniger aus dem Handel sind oft aggressiv, schädigen Rohre und die Umwelt. Wir empfehlen, bei hartnäckigen Verstopfungen professionelle Hilfe zu rufen.",
   },
 ];

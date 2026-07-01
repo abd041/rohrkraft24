@@ -13,7 +13,7 @@ const PLANS = [
       "Verstopfung beseitigen",
       "Waschbecken, Dusche, WC",
       "Mechanische Reinigung",
-      "Keine Anfahrtskosten",
+      SITE.travelFeeShort,
     ],
   },
   {
@@ -26,6 +26,7 @@ const PLANS = [
       "Alle Rohrarten",
       "Festpreis-Garantie",
       "24h Notdienst inklusive",
+      SITE.travelFeeShort,
     ],
   },
   {
@@ -37,6 +38,7 @@ const PLANS = [
       "Urinstein & Kalk entfernen",
       "Fettablagerungen beseitigen",
       "Zustandsbericht",
+      SITE.travelFeeShort,
     ],
   },
 ];
@@ -55,8 +57,8 @@ export function Pricing({ cityLabel, phone }: PricingProps = {}) {
           <p className="section-label">Faire Preise</p>
           <h2 className="section-title mb-4">Faire Festpreise – ohne versteckte Kosten</h2>
           <p className="section-subtitle mx-auto">
-            Bei uns wissen Sie vorher, was es kostet. Keine Anfahrtskosten, keine
-            Wochenendzuschläge.
+            Bei uns wissen Sie vorher, was es kostet. {SITE.travelFeeShort} – bei Beauftragung
+            verrechnet. Transparente Festpreise vor Arbeitsbeginn.
           </p>
         </div>
 
@@ -102,7 +104,7 @@ export function Pricing({ cityLabel, phone }: PricingProps = {}) {
 
         <p className="pricing__disclaimer">
           * Alle Preise inkl. MwSt. Endpreis wird vor Arbeitsbeginn vereinbart – garantiert
-          keine Überraschungen.
+          keine Überraschungen. {SITE.travelFeeNote}
         </p>
       </div>
     </section>

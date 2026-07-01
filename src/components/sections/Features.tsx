@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { SITE } from "@/lib/constants";
 import { FeatureCardIcon, FeatureStatIcon } from "@/components/icons";
 
 const FEATURES = [
@@ -9,7 +10,7 @@ const FEATURES = [
   },
   {
     title: "Erfahrene Monteure",
-    desc: "Unsere top ausgebildeten Techniker arbeiten präzise, effizient und hinterlassen Ihre Räume sauber.",
+    desc: "Unsere Techniker arbeiten präzise, effizient und hinterlassen Ihre Räume sauber.",
   },
   {
     title: "24/7 Persönlicher Service",
@@ -17,13 +18,13 @@ const FEATURES = [
   },
 ];
 
-const STATS = [
-  { value: "30–60 Min.", label: "Reaktionszeit" },
-  { value: "Gratis Anfahrt", label: "Keine Zusatzkosten" },
-  { value: "0€ Schadenscheck", label: "Kostenfrei vor Ort" },
-];
-
 export function Features() {
+  const stats = [
+    { value: SITE.reactionTime, label: "Reaktionszeit" },
+    { value: SITE.travelFeeShort, label: SITE.travelFeeNote },
+    { value: "Festpreis", label: "Vor Arbeitsbeginn vereinbart" },
+  ] as const;
+
   return (
     <section className="features-section">
       <div className="container">
@@ -46,7 +47,7 @@ export function Features() {
         </div>
 
         <div className="features__stats">
-          {STATS.map((stat, i) => (
+          {stats.map((stat, i) => (
             <Fragment key={stat.label}>
               {i > 0 && <div className="features__stat-divider" />}
               <div className="features__stat">

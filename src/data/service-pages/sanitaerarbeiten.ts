@@ -1,7 +1,7 @@
-import type { ServicePageData } from "./types";
+import type { ServicePageBase } from "./types";
 import { IMAGES as IMG } from "@/lib/constants";
 
-export const SANITAERARBEITEN_PAGE: ServicePageData = {
+export const SANITAERARBEITEN_PAGE: ServicePageBase = {
   slug: "sanitaerarbeiten",
   breadcrumbLabel: "Sanitärarbeiten",
   mapKeyword: "sanitaerarbeiten",
@@ -13,7 +13,7 @@ export const SANITAERARBEITEN_PAGE: ServicePageData = {
     image: {
       src: `${IMG}/toilette-verstopft-notfall-bad.webp`,
       srcSm: `${IMG}/toilette-verstopft-notfall-bad-sm.webp`,
-      alt: "Sanitärarbeiten – Rohrretter24 Berlin",
+      alt: "Sanitärarbeiten – RohrRetter24 Berlin",
     },
   },
 };

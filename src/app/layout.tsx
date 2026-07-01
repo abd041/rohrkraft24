@@ -7,19 +7,27 @@ import { CallbackModal } from "@/components/modals/CallbackModal";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { inter } from "./inter";
+import { geistSans, nexa } from "./fonts";
 import "./globals.css";
 
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE } from "@/lib/constants";
+import { getSiteStructuredData } from "@/lib/schema";
+
 export const metadata: Metadata = {
-  title: "Rohrreinigung Berlin ▷ 24h Notdienst | Rohrretter24",
+  title: `Rohrreinigung Berlin ▷ 24h Notdienst | ${SITE.name}`,
   description:
-    "Rohrreinigung Berlin ✔ 24/7 Notdienst ✔ 30–60 Min. Reaktionszeit ✔ Kamera-Inspektion, Rohrreparatur & Sanitär in Berlin und Umgebung (100 km). Gratis Anfahrt!",
+    `Rohrreinigung Berlin ✔ 24/7 Notdienst ✔ ${SITE.reactionTime} Reaktionszeit ✔ Kamera-Inspektion, Rohrreparatur & Sanitär in Berlin und Umgebung (100 km). ${SITE.travelFeeShort}.`,
+  icons: {
+    icon: "/images/logo.svg",
+    apple: "/images/logo.svg",
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#153A6B",
+  themeColor: "#002854",
 };
 
 export default function RootLayout({
@@ -29,7 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className={inter.className}>
+      <body className={`${geistSans.variable} ${nexa.className}`}>
+        <JsonLd data={getSiteStructuredData()} />
         <ModalProvider>
           <Header />
           <main>{children}</main>
