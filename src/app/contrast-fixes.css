@@ -66,8 +66,10 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
+/* 24h Notdienst: high-contrast on white header background.
+   Overrides any accidental #fff value from earlier rules. */
 .header__notdienst {
-  color: #fff;
+  color: var(--orange);
 }
 
 /* Blog sidebar CTA on brand blue */

@@ -1,5 +1,5 @@
 import { CONTACT_TRUST_POINTS } from "@/data/contact";
-import { SITE } from "@/lib/constants";
+import { OPENING_HOURS, SITE } from "@/lib/constants";
 
 export function ContactSidebar() {
   return (
@@ -47,8 +47,10 @@ export function ContactSidebar() {
           </div>
           <div className="kontakt-info-text">
             <span className="kontakt-info-label">Bürozeiten</span>
-            <span className="kontakt-info-value">Mo–Fr 8:00–20:00</span>
-            <span className="kontakt-info-sub">Notdienst: 24/7 · auch Sa & So</span>
+            <span className="kontakt-info-value">{OPENING_HOURS.display[0]}</span>
+            <span className="kontakt-info-sub">
+              {OPENING_HOURS.display[1]} · {OPENING_HOURS.display[2]} · Notdienst 24/7
+            </span>
           </div>
         </div>
       </div>
@@ -88,7 +90,7 @@ export function ContactSidebar() {
           ))}
         </div>
         <div className="kontakt-rating-text">
-          <strong>4,9</strong> · 127 Google-Bewertungen
+          <strong>{String(SITE.rating).replace(".", ",")}</strong> · {SITE.reviewCount} Google-Bewertungen
         </div>
       </div>
     </aside>

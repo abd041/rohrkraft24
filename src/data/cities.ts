@@ -1,6 +1,19 @@
 import berlinCities from "./berlin-cities.json";
 
-export type CityEntry = { name: string; slug: string; shortName?: string; region?: string };
+export type CityEntry = {
+  name: string;
+  slug: string;
+  shortName?: string;
+  region?: string;
+  /** Main postal codes for the city (used in page copy and localHtml snippets) */
+  postalCodes?: string[];
+  /** Key districts or Ortsteile within the city */
+  districts?: string[];
+  /** Straight-line km from Berlin city centre – used for hero body text */
+  distanceFromBerlinKm?: number;
+  /** Nearby city names for natural copy context */
+  nearbyAreas?: string[];
+};
 
 export const BERLIN_CITIES = berlinCities as CityEntry[];
 

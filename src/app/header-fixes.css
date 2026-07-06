@@ -8,7 +8,7 @@
 
 .site-logo {
   width: auto;
-  height: 36px;
+  height: 44px;
   display: block;
 }
 
@@ -25,6 +25,7 @@
 
 .footer__bottom-brand .site-logo {
   height: 34px;
+  filter: brightness(0) invert(1);
 }
 
 .footer__bottom-brand p {
@@ -43,10 +44,36 @@
   white-space: nowrap;
 }
 
-.nav__link--icon svg,
+/* ---------------------------------------------------------------
+   Global SVG icon alignment fix
+   SVGs default to display:inline / vertical-align:baseline which
+   causes them to sit lower than adjacent text in flex rows.
+   Rendering them as block flex-items removes the baseline gap.
+--------------------------------------------------------------- */
+.btn svg,
+.hero__trust-item svg,
 .header__email svg,
-.dropdown__trigger svg {
+.header__notdienst svg,
+.nav__link--icon svg,
+.dropdown__trigger svg,
+.mobile-nav__cta svg,
+.mini-cta__btn svg,
+.notdienst-banner__cta svg,
+.badge-item svg,
+.info-bar__item svg,
+.info-bar__phone svg {
+  display: block;
   flex-shrink: 0;
+}
+
+/* header__actions row: ensure vertical centering of phone + notdienst */
+.header__actions {
+  align-items: center;
+}
+
+/* header inner row: ensure logo, nav, and actions all sit at mid-height */
+.header__inner {
+  align-items: center;
 }
 
 .mobile-nav__cta--navy {

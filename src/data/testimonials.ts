@@ -1,3 +1,7 @@
+// TODO: Replace static sample reviews with live Google Reviews integration before launch.
+// These are manually written placeholder testimonials. No Google Places API / Business Profile
+// integration currently exists in this project. To show real reviews, connect the Google Places
+// API (or a third-party widget) and fetch reviews via an API route (e.g. src/app/api/reviews/).
 export const TESTIMONIALS = [
   {
     name: "Stefan Müller",

@@ -1,5 +1,5 @@
-import { EQUIPMENT_ITEMS } from "@/lib/constants";
-import { CheckIcon } from "@/components/icons";
+import Image from "next/image";
+import { EQUIPMENT_ITEMS } from "@/data/equipment";
 
 export function Equipment() {
   return (
@@ -13,23 +13,26 @@ export function Equipment() {
             professionelle Ausrüstung – von TV-Kameras bis Rothenberger und RIDGID Systemen.
           </p>
         </div>
-        <ul
-          className="services__grid"
-          style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", listStyle: "none", padding: 0 }}
-        >
+
+        <div className="equipment__grid">
           {EQUIPMENT_ITEMS.map((item) => (
-            <li
-              key={item}
-              className="card"
-              style={{ padding: "1.25rem 1.5rem", display: "flex", gap: "0.75rem", alignItems: "flex-start" }}
-            >
-              <span style={{ color: "var(--accent)", flexShrink: 0, marginTop: 2 }}>
-                <CheckIcon />
-              </span>
-              <span style={{ color: "var(--navy)", fontWeight: 600, fontSize: "0.9375rem" }}>{item}</span>
-            </li>
+            <div key={item.title} className="equipment-card rk-reveal">
+              <div className="equipment-card__img-wrap">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  width={400}
+                  height={240}
+                  className="equipment-card__img"
+                />
+              </div>
+              <div className="equipment-card__body">
+                <h3 className="equipment-card__title">{item.title}</h3>
+                <p className="equipment-card__desc">{item.description}</p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

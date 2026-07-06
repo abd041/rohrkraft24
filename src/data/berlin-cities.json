@@ -1,5 +1,5 @@
 [
-  { "name": "Berlin Mitte", "slug": "berlin-mitte", "shortName": "Berlin Mitte", "region": "Berlin" },
+  { "name": "Berlin Mitte", "slug": "berlin-mitte", "shortName": "Berlin Mitte", "region": "Berlin", "postalCodes": ["10115", "10117", "10119", "10178", "10179"], "districts": ["Mitte", "Tiergarten", "Wedding", "Gesundbrunnen"], "distanceFromBerlinKm": 0, "nearbyAreas": ["Berlin-Prenzlauer Berg", "Berlin-Kreuzberg", "Berlin-Charlottenburg"] },
   { "name": "Berlin Friedrichshain-Kreuzberg", "slug": "berlin-friedrichshain-kreuzberg", "shortName": "Friedrichshain-Kreuzberg", "region": "Berlin" },
   { "name": "Berlin Pankow", "slug": "berlin-pankow", "shortName": "Berlin Pankow", "region": "Berlin" },
   { "name": "Berlin Charlottenburg-Wilmersdorf", "slug": "berlin-charlottenburg-wilmersdorf", "shortName": "Charlottenburg-Wilmersdorf", "region": "Berlin" },
@@ -18,7 +18,7 @@
   { "name": "Werneuchen", "slug": "werneuchen", "shortName": "Werneuchen", "region": "Landkreis Barnim" },
   { "name": "Biesenthal", "slug": "biesenthal", "shortName": "Biesenthal", "region": "Landkreis Barnim" },
 
-  { "name": "Oranienburg", "slug": "oranienburg", "shortName": "Oranienburg", "region": "Landkreis Oberhavel" },
+  { "name": "Oranienburg", "slug": "oranienburg", "shortName": "Oranienburg", "region": "Landkreis Oberhavel", "postalCodes": ["16515"], "districts": ["Oranienburg", "Lehnitz", "Wensickendorf", "Zehlendorf"], "distanceFromBerlinKm": 40, "nearbyAreas": ["Hennigsdorf", "Hohen Neuendorf", "Zehdenick"] },
   { "name": "Hennigsdorf", "slug": "hennigsdorf", "shortName": "Hennigsdorf", "region": "Landkreis Oberhavel" },
   { "name": "Hohen Neuendorf", "slug": "hohen-neuendorf", "shortName": "Hohen Neuendorf", "region": "Landkreis Oberhavel" },
   { "name": "Velten", "slug": "velten", "shortName": "Velten", "region": "Landkreis Oberhavel" },
@@ -26,14 +26,14 @@
   { "name": "Zehdenick", "slug": "zehdenick", "shortName": "Zehdenick", "region": "Landkreis Oberhavel" },
   { "name": "Fürstenberg/Havel", "slug": "fuerstenberg-havel", "shortName": "Fürstenberg/Havel", "region": "Landkreis Oberhavel" },
 
-  { "name": "Falkensee", "slug": "falkensee", "shortName": "Falkensee", "region": "Landkreis Havelland" },
+  { "name": "Falkensee", "slug": "falkensee", "shortName": "Falkensee", "region": "Landkreis Havelland", "postalCodes": ["14612"], "districts": ["Falkensee", "Waldstadt", "Seegefeld"], "distanceFromBerlinKm": 25, "nearbyAreas": ["Berlin-Spandau", "Dallgow-Döberitz", "Nauen"] },
   { "name": "Nauen", "slug": "nauen", "shortName": "Nauen", "region": "Landkreis Havelland" },
   { "name": "Brieselang", "slug": "brieselang", "shortName": "Brieselang", "region": "Landkreis Havelland" },
   { "name": "Dallgow-Döberitz", "slug": "dallgow-doeberitz", "shortName": "Dallgow-Döberitz", "region": "Landkreis Havelland" },
   { "name": "Ketzin/Havel", "slug": "ketzin-havel", "shortName": "Ketzin/Havel", "region": "Landkreis Havelland" },
   { "name": "Rathenow", "slug": "rathenow", "shortName": "Rathenow", "region": "Landkreis Havelland" },
 
-  { "name": "Potsdam", "slug": "potsdam", "shortName": "Potsdam", "region": "Landkreis Potsdam-Mittelmark" },
+  { "name": "Potsdam", "slug": "potsdam", "shortName": "Potsdam", "region": "Landkreis Potsdam-Mittelmark", "postalCodes": ["14467", "14469", "14471", "14473", "14476", "14478", "14480", "14482"], "districts": ["Innenstadt", "Babelsberg", "Bornstedt", "Drewitz", "Golm", "Marquardt"], "distanceFromBerlinKm": 35, "nearbyAreas": ["Teltow", "Kleinmachnow", "Werder (Havel)", "Berlin-Wannsee"] },
   { "name": "Teltow", "slug": "teltow", "shortName": "Teltow", "region": "Landkreis Potsdam-Mittelmark" },
   { "name": "Kleinmachnow", "slug": "kleinmachnow", "shortName": "Kleinmachnow", "region": "Landkreis Potsdam-Mittelmark" },
   { "name": "Stahnsdorf", "slug": "stahnsdorf", "shortName": "Stahnsdorf", "region": "Landkreis Potsdam-Mittelmark" },
@@ -50,7 +50,7 @@
   { "name": "Luckenwalde", "slug": "luckenwalde", "shortName": "Luckenwalde", "region": "Landkreis Teltow-Fläming" },
   { "name": "Trebbin", "slug": "trebbin", "shortName": "Trebbin", "region": "Landkreis Teltow-Fläming" },
 
-  { "name": "Königs Wusterhausen", "slug": "koenigs-wusterhausen", "shortName": "Königs Wusterhausen", "region": "Landkreis Dahme-Spreewald" },
+  { "name": "Königs Wusterhausen", "slug": "koenigs-wusterhausen", "shortName": "Königs Wusterhausen", "region": "Landkreis Dahme-Spreewald", "postalCodes": ["15711", "15712", "15713"], "districts": ["Königs Wusterhausen", "Niederlehme", "Senzig", "Kablow"], "distanceFromBerlinKm": 30, "nearbyAreas": ["Zeuthen", "Wildau", "Schönefeld"] },
   { "name": "Wildau", "slug": "wildau", "shortName": "Wildau", "region": "Landkreis Dahme-Spreewald" },
   { "name": "Zeuthen", "slug": "zeuthen", "shortName": "Zeuthen", "region": "Landkreis Dahme-Spreewald" },
   { "name": "Schönefeld", "slug": "schoenefeld", "shortName": "Schönefeld", "region": "Landkreis Dahme-Spreewald" },

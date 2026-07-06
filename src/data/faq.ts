@@ -33,7 +33,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "Kann man Rohre reparieren ohne aufzugraben?",
     answer:
-      "Ja. Mithilfe grabenloser Sanierungstechniken können beschädigte Rohre von innen saniert werden – z. B. durch das Inliner-Verfahren. Der Garten oder Boden bleibt unberührt. Schnell, sauber und kostensparend.",
+      "Bei aufgrabungsfreien Reparaturen kommt es auf den Einzelfall an. Häufig lässt sich ein Rohrschaden gezielt lokalisieren und punktuell reparieren, ohne den gesamten Leitungsverlauf freizulegen. Sprechen Sie uns an, wir prüfen vor Ort, welche Lösung in Ihrem Fall sinnvoll ist.",
   },
   {
     question: "Sind Hausmittel oder Chemikalien zu empfehlen?",

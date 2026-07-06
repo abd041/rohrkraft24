@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/data/blog";
 
@@ -28,12 +29,12 @@ export function Blog() {
               style={{ transitionDelay: `${((index + 2) % 6) * 0.07}s` }}
             >
               <div className="blog-card__img">
-                <img
+                <Image
                   src={post.image}
                   alt={post.alt}
                   width={500}
                   height={333}
-                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                 />
                 <span className="blog-card__cat">{post.category}</span>
               </div>
@@ -41,7 +42,6 @@ export function Blog() {
                 <h3 className="blog-card__title">{post.title}</h3>
                 <p className="blog-card__excerpt">{post.excerpt}</p>
                 <div className="blog-card__footer">
-                  <span className="blog-card__date">{post.date}</span>
                   <span className="blog-card__read">Weiterlesen →</span>
                 </div>
               </div>

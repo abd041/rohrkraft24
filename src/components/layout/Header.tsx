@@ -16,7 +16,7 @@ export function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <Logo height={36} />
+        <Logo height={44} variant="header" />
 
         <nav className="nav">
           <Link href="/" className="nav__link nav__link--icon">
@@ -94,7 +94,7 @@ export function Header() {
       <div className={`mobile-nav${mobileOpen ? " open" : ""}`}>
         <div className="mobile-nav__panel">
           <div className="mobile-nav__header">
-            <Logo height={32} className="site-logo--mobile-nav" />
+            <Logo height={32} className="site-logo--mobile-nav" variant="header" />
             <button
               className="mobile-nav__close"
               aria-label="Menü schließen"

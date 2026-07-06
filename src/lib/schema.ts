@@ -1,8 +1,21 @@
-import { COPY, SERVICE_LINKS, SITE } from "@/lib/constants";
+import { COPY, OPENING_HOURS, SERVICE_LINKS, SITE } from "@/lib/constants";
 
 const ORG_ID = `${SITE.website}/#organization`;
 const WEBSITE_ID = `${SITE.website}/#website`;
 
+/**
+ * Site-wide PlumbingService + WebSite @graph.
+ * Injected on every page via the root layout.
+ *
+ * TODO (pre-launch):
+ *   - geo: current coordinates point to Berlin city centre (52.520008, 13.404954).
+ *     Replace with the exact lat/lng of Mühlenstr. 8a, 14167 Berlin once verified
+ *     (Zehlendorf area – approx. 52.432, 13.258 but confirm via Google Maps).
+ *   - aggregateRating: removed intentionally – the values in SITE.rating / SITE.reviewCount
+ *     are static placeholders, not live data from Google Reviews API.
+ *     Re-add this block only after connecting a real Google Business Profile / Places API
+ *     integration so the numbers are verifiable.
+ */
 export function getSiteStructuredData() {
   return {
     "@context": "https://schema.org",
@@ -15,7 +28,7 @@ export function getSiteStructuredData() {
         url: SITE.website,
         logo: `${SITE.website}/images/logo.svg`,
         image: `${SITE.website}/images/logo.svg`,
-        telephone: "+4917620222200",
+        telephone: SITE.phoneHref.replace("tel:", ""),
         email: SITE.email,
         description:
           `Rohrreinigung, Kamera-Inspektion, Rohrreparatur und 24h Notdienst in Berlin und Umgebung (100 km). Festpreise und ${COPY.team}.`,
@@ -40,35 +53,15 @@ export function getSiteStructuredData() {
           },
           geoRadius: 100000,
         },
-        openingHoursSpecification: [
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "07:00",
-            closes: "20:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "Saturday",
-            opens: "08:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "Sunday",
-            opens: "10:00",
-            closes: "16:00",
-          },
-        ],
+        openingHoursSpecification: OPENING_HOURS.specs.map((s) => ({
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: s.dayOfWeek,
+          opens: s.opens,
+          closes: s.closes,
+        })),
         priceRange: "€€",
         currenciesAccepted: "EUR",
         paymentAccepted: "Cash, Credit Card, Bank Transfer",
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: SITE.rating,
-          bestRating: 5,
-          ratingCount: SITE.reviewCount,
-        },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Leistungen",
@@ -101,5 +94,49 @@ export function getSiteStructuredData() {
         publisher: { "@id": ORG_ID },
       },
     ],
+  };
+}
+
+/**
+ * Per-city-service-page JSON-LD.
+ *
+ * Outputs a Service node with:
+ *  - city-specific areaServed
+ *  - a back-reference to the global PlumbingService organisation via @id
+ *
+ * Injected only on /[service]-[city]/ pages via CityServicePageTemplate.
+ */
+export function getCityPageSchema(data: {
+  cityName: string;
+  serviceLabel: string;
+  slug: string;
+  heroBrief?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE.website}/${data.slug}/#service`,
+    name: `${data.serviceLabel} ${data.cityName}`,
+    serviceType: data.serviceLabel,
+    description:
+      data.heroBrief ??
+      `Professionelle ${data.serviceLabel} in ${data.cityName} und Umgebung – schnell, zuverlässig und zum Festpreis.`,
+    provider: {
+      "@type": "PlumbingService",
+      "@id": ORG_ID,
+      name: SITE.name,
+      telephone: SITE.phoneHref.replace("tel:", ""),
+    },
+    areaServed: {
+      "@type": "City",
+      name: data.cityName,
+    },
+    url: `${SITE.website}/${data.slug}/`,
+    offers: {
+      "@type": "Offer",
+      price: String(SITE.travelFee),
+      priceCurrency: "EUR",
+      description: SITE.travelFeeNote,
+    },
   };
 }

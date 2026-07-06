@@ -112,7 +112,7 @@ export const SERVICE_CONTENTS: Record<string, ServicePageContent> = {
 
   rohrreparatur: {
     intro:
-      "Undichte Rohre, Risse oder beschädigte Anschlüsse können schnell teuer werden – von Feuchtigkeit im Mauerwerk bis zum Wasserschaden. Wir reparieren und sanieren HT-, KG-, Kunststoff-, Kupfer- und Stahlrohre fachgerecht: von punktuellen Reparaturen bis zur grabenlosen Inliner-Sanierung im Raum Berlin und Umgebung.",
+      "Undichte Rohre, Risse oder beschädigte Anschlüsse können schnell teuer werden – von Feuchtigkeit im Mauerwerk bis zum Wasserschaden. Wir reparieren und sanieren HT-, KG-, Kunststoff-, Kupfer- und Stahlrohre fachgerecht – von punktuellen Reparaturen bis zur umfassenden Rohrsanierung im Raum Berlin und Umgebung.",
     whenNeeded: {
       title: "Anzeichen für eine nötige Rohrreparatur",
       items: [
@@ -133,7 +133,7 @@ export const SERVICE_CONTENTS: Record<string, ServicePageContent> = {
         },
         {
           title: "Lösungsvorschlag",
-          text: "Je nach Schaden: lokale Reparatur, Muffentausch, Inliner oder Leitungsabschnitt. Festpreis vor Start.",
+          text: "Je nach Schaden: lokale Reparatur, Muffentausch oder Leitungsabschnitt. Festpreis vor Start.",
         },
         {
           title: "Durchführung",
@@ -152,7 +152,7 @@ export const SERVICE_CONTENTS: Record<string, ServicePageContent> = {
         "Undichte Siphon- oder WC-Anschlüsse",
         "Korrosion an Warmwasserleitung im Keller",
         "Beschädigung nach Bohrarbeiten",
-        "Grabenlose Sanierung mit Inliner-Verfahren",
+        "Punktuelle Reparatur ohne vollständiges Aufgraben",
       ],
     },
     pricing: `${pricingBase} Kleine Reparaturen ab etwa 150 €, umfangreichere Sanierungen nach individuellem Angebot.`,

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import regions from "@/data/einsatzgebiete-regions.json";
-import { SubpageHero } from "@/components/blocks/SubpageHero";
+import { Breadcrumb } from "@/components/blocks/Breadcrumb";
 import { CITY_COUNT } from "@/data/cities";
 import { SITE } from "@/lib/constants";
 import { PhoneIcon } from "@/components/icons";
@@ -21,37 +21,47 @@ const LEGEND = [
 export function EinsatzgebietePageTemplate() {
   return (
     <>
-      <SubpageHero
-        breadcrumb="Einsatzgebiete"
-        label="Unser Einsatzgebiet"
-        title="Rohrreinigung in Berlin & Umgebung"
-        subtitle="Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von 100 km für Sie da. Schnell, fair und rund um die Uhr."
-      />
+      <Breadcrumb current="Einsatzgebiete" />
 
-      <section className="ez-stats-band">
+      <section className="ez-hero">
         <div className="container">
-          <div className="ez-hero__stats">
-            <div className="ez-stat">
-              <span className="ez-stat__num">{CITY_COUNT}</span>
-              <span className="ez-stat__label">Städte im Einsatz</span>
+          <div className="ez-hero__inner">
+            <div>
+              <p className="subpage-hero__label" style={{ display: "inline-block", marginBottom: "1rem" }}>
+                Unser Einsatzgebiet
+              </p>
+              <h1 className="ez-hero__title">Rohrreinigung in Berlin &amp; Umgebung</h1>
+              <p className="ez-hero__sub">
+                Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von 100 km für Sie da.
+                Schnell, fair und rund um die Uhr.
+              </p>
+              <a
+                href={SITE.phoneHref}
+                className="btn btn-primary"
+                style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}
+              >
+                <PhoneIcon /> Jetzt anrufen
+              </a>
             </div>
-            <div className="ez-stat">
-              <span className="ez-stat__num">9</span>
-              <span className="ez-stat__label">Dienstleistungen</span>
+
+            <div className="ez-hero__stats">
+              <div className="ez-stat">
+                <span className="ez-stat__num">{CITY_COUNT}</span>
+                <span className="ez-stat__label">Städte im Einsatz</span>
+              </div>
+              <div className="ez-stat">
+                <span className="ez-stat__num">9</span>
+                <span className="ez-stat__label">Dienstleistungen</span>
+              </div>
+              <div className="ez-stat">
+                <span className="ez-stat__num">24/7</span>
+                <span className="ez-stat__label">Notdienst</span>
+              </div>
+              <div className="ez-stat">
+                <span className="ez-stat__num">{SITE.reactionTime}</span>
+                <span className="ez-stat__label">Reaktionszeit</span>
+              </div>
             </div>
-            <div className="ez-stat">
-              <span className="ez-stat__num">24/7</span>
-              <span className="ez-stat__label">Notdienst</span>
-            </div>
-            <div className="ez-stat">
-              <span className="ez-stat__num">{SITE.reactionTime}</span>
-              <span className="ez-stat__label">Reaktionszeit</span>
-            </div>
-          </div>
-          <div className="ez-stats-cta">
-            <a href={SITE.phoneHref} className="btn btn-primary" style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}>
-              <PhoneIcon /> Jetzt anrufen
-            </a>
           </div>
         </div>
       </section>

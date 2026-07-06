@@ -4,6 +4,7 @@ import { StaticPageTemplate } from "@/components/templates/StaticPageTemplate";
 import { getImpressumBlocks } from "@/lib/impressum";
 import { getPageMetadata } from "@/lib/metadata";
 import { getStaticPageData } from "@/lib/static-pages";
+import { SITE } from "@/lib/constants";
 
 const SLUG = "impressum";
 
@@ -17,7 +18,7 @@ export default function ImpressumPage() {
       breadcrumb="Impressum"
       label="Rechtliches"
       h1={page.h1}
-      subtitle="Angaben gemäß § 5 TMG und Pflichtinformationen zu RohrRetter24 UG"
+      subtitle={`Angaben gemäß § 5 TMG und Pflichtinformationen zu ${SITE.legalName}`}
       blocks={getImpressumBlocks()}
     />
   );

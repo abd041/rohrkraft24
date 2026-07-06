@@ -1,7 +1,10 @@
+import { SITE } from "@/lib/constants";
+
 export function WhatsAppButton() {
+  const waNumber = SITE.phoneHref.replace("tel:+", "");
   return (
     <a
-      href="https://wa.me/4917620222200"
+      href={`https://wa.me/${waNumber}`}
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-btn"

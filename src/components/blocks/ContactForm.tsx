@@ -47,7 +47,7 @@ export function ContactForm() {
             <label htmlFor="telefon">
               Telefon <span className="req-star">*</span>
             </label>
-            <input type="tel" id="telefon" name="telefon" placeholder="0176 2022 2200" required autoComplete="tel" />
+            <input type="tel" id="telefon" name="telefon" placeholder="z. B. 030 12345678" required autoComplete="tel" />
           </div>
           <div className="form-group">
             <label htmlFor="stadt">

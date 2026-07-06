@@ -49,7 +49,7 @@ export function About() {
 
           <figure className="team__photo">
             <Image
-              src={`${IMAGES}/rohrkraft24-team-rohrreinigung-hessen.webp`}
+              src={`${IMAGES}/rohrretter24-team-berlin-rohrreinigung.webp`}
               alt={`${SITE.name} Team – Professioneller Service in Berlin`}
               width={800}
               height={600}

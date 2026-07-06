@@ -28,10 +28,11 @@ export function Hero() {
               Ihr 24h-Notdienst in Berlin und Umgebung (100 km) – schnell, zuverlässig & fair
             </p>
             <p className="hero__body">
-              Rohr verstopft? Abfluss blockiert? Wir sind in {SITE.reactionTime} bei Ihnen – in
-              Berlin, Potsdam, Oranienburg und im gesamten Umkreis von 100 km. Unser {COPY.team}
+              Rohr verstopft? Abfluss verstopft? Wir sind in 30–60 Minuten bei Ihnen – in
+              Berlin, Potsdam, Oranienburg und im Umkreis von insgesamt 100 km. Unser {COPY.team}{" "}
               beseitigt Verstopfungen, repariert Rohrbrüche und hilft bei Sanitär-Notfällen –
-              zum garantierten Festpreis. {SITE.travelFeeShort} – {SITE.travelFeeNote}
+              zum garantierten Festpreis. {SITE.travelFeeShort} – bei Auftragserteilung wird die
+              Anfahrt angerechnet.
             </p>
 
             <div className="hero__trust">
@@ -73,10 +74,10 @@ export function Hero() {
             <picture>
               <source
                 media="(max-width:600px)"
-                srcSet={`${IMAGES}/rohrkraft24-team-hessen-sm.webp`}
+                srcSet={`${IMAGES}/rohrretter24-team-berlin-einsatz-sm.webp`}
               />
               <img
-                src={`${IMAGES}/rohrkraft24-team-hessen.webp`}
+                src={`${IMAGES}/rohrretter24-team-berlin-einsatz.webp`}
                 alt={`${SITE.name} Team – professionelle Rohrreinigung Berlin`}
                 width={900}
                 height={600}

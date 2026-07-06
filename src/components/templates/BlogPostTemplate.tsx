@@ -1,13 +1,20 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { BlogBreadcrumb } from "@/components/blocks/BlogBreadcrumb";
-import { SubpageHero } from "@/components/blocks/SubpageHero";
 import { BlogContent } from "@/components/blocks/BlogContent";
 import { PhoneIcon } from "@/components/icons";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { IMAGES, COPY, SITE } from "@/lib/constants";
 import { Logo } from "@/components/ui/Logo";
 import { getRelatedBlogPosts, type BlogPostData } from "@/lib/blog-posts";
+
+/*
+ * BLOG ARTICLE HERO VARIANT
+ * Switch the active variant by changing the value below:
+ *   "centered"  →  Variant A (default) – solid overlay, centered text
+ *   "magazine"  →  Variant B – gradient overlay, left-aligned editorial style
+ */
+const HERO_VARIANT: "centered" | "magazine" = "centered";
 
 const SERVICE_LINKS = [
   { href: "/rohrreinigung/", label: "Rohrreinigung" },
@@ -25,31 +32,41 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
   const related = getRelatedBlogPosts(post.slug);
   const imgBase = IMAGES;
 
+  const heroStyle = post.hero.image
+    ? ({
+        "--hero-img": `url(${imgBase}/${post.hero.image})`,
+        "--hero-img-sm": `url(${imgBase}/${post.hero.imageSm})`,
+        } as CSSProperties)
+    : undefined;
+
   return (
     <>
       <BlogBreadcrumb current={post.hero.title} />
 
-      <SubpageHero
-        label={post.hero.category}
-        title={post.hero.title}
-        meta={post.hero.meta.map((item) => (
-          <span key={item}>{item}</span>
-        ))}
-      />
+      {/* ── Blog Article Hero ─────────────────────────────────────
+          Variant A (--centered): solid overlay, content centred  ← DEFAULT
+          Variant B (--magazine): gradient overlay, editorial left
+          To switch: change HERO_VARIANT constant at top of file.
+      ──────────────────────────────────────────────────────────── */}
+      <section
+        className={`blog-article-hero blog-article-hero--${HERO_VARIANT}${!post.hero.image ? " blog-article-hero--no-image" : ""}`}
+        style={heroStyle}
+        aria-label={post.hero.title}
+      >
+        <div className="blog-article-hero__overlay" aria-hidden="true" />
+        <div className="blog-article-hero__content container">
+          <span className="blog-article-hero__cat">{post.hero.category}</span>
+          <h1 className="blog-article-hero__title">{post.hero.title}</h1>
+          <div className="blog-article-hero__meta">
+            {post.hero.meta.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section style={{ background: "white" }}>
         <div className="container">
-          <div className="blog-featured-image">
-            <Image
-              src={`${imgBase}/${post.hero.image}`}
-              alt={post.hero.alt}
-              width={1200}
-              height={420}
-              priority
-              style={{ width: "100%", height: "auto" }}
-            />
-          </div>
-
           <div className="blog-layout">
             <article className="blog-content">
               <BlogContent blocks={post.blocks} />
@@ -75,7 +92,7 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
 
               <div className="blog-author">
                 <div className="blog-author__avatar">
-                  <Logo height={40} href={null} />
+                  <Logo height={40} href={null} variant="header" />
                 </div>
                 <div>
                   <p className="blog-author__name">{SITE.name} Redaktion</p>

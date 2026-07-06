@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SubpageHero } from "@/components/blocks/SubpageHero";
 import { BLOG_POSTS } from "@/data/blog";
@@ -19,7 +20,13 @@ export function BlogIndexTemplate() {
             {BLOG_POSTS.map((post, index) => (
               <article key={post.href} className="blog-card rk-reveal" style={{ transitionDelay: `${index * 0.07}s` }}>
                 <Link href={post.href} className="blog-card__img">
-                  <img src={post.image} alt={post.alt} loading="lazy" width="400" height="220" />
+                  <Image
+                    src={post.image}
+                    alt={post.alt}
+                    width={400}
+                    height={220}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+                  />
                   <span className="blog-card__cat">{post.category}</span>
                 </Link>
                 <div className="blog-card__body">
@@ -30,7 +37,6 @@ export function BlogIndexTemplate() {
                   </h2>
                   <p className="blog-card__excerpt">{post.excerpt}</p>
                   <div className="blog-card__footer">
-                    <span className="blog-card__date">📅 {post.date}</span>
                     <Link href={post.href} className="blog-card__read">
                       Weiterlesen →
                     </Link>

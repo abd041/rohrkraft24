@@ -4,6 +4,7 @@ import { CityLocalHtml } from "@/components/blocks/CityLocalHtml";
 import { CityNearby } from "@/components/blocks/CityNearby";
 import { CityServiceBreadcrumb } from "@/components/blocks/CityServiceBreadcrumb";
 import { CityServiceHero } from "@/components/blocks/CityServiceHero";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { About } from "@/components/sections/About";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Features } from "@/components/sections/Features";
@@ -14,6 +15,7 @@ import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { TrustMarquee } from "@/components/sections/TrustMarquee";
 import type { CityPageData } from "@/lib/city-pages";
+import { getCityPageSchema } from "@/lib/schema";
 
 type CityServicePageTemplateProps = {
   page: CityPageData;
@@ -24,6 +26,14 @@ export function CityServicePageTemplate({ page }: CityServicePageTemplateProps) 
 
   return (
     <>
+      <JsonLd
+        data={getCityPageSchema({
+          cityName: page.cityName,
+          serviceLabel: page.serviceLabel,
+          slug: page.slug,
+          heroBrief: page.hero.body,
+        })}
+      />
       <CityServiceBreadcrumb
         serviceLabel={page.serviceLabel}
         serviceHref={page.serviceHref}

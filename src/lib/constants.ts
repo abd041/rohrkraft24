@@ -29,6 +29,12 @@ export const SITE = {
 /**
  * Impressum-Pflichtangaben – nach notarieller Eintragung hier eintragen.
  * Leere Strings zeigen einen Platzhaltertext auf der Impressum-Seite.
+ *
+ * TODO (pre-launch checklist):
+ *   hrbNumber        – HRB-Nr. nach notarieller Eintragung eintragen
+ *   registerCourt    – zuständiges Registergericht (z. B. "Amtsgericht Berlin-Charlottenburg")
+ *   managingDirectors – Geschäftsführer/in(nen) namentlich eintragen
+ *   vatId            – USt-IdNr. nach Vergabe durch das Finanzamt eintragen
  */
 export const LEGAL = {
   hrbNumber: "",
@@ -37,6 +43,29 @@ export const LEGAL = {
   vatId: "",
   pendingNote:
     "Wird nach Abschluss der notariellen Eintragung bzw. nach Vergabe durch das Finanzamt ergänzt.",
+} as const;
+
+/**
+ * Business opening hours — single source of truth for both UI display and JSON-LD schema.
+ * Update here when hours change so both schema.ts and any UI components stay in sync.
+ *
+ * TODO (pre-launch): confirm exact hours with the client before going live.
+ */
+export const OPENING_HOURS = {
+  /** Schema.org-formatted OpeningHoursSpecification entries for JSON-LD */
+  specs: [
+    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "20:00" },
+    { dayOfWeek: ["Saturday"], opens: "08:00", closes: "18:00" },
+    { dayOfWeek: ["Sunday"], opens: "10:00", closes: "16:00" },
+  ],
+  /** Human-readable summary (single-line, e.g. for trust badges) */
+  display: ["Mo–Fr: 07:00–20:00 Uhr", "Sa: 08:00–18:00 Uhr", "So: 10:00–16:00 Uhr"],
+  /** Structured rows for footer / contact sidebar table display */
+  rows: [
+    { label: "Montag – Freitag", time: "07:00 – 20:00" },
+    { label: "Samstag",          time: "08:00 – 18:00" },
+    { label: "Sonntag",          time: "10:00 – 16:00" },
+  ],
 } as const;
 
 /** §2.2 – genehmigte, rechtlich unbedenkliche Formulierungen */
@@ -73,14 +102,4 @@ export const SERVICE_LINKS = [
   { label: "Sanitärarbeiten", href: "/sanitaerarbeiten", icon: "sanitaerarbeiten" },
   { label: "Wasserschaden", href: "/wasserschaden", icon: "wasserschaden" },
   { label: "24h Notdienst", href: "/notdienst", icon: "notdienst" },
-] as const;
-
-export const EQUIPMENT_ITEMS = [
-  "TV-Kamerasysteme",
-  "Rohrortungsgeräte",
-  "Rothenberger Rohrreinigungsmaschinen",
-  "RIDGID FlexShaft-Systeme",
-  "Nasssauger",
-  "Mobile Hochdruckspülung",
-  "Spezialwerkzeuge für Kunststoff-, Kupfer- und Stahlrohrarbeiten",
 ] as const;

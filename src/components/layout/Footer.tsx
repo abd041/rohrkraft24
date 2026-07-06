@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FOOTER_CITIES, CITY_COUNT } from "@/data/cities";
-import { SERVICE_LINKS, SITE } from "@/lib/constants";
+import { OPENING_HOURS, SERVICE_LINKS, SITE } from "@/lib/constants";
 import { Logo } from "@/components/ui/Logo";
 
 const QUICK_LINKS = [
@@ -44,18 +44,15 @@ export function Footer() {
           <div>
             <h3 className="footer__heading">Öffnungszeiten</h3>
             <div className="footer__hours">
-              <div className="footer__hours-row">
-                <span>Montag – Freitag</span>
-                <span className="footer__hours-time">07:00 – 20:00</span>
-              </div>
-              <div className="footer__hours-row">
-                <span>Samstag</span>
-                <span className="footer__hours-time">08:00 – 18:00</span>
-              </div>
-              <div className="footer__hours-row footer__hours-row--sunday">
-                <span>Sonntag</span>
-                <span className="footer__hours-time">10:00 – 16:00</span>
-              </div>
+              {OPENING_HOURS.rows.map((row, i) => (
+                <div
+                  key={row.label}
+                  className={`footer__hours-row${i === 2 ? " footer__hours-row--sunday" : ""}`}
+                >
+                  <span>{row.label}</span>
+                  <span className="footer__hours-time">{row.time}</span>
+                </div>
+              ))}
               <Link href="/notdienst/" className="footer__notdienst-badge">
                 24h Notdienst
               </Link>
@@ -144,7 +141,7 @@ export function Footer() {
       <div className="footer__bottom-bar">
         <div className="container footer__bottom">
           <div className="footer__bottom-brand">
-            <Logo height={34} />
+            <Logo height={34} variant="footer" />
             <p>© 2026 {SITE.name}. Alle Rechte vorbehalten.</p>
           </div>
           <div className="footer__bottom-links">
