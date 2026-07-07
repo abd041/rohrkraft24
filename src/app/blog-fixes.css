@@ -191,8 +191,16 @@
   flex-wrap: wrap;
 }
 
-/* blog-card category pill width cap */
+/* blog-card category pill – vertically centered label */
 .blog-card__cat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 1.625rem;
+  padding: 0 0.75rem;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  line-height: 1;
   width: fit-content;
   max-width: calc(100% - 1.5rem);
 }

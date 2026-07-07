@@ -43,7 +43,9 @@ export function Services({ cityLabel }: ServicesProps = {}) {
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
                 {service.bestseller && (
-                  <span className="service-card__badge-overlay">Bestseller</span>
+                  <span className="service-card__badge-overlay">
+                    <span>Bestseller</span>
+                  </span>
                 )}
               </div>
               <div className="service-card__body">

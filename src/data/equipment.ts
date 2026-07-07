@@ -1,17 +1,3 @@
-// TODO: Replace placeholder images with final matching photos from the client ZIP file.
-// Place the final images in: public/images/equipment/
-// Expected filenames (webp preferred):
-//   tv-kamerasysteme.webp
-//   rohrortungsgeraete.webp
-//   rothenberger-rohrreinigungsmaschinen.webp
-//   ridgid-flexshaft-systeme.webp
-//   nasssauger.webp
-//   mobile-hochdruckspuelung.webp
-//   spezialwerkzeuge-rohre.webp
-//
-// Once the ZIP images are placed, update each `image` path below to:
-//   /images/equipment/<filename>.webp
-
 export type EquipmentItem = {
   title: string;
   description: string;
@@ -19,61 +5,56 @@ export type EquipmentItem = {
   alt: string;
 };
 
+const TOOLS = "/images/tools";
+
 export const EQUIPMENT_ITEMS: EquipmentItem[] = [
   {
     title: "TV-Kamerasysteme",
     description:
       "Hochauflösende Kamerafahrten zur präzisen Schadenslokalisation im Rohrinneren – schnell, sauber und ohne Aufgraben.",
-    // TODO: replace with /images/equipment/tv-kamerasysteme.webp
-    image: "/images/kamerainspektion-kanal-garten.webp",
+    image: `${TOOLS}/tv-kamerasysteme.png`,
     alt: "TV-Kamerasystem für professionelle Rohrinspektion",
   },
   {
     title: "Rohrortungsgeräte",
     description:
       "Elektronische Ortungsgeräte für die genaue Lagebestimmung von Rohren und Leckagen unter der Erde.",
-    // TODO: replace with /images/equipment/rohrortungsgeraete.webp
-    image: "/images/rohrreinigung-fachmann-einsatz.webp",
+    image: `${TOOLS}/rohrortungsgeraete.png`,
     alt: "Rohrortungsgerät zur Leitungslokalisation",
   },
   {
     title: "Rothenberger Rohrreinigungsmaschinen",
     description:
       "Professionelle Spiralmaschinen der Marke Rothenberger für hartnäckige Verstopfungen in Abwasser- und Entwässerungsleitungen.",
-    // TODO: replace with /images/equipment/rothenberger-rohrreinigungsmaschinen.webp
-    image: "/images/rohrreinigung-fachmann-einsatz.webp",
+    image: `${TOOLS}/rothenberger-rohrreinigungsmaschinen.png`,
     alt: "Rothenberger Rohrreinigungsmaschine im Einsatz",
   },
   {
     title: "RIDGID FlexShaft-Systeme",
     description:
       "RIDGID FlexShaft-Technologie für maximale Reinigungsleistung bei engen Bögen und langen Leitungsstrecken.",
-    // TODO: replace with /images/equipment/ridgid-flexshaft-systeme.webp
-    image: "/images/kanalreinigung-hochdruck-rohr.webp",
+    image: `${TOOLS}/ridgid-flexshaft-systeme.png`,
     alt: "RIDGID FlexShaft-System für Rohrreinigung",
   },
   {
     title: "Nasssauger",
     description:
       "Industrielle Nasssauger für die schnelle Beseitigung von Wasser und Schmutz nach Rohrbruch oder Überflutung.",
-    // TODO: replace with /images/equipment/nasssauger.webp
-    image: "/images/notdienst-rohrreinigung-sofort.webp",
+    image: `${TOOLS}/nasssauger.png`,
     alt: "Industrieller Nasssauger für Notfalleinsätze",
   },
   {
     title: "Mobile Hochdruckspülung",
     description:
       "Mobile Hochdruckspülgeräte für die gründliche Reinigung von Kanal-, Abwasser- und Regenwasserleitungen.",
-    // TODO: replace with /images/equipment/mobile-hochdruckspuelung.webp
-    image: "/images/kanalreinigung-hochdruck-rohr.webp",
+    image: `${TOOLS}/mobile-hochdruckspuelung.png`,
     alt: "Mobile Hochdruckspülung für Kanalleitungen",
   },
   {
-    title: "Spezialwerkzeuge für Kunststoff-, Kupfer- und Stahlrohre",
+    title: "Spezialwerkzeuge für Kunststoff-, Kupfer- und Stahlrohrarbeiten",
     description:
       "Passgenaues Werkzeug für alle gängigen Rohrmaterialien – für saubere Verbindungen und dauerhafte Reparaturen.",
-    // TODO: replace with /images/equipment/spezialwerkzeuge-rohre.webp
-    image: "/images/rohrretter24-team-berlin-einsatz.webp",
+    image: `${TOOLS}/spezialwerkzeuge-rohre.png`,
     alt: "Spezialwerkzeuge für unterschiedliche Rohrmaterialien",
   },
 ];

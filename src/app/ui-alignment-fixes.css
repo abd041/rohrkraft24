@@ -1,0 +1,201 @@
+/* Global icon + text vertical alignment (Nexa line-height / font metrics) */
+
+/* ── Shared flex rows: kill inherited body line-height ── */
+.btn,
+.btn-cta-white,
+.hero__trust-item,
+.hero__avail-badge,
+.mini-cta__btn,
+.mobile-sticky-btn,
+.mobile-nav__cta,
+.notdienst-banner__cta,
+.notdienst-banner__bullets li,
+.badge-item,
+.info-bar__item,
+.info-bar__phone,
+.header__email,
+.header__notdienst,
+.nav__link--icon,
+.dropdown__trigger,
+.team__bullet,
+.map-city-link,
+.service-card__link,
+.eg-legend-item,
+.subpage-hero__label,
+.blog-page-hero__cat,
+.blog-card__cat,
+.kontakt-trust-list li,
+.rueckruf-row,
+.pricing-card__bullet,
+.pricing-card__cta {
+  line-height: 1;
+}
+
+/* ── Buttons ── */
+.btn,
+.btn-cta-white {
+  justify-content: center;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.btn-primary,
+.btn-outline-dark,
+.btn-outline,
+.btn--send {
+  min-height: 3rem;
+  padding-block: 0;
+}
+
+.btn-primary {
+  padding-inline: 1.75rem;
+}
+
+.btn-outline-dark,
+.btn-outline,
+.btn--send {
+  padding-inline: 1.5rem;
+}
+
+.btn-navy {
+  min-height: 2.625rem;
+  padding-block: 0;
+  padding-inline: 1.25rem;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.btn-cta-white {
+  min-height: 3.25rem;
+  padding-block: 0;
+  padding-inline: 2rem;
+}
+
+.mini-cta__btn,
+.mobile-sticky-btn,
+.notdienst-banner__cta {
+  justify-content: center;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  min-height: 2.75rem;
+  padding-block: 0;
+}
+
+.mobile-nav__cta {
+  justify-content: center;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.pricing-card__cta {
+  min-height: 2.75rem;
+  padding-block: 0;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* ── Hero trust pills (Erfahrenes Team, etc.) ── */
+.hero__trust-item {
+  justify-content: center;
+  box-sizing: border-box;
+  height: 2rem;
+  padding: 0 0.75rem;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  gap: 0.4rem;
+}
+
+.hero__avail-badge {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  min-height: 2rem;
+  padding-block: 0;
+  padding-inline: 0.875rem;
+}
+
+/* ── Checkmark bullets ── */
+.bullet-check,
+.pricing-card__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.notdienst-banner__bullets li,
+.team__bullet,
+.pricing-card__bullet,
+.kontakt-trust-list li {
+  align-items: center;
+}
+
+.team__bullet-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.kontakt-trust-list li {
+  line-height: 1.35;
+}
+
+/* ── Header / info bar ── */
+.info-bar__item,
+.info-bar__phone,
+.header__email,
+.header__notdienst,
+.badge-item {
+  align-items: center;
+}
+
+/* ── SVGs in flex rows: no baseline gap ── */
+.btn svg,
+.btn-cta-white svg,
+.hero__trust-item svg,
+.hero__avail-badge svg,
+.mini-cta__btn svg,
+.mobile-sticky-btn svg,
+.mobile-nav__cta svg,
+.notdienst-banner__cta svg,
+.notdienst-banner__bullets svg,
+.bullet-check svg,
+.pricing-card__check svg,
+.pricing-card__cta svg,
+.badge-item svg,
+.info-bar__item svg,
+.info-bar__phone svg,
+.header__email svg,
+.header__notdienst svg,
+.nav__link--icon svg,
+.dropdown__trigger svg,
+.dropdown__svc-icon svg,
+.team__bullet svg,
+.team__bullet-icon svg,
+.map-city-link svg,
+.service-card__link svg,
+.eg-legend-item svg,
+.kontakt-trust-list li svg,
+.rueckruf-row svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Overlay badges on cards */
+.service-card__badge-overlay,
+.pricing-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 1.625rem;
+  padding: 0 0.75rem;
+  line-height: 1;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.service-card__badge-overlay span,
+.pricing-card__badge span {
+  display: block;
+  line-height: 1;
+}

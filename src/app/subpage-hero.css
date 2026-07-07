@@ -19,19 +19,25 @@
 
 .subpage-hero__label,
 .blog-page-hero__cat {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   width: fit-content;
   max-width: 100%;
-  font-size: 0.75rem;
+  height: 2rem;
+  padding: 0 0.875rem;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 0.6875rem;
   font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--blue-300);
   background: rgba(111, 163, 227, 0.15);
   border: 1px solid rgba(111, 163, 227, 0.45);
-  padding: 0.25rem 0.875rem;
   border-radius: 9999px;
-  margin-bottom: 1.25rem;
+  margin: 0 auto 1.25rem;
 }
 
 .subpage-hero h1,

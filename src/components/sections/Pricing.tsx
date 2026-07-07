@@ -70,7 +70,9 @@ export function Pricing({ cityLabel, phone }: PricingProps = {}) {
               style={{ transitionDelay: PRICING_DELAYS[i] }}
             >
               {plan.featured && (
-                <div className="pricing-card__badge">Am beliebtesten</div>
+                <div className="pricing-card__badge">
+                  <span>Am beliebtesten</span>
+                </div>
               )}
               <div className="pricing-card__icon-box">
                 <PricingCardIcon index={i} />

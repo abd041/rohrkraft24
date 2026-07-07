@@ -20,11 +20,11 @@ export function Header() {
 
         <nav className="nav">
           <Link href="/" className="nav__link nav__link--icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
               <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>{" "}
-            Startseite
+            </svg>
+            <span>Startseite</span>
           </Link>
           <Link href="/ueber-uns/" className="nav__link">
             Über uns
@@ -36,8 +36,8 @@ export function Header() {
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <button className="dropdown__trigger" type="button">
-              Dienstleistungen{" "}
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <span>Dienstleistungen</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden>
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
@@ -47,7 +47,7 @@ export function Header() {
                   <span className="dropdown__svc-icon">
                     <ServiceIcon name={link.icon as ServiceIconName} />
                   </span>
-                  {link.label}
+                  <span className="dropdown__item-label">{link.label}</span>
                 </Link>
               ))}
             </div>
@@ -66,14 +66,14 @@ export function Header() {
 
         <div className="header__actions">
           <a href={SITE.phoneHref} className="header__email">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
-            </svg>{" "}
-            {SITE.phone}
+            </svg>
+            <span>{SITE.phone}</span>
           </a>
           <a href={SITE.phoneHref} className="header__notdienst">
-            <span className="header__notdienst-dot" />
-            24h Notdienst
+            <span className="header__notdienst-dot" aria-hidden />
+            <span>24h Notdienst</span>
           </a>
         </div>
 

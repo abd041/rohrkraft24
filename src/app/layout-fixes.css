@@ -18,7 +18,7 @@ body {
 /* header__inner shorthand padding was wiping container side gutters */
 .container.header__inner {
   padding-block: 1.125rem;
-  padding-inline: 1.5rem;
+  padding-inline: 0.75rem;
 }
 
 @media (max-width: 768px) {

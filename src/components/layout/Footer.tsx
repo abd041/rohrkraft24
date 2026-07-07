@@ -54,7 +54,7 @@ export function Footer() {
                 </div>
               ))}
               <Link href="/notdienst/" className="footer__notdienst-badge">
-                24h Notdienst
+                <span>24h Notdienst</span>
               </Link>
             </div>
           </div>
