@@ -5,6 +5,7 @@ import { CITY_COUNT } from "@/data/cities";
 import { SITE } from "@/lib/constants";
 import { PhoneIcon } from "@/components/icons";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { ServiceArea } from "@/components/sections/ServiceArea";
 
 const LEGEND = [
   "Rohrreinigung",
@@ -63,6 +64,8 @@ export function EinsatzgebietePageTemplate() {
           </div>
         </div>
       </section>
+
+      <ServiceArea />
 
       <section className="eg-regions-section section" style={{ background: "var(--gray-50)" }}>
         <div className="container">

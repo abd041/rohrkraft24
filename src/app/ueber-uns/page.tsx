@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SubpageHero } from "@/components/blocks/SubpageHero";
 import { About } from "@/components/sections/About";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { Equipment } from "@/components/sections/Equipment";
 import { COPY, SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function UeberUnsPage() {
         subtitle={`${SITE.name} – ${COPY.specialization}. ${COPY.experience} im Raum Berlin und Umgebung.`}
       />
       <About />
+      <Equipment />
       <CTABanner />
     </>
   );

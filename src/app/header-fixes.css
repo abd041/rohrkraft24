@@ -16,20 +16,31 @@
   height: 32px;
 }
 
-.footer__bottom-brand {
-  display: flex;
+.footer__bottom--centered {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 0.75rem;
 }
 
-.footer__bottom-brand .site-logo {
-  height: 34px;
-  filter: brightness(0) invert(1);
+.footer__bottom--centered p {
+  margin: 0;
 }
 
-.footer__bottom-brand p {
-  margin: 0;
+.footer__bottom--centered .footer__bottom-links {
+  justify-content: center;
+}
+
+.cta-section__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-section__logo .site-logo {
+  height: 38px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer__notdienst-badge {
@@ -180,8 +191,26 @@
   gap: 1rem;
 }
 
+/* Switch to mobile menu before logo, nav links, and actions collide */
+@media (max-width: 1280px) {
+  .header .nav,
+  .header .header__actions {
+    display: none;
+  }
+
+  .header .menu-toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 1281px) {
+  .header .menu-toggle {
+    display: none;
+  }
+}
+
 /* Tighter horizontal layout – more room for centered nav links */
-@media (min-width: 769px) {
+@media (min-width: 1281px) {
   .header .container.header__inner {
     max-width: 1360px;
     padding-inline: 0.75rem;
@@ -212,7 +241,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .header .container.header__inner {
     padding-inline: 1rem;
   }

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { FOOTER_CITIES, CITY_COUNT } from "@/data/cities";
 import { OPENING_HOURS, SERVICE_LINKS, SITE } from "@/lib/constants";
-import { Logo } from "@/components/ui/Logo";
-
 const QUICK_LINKS = [
   { label: "Startseite", href: "/" },
   { label: "Über uns", href: "/ueber-uns/" },
@@ -139,11 +137,8 @@ export function Footer() {
       </div>
 
       <div className="footer__bottom-bar">
-        <div className="container footer__bottom">
-          <div className="footer__bottom-brand">
-            <Logo height={34} variant="footer" />
-            <p>© 2026 {SITE.name}. Alle Rechte vorbehalten.</p>
-          </div>
+        <div className="container footer__bottom footer__bottom--centered">
+          <p>© 2026 {SITE.name}. Alle Rechte vorbehalten.</p>
           <div className="footer__bottom-links">
             <Link href="/impressum/">Impressum</Link>
             <Link href="/datenschutz/">Datenschutz</Link>

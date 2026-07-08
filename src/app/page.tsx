@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustMarquee } from "@/components/sections/TrustMarquee";
 import { Features } from "@/components/sections/Features";
 import { Services } from "@/components/sections/Services";
-import { Equipment } from "@/components/sections/Equipment";
 import { Pricing } from "@/components/sections/Pricing";
 import { MiniCTA } from "@/components/sections/MiniCTA";
 import { About } from "@/components/sections/About";
@@ -19,7 +18,6 @@ export default function HomePage() {
       <TrustMarquee />
       <Features />
       <Services />
-      <Equipment />
       <Pricing />
       <MiniCTA />
       <About />

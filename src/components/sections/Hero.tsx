@@ -1,6 +1,6 @@
 "use client";
 
-import { COPY, IMAGES, HERO_TRUST, SITE } from "@/lib/constants";
+import { IMAGES, HERO_TRUST, SITE } from "@/lib/constants";
 import { CalendarIcon, CheckIcon, PhoneIcon } from "@/components/icons";
 import { useModal } from "@/components/providers/ModalProvider";
 
@@ -20,19 +20,17 @@ export function Hero() {
         <div className="hero__grid">
           <div className="hero__content">
             <h1 className="hero__title">
-              Rohrreinigung in
+              Rohr verstopft?
               <br />
-              Berlin & Umgebung
+              Kein Grund zur Panik.
             </h1>
             <p className="hero__tagline">
-              Ihr 24h-Notdienst in Berlin und Umgebung (100 km) – schnell, zuverlässig & fair
+              Wir sind in 30–60 Minuten bei Ihnen – in Berlin, Potsdam, Oranienburg und im
+              gesamten Umkreis von 100 km.
             </p>
             <p className="hero__body">
-              Rohr verstopft? Abfluss verstopft? Wir sind in 30–60 Minuten bei Ihnen – in
-              Berlin, Potsdam, Oranienburg und im Umkreis von insgesamt 100 km. Unser {COPY.team}{" "}
-              beseitigt Verstopfungen, repariert Rohrbrüche und hilft bei Sanitär-Notfällen –
-              zum garantierten Festpreis. {SITE.travelFeeShort} – bei Auftragserteilung wird die
-              Anfahrt angerechnet.
+              Festpreisgarantie · 49 € Anfahrtsgebühr (angerechnet) · Rohrreinigung, Reparatur
+              &amp; Notfallhilfe
             </p>
 
             <div className="hero__trust">
