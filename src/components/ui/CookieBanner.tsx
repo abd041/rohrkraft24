@@ -1,26 +1,44 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import Link from "next/link";
 
+const CONSENT_KEY = "rk24_consent";
+const CONSENT_CHANGE_EVENT = "rk24-consent-change";
+
+function getConsent(): boolean {
+  return localStorage.getItem(CONSENT_KEY) !== null;
+}
+
+function getServerConsent(): boolean {
+  return true;
+}
+
+function subscribeToConsent(onStoreChange: () => void) {
+  const handler = () => onStoreChange();
+  window.addEventListener("storage", handler);
+  window.addEventListener(CONSENT_CHANGE_EVENT, handler);
+  return () => {
+    window.removeEventListener("storage", handler);
+    window.removeEventListener(CONSENT_CHANGE_EVENT, handler);
+  };
+}
+
 export function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+  const hasConsent = useSyncExternalStore(subscribeToConsent, getConsent, getServerConsent);
 
   useEffect(() => {
-    const accepted = localStorage.getItem("rk24_consent");
-    if (!accepted) {
-      setVisible(true);
-      document.body.classList.add("cookie-active");
-    }
-  }, []);
+    if (hasConsent) return;
+    document.body.classList.add("cookie-active");
+    return () => document.body.classList.remove("cookie-active");
+  }, [hasConsent]);
 
   const accept = () => {
-    localStorage.setItem("rk24_consent", "all");
-    setVisible(false);
-    document.body.classList.remove("cookie-active");
+    localStorage.setItem(CONSENT_KEY, "all");
+    window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT));
   };
 
-  if (!visible) return null;
+  if (hasConsent) return null;
 
   return (
     <div className="cookie-overlay">
