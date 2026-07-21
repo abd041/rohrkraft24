@@ -1,28 +1,91 @@
 import Image from "next/image";
 import { TESTIMONIALS } from "@/data/testimonials";
-import { SITE } from "@/lib/constants";
-import { GoogleIcon, StarsRow } from "@/components/icons";
+import { StarsRow } from "@/components/icons";
 
-export function Testimonials() {
+type TestimonialsProps = {
+  variant?: "default" | "premium";
+};
+
+export function Testimonials({ variant = "default" }: TestimonialsProps) {
+  if (variant === "premium") {
+    const [featured, ...rest] = TESTIMONIALS;
+
+    return (
+      <section className="reviews-premium">
+        <header className="reviews-premium__intro">
+          <div className="container">
+            <div className="reviews-premium__intro-inner">
+              <p className="reviews-premium__label">Kundenstimmen</p>
+              <h2 className="reviews-premium__heading">
+                Was unsere
+                <br />
+                Kunden sagen
+              </h2>
+              <p className="reviews-premium__count">
+                Erfahrungen aus Einsätzen in Berlin und Umgebung – ausgewählte Stimmen unserer Kunden.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div className="container reviews-premium__body">
+          <article className="reviews-premium__featured">
+            <span className="reviews-premium__quote" aria-hidden>
+              “
+            </span>
+            <p className="reviews-premium__featured-text">{featured.text}</p>
+            <div className="reviews-premium__author">
+              <div className="reviews-premium__avatar">
+                <Image src={featured.avatar} alt="" width={56} height={56} />
+              </div>
+              <div>
+                <p className="reviews-premium__name">{featured.name}</p>
+                <p className="reviews-premium__meta">
+                  {featured.city} · {featured.service}
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div className="reviews-premium__grid">
+            {rest.map((t, index) => (
+              <article
+                key={t.name}
+                className="reviews-premium__item"
+                style={{ animationDelay: `${0.1 + index * 0.06}s` }}
+              >
+                <div className="reviews-premium__item-stars" aria-hidden>
+                  <StarsRow />
+                </div>
+                <p className="reviews-premium__item-text">{t.text}</p>
+                <div className="reviews-premium__author reviews-premium__author--compact">
+                  <div className="reviews-premium__avatar reviews-premium__avatar--sm">
+                    <Image src={t.avatar} alt="" width={40} height={40} />
+                  </div>
+                  <div>
+                    <p className="reviews-premium__name">{t.name}</p>
+                    <p className="reviews-premium__meta">
+                      {t.city} · {t.service}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="section" style={{ background: "white" }}>
       <div className="container">
         <div className="text-center mb-12">
           <p className="section-label">Kundenstimmen</p>
           <h2 className="section-title mb-4">Was unsere Kunden sagen</h2>
-          <div className="reviews-summary">
-            <div className="stars">
-              <StarsRow />
-            </div>
-            <div>
-              <p className="reviews-summary__score">
-                {SITE.rating.toString().replace(".", ",")} / 5
-              </p>
-              <p className="reviews-summary__count">
-                Basierend auf {SITE.reviewCount}+ Bewertungen in Berlin & Umgebung
-              </p>
-            </div>
-          </div>
+          <p className="section-subtitle mx-auto">
+            Erfahrungen aus Einsätzen in Berlin und Umgebung.
+          </p>
         </div>
 
         <div className="reviews__grid">
@@ -40,7 +103,6 @@ export function Testimonials() {
                   <p className="review-card__name">{t.name}</p>
                   <p className="review-card__city">{t.city}</p>
                 </div>
-                <GoogleIcon size={18} />
               </div>
               <div className="stars" style={{ fontSize: "0.8rem" }}>
                 <StarsRow />

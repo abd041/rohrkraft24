@@ -1,14 +1,41 @@
+import type { ReactNode } from "react";
 import { Breadcrumb } from "@/components/blocks/Breadcrumb";
 
 type SubpageHeroProps = {
   label: string;
-  title: string;
+  title: ReactNode;
   subtitle?: string;
-  meta?: React.ReactNode;
+  meta?: ReactNode;
   breadcrumb?: string;
+  variant?: "default" | "premium";
 };
 
-export function SubpageHero({ label, title, subtitle, meta, breadcrumb }: SubpageHeroProps) {
+export function SubpageHero({
+  label,
+  title,
+  subtitle,
+  meta,
+  breadcrumb,
+  variant = "default",
+}: SubpageHeroProps) {
+  if (variant === "premium") {
+    return (
+      <>
+        {breadcrumb && <Breadcrumb current={breadcrumb} />}
+        <section className="subpage-hero subpage-hero--premium">
+          <div className="container">
+            <div className="subpage-hero-premium__inner">
+              <p className="subpage-hero-premium__label">{label}</p>
+              <h1 className="subpage-hero-premium__title">{title}</h1>
+              {subtitle && <p className="subpage-hero-premium__subtitle">{subtitle}</p>}
+              {meta && <div className="subpage-hero-premium__meta">{meta}</div>}
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
+
   return (
     <>
       {breadcrumb && <Breadcrumb current={breadcrumb} />}

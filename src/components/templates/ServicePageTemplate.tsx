@@ -23,18 +23,18 @@ export function ServicePageTemplate({ page }: ServicePageTemplateProps) {
     <>
       <Breadcrumb current={page.breadcrumbLabel} />
       <ServicePageHero hero={page.hero} />
+      <TrustMarquee variant="premium" />
       <ServicePageContent content={page.content} serviceLabel={page.breadcrumbLabel} />
-      <TrustMarquee />
-      <Features />
-      <Services />
-      <Equipment />
-      <Pricing />
-      <MiniCTA />
-      <About />
-      <Testimonials />
-      <FAQ />
-      <ServiceArea mapKeyword={page.mapKeyword} />
-      <CTABanner />
+      <Features variant="premium" />
+      <Services variant="premium" />
+      <Equipment variant="premium" />
+      <Pricing variant="premium" />
+      <MiniCTA variant="premium" />
+      <About variant="premium" />
+      <Testimonials variant="premium" />
+      <FAQ variant="premium" />
+      <ServiceArea variant="premium" mapKeyword={page.mapKeyword} />
+      <CTABanner variant="premium" />
     </>
   );
 }

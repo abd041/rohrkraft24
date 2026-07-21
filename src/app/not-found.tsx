@@ -1,18 +1,27 @@
 import Link from "next/link";
+import { SITE } from "@/lib/constants";
 
 export default function NotFound() {
   return (
-    <section className="section">
-      <div className="container" style={{ padding: "5rem 0", textAlign: "center" }}>
-        <h1 style={{ fontSize: "2rem", fontWeight: 800, color: "var(--navy)", marginBottom: "1rem" }}>
-          404 – Seite nicht gefunden
+    <section className="notfound-premium">
+      <div className="container notfound-premium__inner">
+        <p className="notfound-premium__label">Fehler 404</p>
+        <h1 className="notfound-premium__title">
+          Seite nicht
+          <br />
+          gefunden
         </h1>
-        <p style={{ color: "var(--gray-500)", marginBottom: "2rem" }}>
+        <p className="notfound-premium__text">
           Die angeforderte Seite existiert nicht oder wurde verschoben.
         </p>
-        <Link href="/" className="btn btn-primary">
-          Zur Startseite
-        </Link>
+        <div className="notfound-premium__actions">
+          <Link href="/" className="btn btn-primary">
+            Zur Startseite
+          </Link>
+          <a href={SITE.phoneHref} className="btn btn-outline notfound-premium__secondary">
+            {SITE.phone} anrufen
+          </a>
+        </div>
       </div>
     </section>
   );

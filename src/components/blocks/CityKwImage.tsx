@@ -8,9 +8,9 @@ type CityKwImageProps = {
 
 export function CityKwImage({ src, alt, caption }: CityKwImageProps) {
   return (
-    <section className="section kw-image-section" style={{ background: "#f8fafc", padding: "2rem 0" }}>
+    <section className="kw-premium">
       <div className="container">
-        <figure className="kw-image-figure rk-reveal" style={{ transitionDelay: "0.07s" }}>
+        <figure className="kw-premium__figure">
           <img
             src={`${IMG}/${src}`}
             alt={alt}
@@ -18,9 +18,9 @@ export function CityKwImage({ src, alt, caption }: CityKwImageProps) {
             height={675}
             loading="lazy"
             decoding="async"
-            className="kw-image"
+            className="kw-premium__img"
           />
-          <figcaption className="kw-image-caption">{caption}</figcaption>
+          <figcaption className="kw-premium__caption">{caption}</figcaption>
         </figure>
       </div>
     </section>

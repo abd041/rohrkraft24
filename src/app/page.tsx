@@ -15,17 +15,17 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustMarquee />
-      <Features />
-      <Services />
-      <Pricing />
-      <MiniCTA />
-      <About />
-      <ServiceArea />
-      <Testimonials />
-      <FAQ />
-      <Blog />
-      <CTABanner />
+      <TrustMarquee variant="premium" />
+      <Features variant="premium" />
+      <Services variant="premium" />
+      <Pricing variant="premium" />
+      <MiniCTA variant="premium" />
+      <About variant="premium" />
+      <ServiceArea variant="premium" />
+      <Testimonials variant="premium" />
+      <FAQ variant="premium" />
+      <Blog variant="premium" />
+      <CTABanner variant="premium" />
     </>
   );
 }

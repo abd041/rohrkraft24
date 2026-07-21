@@ -19,108 +19,109 @@ const LEGEND = [
   "24h Notdienst",
 ];
 
+const STATS = [
+  { num: String(CITY_COUNT), label: "Städte im Einsatz" },
+  { num: "9", label: "Dienstleistungen" },
+  { num: "24/7", label: "Notdienst" },
+  { num: SITE.reactionTime, label: "Reaktionszeit" },
+] as const;
+
 export function EinsatzgebietePageTemplate() {
   return (
     <>
       <Breadcrumb current="Einsatzgebiete" />
 
-      <section className="ez-hero">
+      <section className="areas-premium__hero">
         <div className="container">
-          <div className="ez-hero__inner">
-            <div>
-              <p className="subpage-hero__label">Unser Einsatzgebiet</p>
-              <h1 className="ez-hero__title">Rohrreinigung in Berlin &amp; Umgebung</h1>
-              <p className="ez-hero__sub">
-                Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von 100 km für Sie da.
-                Schnell, fair und rund um die Uhr.
+          <div className="areas-premium__hero-grid">
+            <div className="areas-premium__hero-copy">
+              <p className="areas-premium__label">Unser Einsatzgebiet</p>
+              <h1 className="areas-premium__title">
+                Rohrreinigung in
+                <br />
+                Berlin &amp; Umgebung
+              </h1>
+              <p className="areas-premium__lede">
+                Von Berlin bis Potsdam, von Oranienburg bis Brandenburg – wir sind im Umkreis von
+                100&nbsp;km für Sie da. Schnell, fair und rund um die Uhr.
               </p>
-              <a
-                href={SITE.phoneHref}
-                className="btn btn-primary"
-                style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}
-              >
-                <PhoneIcon /> Jetzt anrufen
+              <a href={SITE.phoneHref} className="btn btn-primary areas-premium__cta">
+                <PhoneIcon /> {SITE.phone} – Jetzt anrufen
               </a>
             </div>
 
-            <div className="ez-hero__stats">
-              <div className="ez-stat">
-                <span className="ez-stat__num">{CITY_COUNT}</span>
-                <span className="ez-stat__label">Städte im Einsatz</span>
-              </div>
-              <div className="ez-stat">
-                <span className="ez-stat__num">9</span>
-                <span className="ez-stat__label">Dienstleistungen</span>
-              </div>
-              <div className="ez-stat">
-                <span className="ez-stat__num">24/7</span>
-                <span className="ez-stat__label">Notdienst</span>
-              </div>
-              <div className="ez-stat">
-                <span className="ez-stat__num">{SITE.reactionTime}</span>
-                <span className="ez-stat__label">Reaktionszeit</span>
-              </div>
+            <div className="areas-premium__metrics">
+              {STATS.map((stat) => (
+                <div key={stat.label} className="areas-premium__metric">
+                  <span className="areas-premium__metric-num">{stat.num}</span>
+                  <span className="areas-premium__metric-label">{stat.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <ServiceArea />
+      <ServiceArea variant="premium" />
 
-      <section className="eg-regions-section section" style={{ background: "var(--gray-50)" }}>
-        <div className="container">
-          <div className="ez-intro">
-            <p className="section-label">Alle Regionen</p>
-            <h2 className="section-title">Wir sind in Berlin und Umgebung für Sie da</h2>
-            <p className="section-subtitle mx-auto">
-              Klicken Sie auf eine Stadt – wir zeigen Ihnen alle verfügbaren Leistungen und kommen schnellstmöglich zu
-              Ihnen.
-            </p>
+      <section className="areas-premium__regions">
+        <header className="areas-premium__regions-intro">
+          <div className="container">
+            <div className="areas-premium__regions-intro-inner">
+              <p className="areas-premium__label">Alle Regionen</p>
+              <h2 className="areas-premium__regions-title">
+                Wir sind in Berlin und
+                <br />
+                Umgebung für Sie da
+              </h2>
+              <p className="areas-premium__regions-lede">
+                Wählen Sie Ihre Stadt – wir zeigen alle verfügbaren Leistungen und kommen
+                schnellstmöglich zu Ihnen.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div className="container areas-premium__regions-body">
+          <div className="areas-premium__legend">
+            <span className="areas-premium__legend-label">Leistungen</span>
+            <div className="areas-premium__legend-items">
+              {LEGEND.map((item) => (
+                <span key={item} className="areas-premium__legend-item">
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
-          <div className="eg-service-legend">
-            <span className="eg-legend-label">Unsere Dienstleistungen:</span>
-            {LEGEND.map((item) => (
-              <span key={item} className="eg-legend-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>{" "}
-                {item}
-              </span>
-            ))}
-          </div>
-
-          <div className="eg-regions-wrap">
+          <div className="areas-premium__regions-wrap">
             {regions.map((region) => (
-              <div key={region.name} className="eg-region-block">
-                <div className="eg-region-header">
+              <div key={region.name} className="areas-premium__region">
+                <div className="areas-premium__region-header">
                   <h2>{region.name.replace(/&amp;/g, "&")}</h2>
-                  <span className="eg-region-count">{region.count}</span>
+                  <span className="areas-premium__region-count">{region.count}</span>
                 </div>
-                <div className="eg-cities-grid">
+                <div className="areas-premium__cities">
                   {region.cities.map((city) => (
-                    <div key={`${region.name}-${city.name}`} className="eg-city-card">
-                      <div className="eg-city-top">
+                    <article
+                      key={`${region.name}-${city.name}`}
+                      className="areas-premium__city"
+                    >
+                      <div className="areas-premium__city-top">
                         <h3>{city.name}</h3>
-                        <div className="eg-city-meta">
-                          <span className="eg-plz">{city.plz}</span>
-                          <span className="eg-distance">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                              <circle cx="12" cy="10" r="3" />
-                            </svg>{" "}
-                            {city.distance}
-                          </span>
+                        <div className="areas-premium__city-meta">
+                          <span>{city.plz}</span>
+                          <span>{city.distance}</span>
                         </div>
                       </div>
-                      <div className="eg-city-links">
+                      <div className="areas-premium__city-links">
                         {city.links.map((link) => (
                           <Link key={link.href} href={link.href} title={link.label}>
                             {link.label}
                           </Link>
                         ))}
                       </div>
-                    </div>
+                    </article>
                   ))}
                 </div>
               </div>
@@ -129,7 +130,7 @@ export function EinsatzgebietePageTemplate() {
         </div>
       </section>
 
-      <CTABanner />
+      <CTABanner variant="premium" />
     </>
   );
 }

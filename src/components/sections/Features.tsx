@@ -18,12 +18,59 @@ const FEATURES = [
   },
 ];
 
-export function Features() {
-  const stats = [
-    { value: SITE.reactionTime, label: "Reaktionszeit" },
-    { value: SITE.travelFeeShort, label: SITE.travelFeeNote },
-    { value: "Festpreis", label: "Vor Arbeitsbeginn vereinbart" },
-  ] as const;
+const STATS = [
+  { value: SITE.reactionTime, label: "Reaktionszeit" },
+  { value: SITE.travelFeeShort, label: SITE.travelFeeNote },
+  { value: "Festpreis", label: "Vor Arbeitsbeginn vereinbart" },
+] as const;
+
+type FeaturesProps = {
+  variant?: "default" | "premium";
+};
+
+export function Features({ variant = "default" }: FeaturesProps) {
+  if (variant === "premium") {
+    return (
+      <section className="features-premium">
+        <div className="container">
+          <header className="features-premium__intro">
+            <p className="features-premium__label">Warum RohrRetter24</p>
+            <h2 className="features-premium__heading">
+              Schnelle Hilfe.
+              <br />
+              Faire Preise. Saubere Arbeit.
+            </h2>
+            <p className="features-premium__lede">
+              Drei Gründe, warum Kunden in Berlin und Umgebung uns bei Rohrproblemen anrufen.
+            </p>
+          </header>
+
+          <ol className="features-premium__list">
+            {FEATURES.map((feature, i) => (
+              <li key={feature.title} className="features-premium__item">
+                <span className="features-premium__index" aria-hidden>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="features-premium__copy">
+                  <h3 className="features-premium__title">{feature.title}</h3>
+                  <p className="features-premium__desc">{feature.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          <div className="features-premium__metrics">
+            {STATS.map((stat) => (
+              <div key={stat.label} className="features-premium__metric">
+                <p className="features-premium__metric-value">{stat.value}</p>
+                <p className="features-premium__metric-label">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="features-section">
@@ -47,7 +94,7 @@ export function Features() {
         </div>
 
         <div className="features__stats">
-          {stats.map((stat, i) => (
+          {STATS.map((stat, i) => (
             <Fragment key={stat.label}>
               {i > 0 && <div className="features__stat-divider" />}
               <div className="features__stat">

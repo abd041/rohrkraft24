@@ -6,5 +6,11 @@ type CityLocalHtmlProps = {
 
 export function CityLocalHtml({ html }: CityLocalHtmlProps) {
   if (!html.trim()) return null;
-  return <RichHtml html={html} />;
+  return (
+    <section className="local-premium">
+      <div className="container local-premium__inner">
+        <RichHtml html={html} />
+      </div>
+    </section>
+  );
 }

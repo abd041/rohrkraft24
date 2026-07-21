@@ -1,122 +1,57 @@
 "use client";
 
-import { IMAGES, HERO_TRUST, SITE } from "@/lib/constants";
-import { CalendarIcon, CheckIcon, PhoneIcon } from "@/components/icons";
+import { IMAGES, SITE } from "@/lib/constants";
+import { CalendarIcon, PhoneIcon } from "@/components/icons";
 import { useModal } from "@/components/providers/ModalProvider";
-
-const STATS = [
-  { num: "500+", label: "Einsätze" },
-  { num: SITE.yearsExperience, label: "Jahre Erfahrung" },
-  { num: "98%", label: "Kundenzufriedenheit" },
-  { num: "24/7", label: "Erreichbar" },
-];
 
 export function Hero() {
   const { openModal } = useModal();
 
   return (
-    <section className="hero">
-      <div className="hero__inner container">
-        <div className="hero__grid">
-          <div className="hero__content">
-            <h1 className="hero__title">
-              Rohr verstopft?
-              <br />
-              Kein Grund zur Panik.
-            </h1>
-            <p className="hero__tagline">
-              Wir sind in 30–60 Minuten bei Ihnen – in Berlin, Potsdam, Oranienburg und im
-              gesamten Umkreis von 100 km.
-            </p>
-            <p className="hero__body">
-              Festpreisgarantie · 49 € Anfahrtsgebühr (angerechnet) · Rohrreinigung, Reparatur
-              &amp; Notfallhilfe
-            </p>
+    <section className="hero hero--premium">
+      <div className="hero-premium__media" aria-hidden>
+        <picture>
+          <source
+            media="(max-width:600px)"
+            srcSet={`${IMAGES}/rohrretter24-team-berlin-einsatz-sm.webp`}
+          />
+          <img
+            src={`${IMAGES}/rohrretter24-team-berlin-einsatz.webp`}
+            alt=""
+            width={1600}
+            height={900}
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
+        <div className="hero-premium__veil" />
+      </div>
 
-            <div className="hero__trust">
-              {HERO_TRUST.map((item) => (
-                <span key={item} className="hero__trust-item">
-                  <CheckIcon /> {item}
-                </span>
-              ))}
-            </div>
+      <div className="hero-premium__stage hero-premium__stage--solo">
+        <div className="container hero-premium__content">
+          <p className="hero-premium__brand">{SITE.name}</p>
+          <h1 className="hero-premium__title">
+            Rohr verstopft?
+            <br />
+            Kein Grund zur Panik.
+          </h1>
+          <p className="hero-premium__support">
+            Wir sind in 30–60 Minuten bei Ihnen – in Berlin, Potsdam, Oranienburg und im
+            gesamten Umkreis von 100 km.
+          </p>
 
-            <div className="hero__ctas">
-              <a href={SITE.phoneHref} className="btn btn-primary pulse">
-                <PhoneIcon /> Jetzt anrufen
-              </a>
-              <button
-                type="button"
-                className="btn btn-outline-dark"
-                onClick={() => openModal("callback")}
-              >
-                <CalendarIcon />
-                Termin vereinbaren
-              </button>
-            </div>
-
-            <div className="hero__stats">
-              {STATS.map((stat, i) => (
-                <div key={stat.label} style={{ display: "contents" }}>
-                  {i > 0 && <div className="hero__stat-divider" />}
-                  <div className="hero__stat">
-                    <span className="hero__stat-num">{stat.num}</span>
-                    <span className="hero__stat-label">{stat.label}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="hero__photo">
-            <picture>
-              <source
-                media="(max-width:600px)"
-                srcSet={`${IMAGES}/rohrretter24-team-berlin-einsatz-sm.webp`}
-              />
-              <img
-                src={`${IMAGES}/rohrretter24-team-berlin-einsatz.webp`}
-                alt={`${SITE.name} Team – professionelle Rohrreinigung Berlin`}
-                width={900}
-                height={600}
-                loading="eager"
-                fetchPriority="high"
-              />
-            </picture>
-            <div className="hero__avail-badge">
-              <span className="hero__dot" />
-              Jetzt verfügbar
-            </div>
-            <div className="hero__stars">
-              <div className="stars">
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star">★</span>
-              </div>
-              <div>
-                <p
-                  style={{
-                    fontWeight: 900,
-                    fontSize: "0.875rem",
-                    color: "var(--navy)",
-                    lineHeight: 1,
-                  }}
-                >
-                  {SITE.rating.toString().replace(".", ",")} / 5
-                </p>
-                <p
-                  style={{
-                    fontSize: "0.72rem",
-                    color: "var(--gray-600)",
-                    marginTop: 2,
-                  }}
-                >
-                  {SITE.reviewCount} Bewertungen
-                </p>
-              </div>
-            </div>
+          <div className="hero-premium__ctas">
+            <a href={SITE.phoneHref} className="btn btn-primary hero-premium__cta-primary">
+              <PhoneIcon /> {SITE.phone} – Jetzt anrufen
+            </a>
+            <button
+              type="button"
+              className="btn btn-outline hero-premium__cta-secondary"
+              onClick={() => openModal("callback")}
+            >
+              <CalendarIcon />
+              Termin vereinbaren
+            </button>
           </div>
         </div>
       </div>

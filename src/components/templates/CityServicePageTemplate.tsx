@@ -40,21 +40,25 @@ export function CityServicePageTemplate({ page }: CityServicePageTemplateProps) 
         current={page.breadcrumb}
       />
       <CityServiceHero hero={page.hero} phone={phone} />
-      <TrustMarquee />
-      <Features />
-      <Services cityLabel={page.cityShort} />
-      <Pricing cityLabel={page.cityShort} phone={phone} />
-      <MiniCTA phone={phone} />
-      <About />
+      <TrustMarquee variant="premium" />
+      <Features variant="premium" />
+      <Services variant="premium" cityLabel={page.cityShort} />
+      <Pricing variant="premium" cityLabel={page.cityShort} phone={phone} />
+      <MiniCTA variant="premium" phone={phone} />
+      <About variant="premium" />
       {page.localHtml ? <CityLocalHtml html={page.localHtml} /> : null}
       {page.kwImage ? (
         <CityKwImage src={page.kwImage.src} alt={page.kwImage.alt} caption={page.kwImage.caption} />
       ) : null}
-      <Testimonials />
+      <Testimonials variant="premium" />
       <CityFAQ title={page.faqTitle} items={page.faq} phone={phone} />
       <CityNearby title={page.nearbyTitle} intro={page.nearbyIntro} links={page.nearby} />
-      <CTABanner phone={phone} />
-      <ServiceArea mapKeyword={page.mapKeyword} currentCitySlug={page.currentCitySlug} />
+      <ServiceArea
+        variant="premium"
+        mapKeyword={page.mapKeyword}
+        currentCitySlug={page.currentCitySlug}
+      />
+      <CTABanner variant="premium" phone={phone} />
     </>
   );
 }

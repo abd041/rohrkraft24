@@ -14,14 +14,21 @@ export default function UeberUnsPage() {
   return (
     <>
       <SubpageHero
+        variant="premium"
         breadcrumb="Über uns"
         label="Über uns"
-        title={`Ihr ${COPY.partner}`}
+        title={
+          <>
+            Ihr zuverlässiger Partner
+            <br />
+            für Rohrreinigung
+          </>
+        }
         subtitle={`${SITE.name} – ${COPY.specialization}. ${COPY.experience} im Raum Berlin und Umgebung.`}
       />
-      <About />
-      <Equipment />
-      <CTABanner />
+      <About variant="premium" />
+      <Equipment variant="premium" />
+      <CTABanner variant="premium" />
     </>
   );
 }

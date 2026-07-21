@@ -1,82 +1,159 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import { SITE } from "@/lib/constants";
 import { useModal } from "@/components/providers/ModalProvider";
 
 export function CallbackModal() {
   const { activeModal, closeModal } = useModal();
-  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (activeModal === "callback") {
       document.body.classList.add("modal-open");
-    } else {
-      document.body.classList.remove("modal-open");
+      const t = window.setTimeout(() => closeRef.current?.focus(), 0);
+      return () => {
+        window.clearTimeout(t);
+        document.body.classList.remove("modal-open");
+      };
     }
+    document.body.classList.remove("modal-open");
     return () => document.body.classList.remove("modal-open");
   }, [activeModal]);
 
+  useEffect(() => {
+    if (activeModal !== "callback") return;
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeModal();
+        return;
+      }
+      if (e.key !== "Tab" || !panelRef.current) return;
+      const focusable = panelRef.current.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [activeModal, closeModal]);
+
   if (activeModal !== "callback") return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleClose = () => {
+    setError(null);
+    closeModal();
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+    const form = e.currentTarget;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const data = new FormData(form);
+    const vorname = String(data.get("vorname") ?? "").trim();
+    const nachname = String(data.get("nachname") ?? "").trim();
+    const telefon = String(data.get("telefon") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+
+    const subject = encodeURIComponent(`Rückrufanfrage – ${vorname} ${nachname}`);
+    const body = encodeURIComponent(
+      [
+        "Rückrufanfrage über die Website",
+        "",
+        `Name: ${vorname} ${nachname}`,
+        `Telefon: ${telefon}`,
+        email ? `E-Mail: ${email}` : null,
+        "",
+        "Bitte um Rückruf.",
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+
+    try {
+      window.location.href = `mailto:${SITE.email}?subject=${subject}&body=${body}`;
+      handleClose();
+    } catch {
+      setError(`Bitte rufen Sie uns direkt an: ${SITE.phone}`);
+    }
   };
 
   return (
-    <div id="rueckrufModal">
-      <div className="rueckruf-overlay" onClick={closeModal} />
-      <div className="rueckruf-box">
-        <button type="button" className="rueckruf-close" onClick={closeModal} aria-label="Schließen">
+    <div className="callback-premium" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+      <button type="button" className="callback-premium__backdrop" onClick={handleClose} aria-label="Schließen" />
+      <div className="callback-premium__panel" ref={panelRef}>
+        <button
+          ref={closeRef}
+          type="button"
+          className="callback-premium__close"
+          onClick={handleClose}
+          aria-label="Schließen"
+        >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
 
-        {submitted ? (
-          <div className="rueckruf-success">
-            <strong>Vielen Dank!</strong>
-            <span>Wir melden uns in Kürze bei Ihnen.</span>
-          </div>
-        ) : (
-          <>
-            <div className="rueckruf-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
-              </svg>
+        <p className="callback-premium__label">Rückruf</p>
+        <h2 id="callback-title" className="callback-premium__title">
+          Kostenlosen Rückruf anfordern
+        </h2>
+        <p className="callback-premium__sub">
+          Wir rufen Sie in der Regel innerhalb von 30 Minuten zurück – kostenlos und unverbindlich.
+          Ihre Anfrage öffnet Ihr E-Mail-Programm an {SITE.email}.
+        </p>
+        <form className="callback-premium__form" onSubmit={handleSubmit}>
+          <div className="callback-premium__row">
+            <div className="form-group">
+              <label htmlFor="callback-vorname">Vorname *</label>
+              <input id="callback-vorname" name="vorname" required type="text" autoComplete="given-name" />
             </div>
-            <h2 className="rueckruf-title">Kostenlosen Rückruf anfordern</h2>
-            <p className="rueckruf-sub">
-              Wir rufen Sie innerhalb von 30 Minuten zurück – kostenlos und unverbindlich.
+            <div className="form-group">
+              <label htmlFor="callback-nachname">Nachname *</label>
+              <input id="callback-nachname" name="nachname" required type="text" autoComplete="family-name" />
+            </div>
+          </div>
+          <div className="form-group">
+            <label htmlFor="callback-telefon">Telefon *</label>
+            <input id="callback-telefon" name="telefon" required type="tel" autoComplete="tel" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="callback-email">
+              E-Mail <span className="form-optional">(optional)</span>
+            </label>
+            <input id="callback-email" name="email" type="email" autoComplete="email" />
+          </div>
+          {error && (
+            <p className="form-feedback" role="alert">
+              {error}
             </p>
-            <form className="rueckruf-form" onSubmit={handleSubmit}>
-              <div className="rueckruf-row">
-                <div className="form-group">
-                  <label htmlFor="vorname">Vorname *</label>
-                  <input id="vorname" required type="text" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="nachname">Nachname *</label>
-                  <input id="nachname" required type="text" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="telefon">Telefon *</label>
-                <input id="telefon" required type="tel" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">
-                  E-Mail <span className="form-optional">(optional)</span>
-                </label>
-                <input id="email" type="email" />
-              </div>
-              <button type="submit" className="btn btn-primary btn--full">
-                Jetzt Rückruf anfordern
-              </button>
-            </form>
-          </>
-        )}
+          )}
+          <button type="submit" className="btn btn-primary callback-premium__submit">
+            Per E-Mail anfordern
+          </button>
+          <a href={SITE.phoneHref} className="callback-premium__phone">
+            Oder direkt anrufen: {SITE.phone}
+          </a>
+        </form>
       </div>
     </div>
   );

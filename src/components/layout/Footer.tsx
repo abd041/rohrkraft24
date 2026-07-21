@@ -28,7 +28,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="footer__heading">Quick Links</h3>
+            <h3 className="footer__heading">Schnellzugriff</h3>
             <div className="footer__links">
               {QUICK_LINKS.map((link) => (
                 <Link key={link.href} href={link.href} className="footer__link">

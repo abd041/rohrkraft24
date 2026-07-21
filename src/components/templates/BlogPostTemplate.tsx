@@ -8,14 +8,6 @@ import { IMAGES, COPY, SITE } from "@/lib/constants";
 import { Logo } from "@/components/ui/Logo";
 import { getRelatedBlogPosts, type BlogPostData } from "@/lib/blog-posts";
 
-/*
- * BLOG ARTICLE HERO VARIANT
- * Switch the active variant by changing the value below:
- *   "centered"  →  Variant A (default) – solid overlay, centered text
- *   "magazine"  →  Variant B – gradient overlay, left-aligned editorial style
- */
-const HERO_VARIANT: "centered" | "magazine" = "centered";
-
 const SERVICE_LINKS = [
   { href: "/rohrreinigung/", label: "Rohrreinigung" },
   { href: "/kamera-inspektion/", label: "TV-Kamera-Inspektion" },
@@ -36,28 +28,23 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
     ? ({
         "--hero-img": `url(${imgBase}/${post.hero.image})`,
         "--hero-img-sm": `url(${imgBase}/${post.hero.imageSm})`,
-        } as CSSProperties)
+      } as CSSProperties)
     : undefined;
 
   return (
     <>
       <BlogBreadcrumb current={post.hero.title} />
 
-      {/* ── Blog Article Hero ─────────────────────────────────────
-          Variant A (--centered): solid overlay, content centred  ← DEFAULT
-          Variant B (--magazine): gradient overlay, editorial left
-          To switch: change HERO_VARIANT constant at top of file.
-      ──────────────────────────────────────────────────────────── */}
       <section
-        className={`blog-article-hero blog-article-hero--${HERO_VARIANT}${!post.hero.image ? " blog-article-hero--no-image" : ""}`}
+        className={`blog-post-premium-hero${!post.hero.image ? " blog-post-premium-hero--no-image" : ""}`}
         style={heroStyle}
         aria-label={post.hero.title}
       >
-        <div className="blog-article-hero__overlay" aria-hidden="true" />
-        <div className="blog-article-hero__content container">
-          <span className="blog-article-hero__cat">{post.hero.category}</span>
-          <h1 className="blog-article-hero__title">{post.hero.title}</h1>
-          <div className="blog-article-hero__meta">
+        <div className="blog-post-premium-hero__veil" aria-hidden />
+        <div className="container blog-post-premium-hero__content">
+          <p className="blog-post-premium-hero__cat">{post.hero.category}</p>
+          <h1 className="blog-post-premium-hero__title">{post.hero.title}</h1>
+          <div className="blog-post-premium-hero__meta">
             {post.hero.meta.map((item) => (
               <span key={item}>{item}</span>
             ))}
@@ -65,104 +52,91 @@ export function BlogPostTemplate({ post }: BlogPostTemplateProps) {
         </div>
       </section>
 
-      <section style={{ background: "white" }}>
-        <div className="container">
-          <div className="blog-layout">
-            <article className="blog-content">
+      <section className="blog-post-premium">
+        <div className="container blog-post-premium__layout">
+          <article className="blog-post-premium__main">
+            <div className="blog-content">
               <BlogContent blocks={post.blocks} />
+            </div>
 
-              {post.faq.length > 0 && (
-                <>
-                  <h2 id="faq">Häufige Fragen</h2>
-                  {post.faq.map((item) => (
-                    <div
-                      key={item.question}
-                      style={{ borderBottom: "1px solid var(--gray-200)", padding: "1.1rem 0" }}
-                    >
-                      <strong style={{ display: "block", color: "var(--navy)", marginBottom: "0.4rem" }}>
-                        {item.question}
-                      </strong>
-                      <p style={{ margin: 0, color: "var(--gray-600)", lineHeight: 1.75, fontSize: "0.95rem" }}>
-                        {item.answer}
-                      </p>
-                    </div>
-                  ))}
-                </>
-              )}
-
-              <div className="blog-author">
-                <div className="blog-author__avatar">
-                  <Logo height={40} href={null} variant="header" />
-                </div>
-                <div>
-                  <p className="blog-author__name">{SITE.name} Redaktion</p>
-                  <p className="blog-author__role">
-                    {COPY.team.charAt(0).toUpperCase() + COPY.team.slice(1)} – {COPY.specialization} in Berlin und Umgebung
-                  </p>
-                </div>
+            {post.faq.length > 0 && (
+              <div className="blog-post-premium__faq">
+                <h2 id="faq">Häufige Fragen</h2>
+                {post.faq.map((item) => (
+                  <div key={item.question} className="blog-post-premium__faq-item">
+                    <strong>{item.question}</strong>
+                    <p>{item.answer}</p>
+                  </div>
+                ))}
               </div>
-            </article>
+            )}
 
-            <aside className="blog-sidebar">
-              {post.toc.length > 0 && (
-                <div className="blog-sidebar__box rk-reveal rk-visible" style={{ transitionDelay: "0s" }}>
-                  <h3>Inhaltsverzeichnis</h3>
-                  <ul className="blog-toc">
-                    {post.toc.map((item) => (
-                      <li key={item.id}>
-                        <a href={`#${item.id}`}>{item.label}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              <div
-                className="blog-sidebar__box rk-reveal"
-                style={{ background: "var(--secondary)", borderColor: "var(--secondary)", transitionDelay: "0.07s" }}
-              >
-                <h3 style={{ color: "white" }}>Jetzt Hilfe erhalten</h3>
-                <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "0.875rem", marginBottom: "1rem", lineHeight: 1.6 }}>
-                  Problem? Wir sind 24/7 für Sie da – auch nachts und am Wochenende.
+            <div className="blog-post-premium__author">
+              <div className="blog-post-premium__author-logo">
+                <Logo height={36} href={null} variant="header" />
+              </div>
+              <div>
+                <p className="blog-post-premium__author-name">{SITE.name} Redaktion</p>
+                <p className="blog-post-premium__author-role">
+                  {COPY.team.charAt(0).toUpperCase() + COPY.team.slice(1)} – {COPY.specialization}{" "}
+                  in Berlin und Umgebung
                 </p>
-                <a
-                  href={SITE.phoneHref}
-                  className="btn btn-primary"
-                  style={{ width: "100%", justifyContent: "center", background: "white", color: "var(--primary)" }}
-                >
-                  <PhoneIcon /> {SITE.phone}
-                </a>
               </div>
+            </div>
+          </article>
 
-              {related.length > 0 && (
-                <div className="blog-sidebar__box rk-reveal" style={{ transitionDelay: "0.14s" }}>
-                  <h3>Weitere Artikel</h3>
-                  <ul className="blog-related">
-                    {related.map((item) => (
-                      <li key={item.href}>
-                        <Link href={item.href}>{item.title}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              <div className="blog-sidebar__box rk-reveal" style={{ transitionDelay: "0.21s" }}>
-                <h3>Unsere Leistungen</h3>
-                <ul className="blog-related">
-                  {SERVICE_LINKS.map((item) => (
-                    <li key={item.href}>
-                      <Link href={item.href}>{item.label}</Link>
+          <aside className="blog-post-premium__aside">
+            {post.toc.length > 0 && (
+              <div className="blog-post-premium__nav">
+                <p className="blog-post-premium__nav-label">Inhalt</p>
+                <ul>
+                  {post.toc.map((item) => (
+                    <li key={item.id}>
+                      <a href={`#${item.id}`}>{item.label}</a>
                     </li>
                   ))}
                 </ul>
               </div>
-            </aside>
-          </div>
+            )}
+
+            <div className="blog-post-premium__help">
+              <p className="blog-post-premium__help-label">Jetzt Hilfe erhalten</p>
+              <p className="blog-post-premium__help-text">
+                Problem? Wir sind 24/7 für Sie da – auch nachts und am Wochenende.
+              </p>
+              <a href={SITE.phoneHref} className="btn btn-primary blog-post-premium__help-cta">
+                <PhoneIcon /> {SITE.phone}
+              </a>
+            </div>
+
+            {related.length > 0 && (
+              <div className="blog-post-premium__nav">
+                <p className="blog-post-premium__nav-label">Weitere Artikel</p>
+                <ul>
+                  {related.map((item) => (
+                    <li key={item.href}>
+                      <Link href={item.href}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div className="blog-post-premium__nav">
+              <p className="blog-post-premium__nav-label">Leistungen</p>
+              <ul>
+                {SERVICE_LINKS.map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <CTABanner />
+      <CTABanner variant="premium" />
     </>
   );
 }

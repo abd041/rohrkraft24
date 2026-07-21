@@ -46,10 +46,73 @@ const PLANS = [
 type PricingProps = {
   cityLabel?: string;
   phone?: CityPagePhone;
+  variant?: "default" | "premium";
 };
 
-export function Pricing({ cityLabel, phone }: PricingProps = {}) {
+export function Pricing({ cityLabel, phone, variant = "default" }: PricingProps = {}) {
   const phoneHref = phone?.href ?? SITE.phoneHref;
+  const titleFor = (title: string) => (cityLabel ? `${title} ${cityLabel}` : title);
+
+  if (variant === "premium") {
+    return (
+      <section className="pricing-premium" id="preise">
+        <header className="pricing-premium__intro">
+          <div className="container">
+            <div className="pricing-premium__intro-inner">
+              <p className="pricing-premium__label">Faire Preise</p>
+              <h2 className="pricing-premium__heading">
+                Faire Festpreise –
+                <br />
+                ohne versteckte Kosten
+              </h2>
+              <p className="pricing-premium__lede">
+                Bei uns wissen Sie vorher, was es kostet. {SITE.travelFeeShort} – bei Beauftragung
+                verrechnet. Transparente Festpreise vor Arbeitsbeginn.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div className="container pricing-premium__body">
+          <div className="pricing-premium__grid">
+            {PLANS.map((plan, i) => (
+              <article
+                key={plan.title}
+                className={`pricing-premium__plan${plan.featured ? " pricing-premium__plan--featured" : ""}`}
+                style={{ animationDelay: `${0.08 + i * 0.08}s` }}
+              >
+                {plan.featured && (
+                  <p className="pricing-premium__kicker">Am beliebtesten</p>
+                )}
+                <p className="pricing-premium__price">
+                  <span className="pricing-premium__from">ab</span>
+                  <span className="pricing-premium__amount">{plan.price}</span>
+                  <span className="pricing-premium__currency">€</span>
+                </p>
+                <h3 className="pricing-premium__title">{titleFor(plan.title)}</h3>
+                <ul className="pricing-premium__features">
+                  {plan.features.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+                <a
+                  href={phoneHref}
+                  className={`pricing-premium__cta${plan.featured ? " pricing-premium__cta--featured" : ""}`}
+                >
+                  <PhoneIcon /> Jetzt anfragen
+                </a>
+              </article>
+            ))}
+          </div>
+          <p className="pricing-premium__disclaimer">
+            * Alle Preise inkl. MwSt. Endpreis wird vor Arbeitsbeginn vereinbart – garantiert keine
+            Überraschungen. {SITE.travelFeeNote}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="section pricing-section" style={{ background: "var(--gray-50)" }} id="preise">
       <div className="container">
@@ -81,9 +144,7 @@ export function Pricing({ cityLabel, phone }: PricingProps = {}) {
                 <span className="pricing-card__from">ab</span>
                 <span className="pricing-card__num">{plan.price}€</span>
               </div>
-              <h3 className="pricing-card__title">
-                {cityLabel ? `${plan.title} ${cityLabel}` : plan.title}
-              </h3>
+              <h3 className="pricing-card__title">{titleFor(plan.title)}</h3>
               <ul className="pricing-card__bullets">
                 {plan.features.map((f) => (
                   <li key={f} className="pricing-card__bullet">

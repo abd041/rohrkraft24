@@ -5,7 +5,6 @@ import { MobileStickyBar } from "@/components/layout/MobileStickyBar";
 import { ModalProvider } from "@/components/providers/ModalProvider";
 import { CallbackModal } from "@/components/modals/CallbackModal";
 import { CookieBanner } from "@/components/ui/CookieBanner";
-import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { geistSans, nexa } from "./fonts";
 import "./globals.css";
@@ -46,7 +45,6 @@ export default function RootLayout({
           <MobileStickyBar />
           <CallbackModal />
           <CookieBanner />
-          <WhatsAppButton />
           <ScrollReveal />
         </ModalProvider>
       </body>
